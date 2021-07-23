@@ -12,107 +12,52 @@
 <body>
     <div class="box1">
         <h1>SOUTH DAKOTA ODOR FOOTPRINT TOOL</h1>
-        
-        
+
+
     </div>
     <div class="box2">
+        <p style="color: midnightblue;"><strong>Procedure to use SDOFT:</strong> </p>
         <ol>
-            <p><strong>Procedure to use SDOFT:</strong> </p>
             <li>Select South Dakota County from drop down list where site is located.</li>
             <li>Select Odor Source Type from drop down list for each odor source at the site.</li>
             <li>Select housing or manure storage type from drop down list for each odor source at the site.</li>
             <li>Enter size (width and length) of emitting surface for each odor source at the site.</li>
             <li>Enter odor control technology if any from drop down list for each odor source at the site.</li>
             <li>View annoyance-free distances at bottom of page (scroll down).</li>
-            <li>Select the annoyance-free curves to be graphed by checking the square on the left bottom of this page.</li>
+            <li>Select the annoyance-free curves to be graphed by checking the square on the left bottom of this page.
+            </li>
         </ol>
     </div>
-    
+
     <div>
-        <form action="county.php">
+        <form action="county.php" method="get">
             <p style="color: midnightblue;"><strong>County of Site</strong> </p>
-            <select onchange="isSelected(this.value);"id="county">
-                <option value="1">Aurora</option>
-                <option value="2">Beadle</option>
-                <option value="3">Bennett</option>
-                <option value="4">Bon Homme</option>
-                <option value="5" selected="selected">Brookings</option>
-                <option value="6">Brown</option>
-                <option value="7">Brule</option>
-                <option value="8">Buffalo</option>
-                <option value="9">Butte</option>
-                <option value="10">Campbell</option>
-                <option value="11">Charles Mix</option>
-                <option value="12">Clark</option>
-                <option value="13">Clay</option>
-                <option value="14">Codington</option>
-                <option value="15">Corson</option>
-                <option value="16">Custer</option>
-                <option value="17">Davison</option>
-                <option value="18">Day</option>
-                <option value="19">Deuel</option>
-                <option value="20">Dewey</option>
-                <option value="21">Douglas</option>
-                <option value="22">Edmunds</option>
-                <option value="23">Fall River</option>
-                <option value="24">Faulk</option>
-                <option value="25">Grant</option>
-                <option value="26">Gregory</option>
-                <option value="27">Haakon</option>
-                <option value="28">Hamlin</option>
-                <option value="29">Hand</option>
-                <option value="30">Hanson</option>
-                <option value="31">Harding</option>
-                <option value="32">Hughes</option>
-                <option value="33">Hutchinson</option>
-                <option value="34">Hyde</option>
-                <option value="35">Jackson</option>
-                <option value="36">Jerauld</option>
-                <option value="37">Jones</option>
-                <option value="38">Kingsbury</option>
-                <option value="39">Lake</option>
-                <option value="40">Lawrence</option>
-                <option value="41">Lincoln</option>
-                <option value="42">Lyman</option>
-                <option value="43">Marshall</option>
-                <option value="44">McCook</option>
-                <option value="45">McPherson</option>
-                <option value="46">Meade</option>
-                <option value="47">Mellette</option>
-                <option value="48">Miner</option>
-                <option value="49">Minnehaha</option>
-                <option value="50">Moody</option>
-                <option value="51">Pennington</option>
-                <option value="52">Perkins</option>
-                <option value="53">Potter</option>
-                <option value="54">Roberts</option>
-                <option value="55">Sanborn</option>
-                <option value="56">Shannon</option>
-                <option value="57">Spink</option>
-                <option value="58">Stanley</option>
-                <option value="59">Sully</option>
-                <option value="60">Todd</option>
-                <option value="61">Tripp</option>
-                <option value="62">Turner</option>
-                <option value="63">Union</option>
-                <option value="64">Walworth</option>
-                <option value="65">Yankton</option>
-                <option value="66">Ziebach</option>
-            </select>
+            <label for="county">Choose your county from the list:</label>
+            <input list="counties" name="county" id="county">
+            <datalist onchange="isSelected(this.value);" id="counties">
+                <option>Aurora</option>
+                <option>Beadle</option>
+                <option>Bennett</option>
+                <option>Bon Homme</option>
+                <option>Brookings</option>
+                <option>Brown</option>
+
+            </datalist>
         </form>
     </div>
-    <p style="color: midnightblue;"><strong>Source Type</strong></p>
+    <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
     <div class="source">
         <!-- <p style="color: midnightblue;"><strong>Source Type</strong></p> -->
-            <p>Source 1</p>
-            <p>Source 2</p>
-            <p>Source 3</p>
-            <p>Source 4</p>
-            <p>Source 5</p>
+        <p style="margin-left: 160px;">Source 1</p>
+        <p>Source 2</p>
+        <p>Source 3</p>
+        <p>Source 4</p>
+        <p>Source 5</p>
     </div>
     <div class="sourcetable">
+        <label for="sourcetable">Source Type:</label>
         <form action="source1.php">
-            <select>
+            <select style="width:210px">
                 <option>Cattle Yard</option>
                 <option>Dairy Barn</option>
                 <option>Swine Barn</option>
@@ -120,7 +65,7 @@
             </select>
         </form>
         <form action="source2.php">
-            <select>
+            <select style="width:210px">
                 <option>Cattle Yard</option>
                 <option>Dairy Barn</option>
                 <option>Swine Barn</option>
@@ -128,7 +73,7 @@
             </select>
         </form>
         <form action="source3.php">
-            <select>
+            <select style="width:210px">
                 <option>Cattle Yard</option>
                 <option>Dairy Barn</option>
                 <option>Swine Barn</option>
@@ -136,27 +81,144 @@
             </select>
         </form>
         <form action="source4.php">
-            <select>
+            <select style="width:210px">
                 <option>Cattle Yard</option>
                 <option>Dairy Barn</option>
                 <option>Swine Barn</option>
                 <option>Manure Storage</option>
             </select>
         </form>
-        <form action="source88.php">
-            <select>
+        <form action="source5.php">
+            <select style="width:210px">
                 <option>Cattle Yard</option>
                 <option>Dairy Barn</option>
                 <option>Swine Barn</option>
                 <option>Manure Storage</option>
             </select>
         </form>
+    </div>
+    <div class="houseType">
+        <label for="houseType"> House Type:</label>
+        <form action="type1.php">
+            <select onChange="Displayfactor();">
+                <option value="3">Anaerobic Lagoon - Non Purple</option>
+                <option value="2">Anaerobic Lagoon - Purple</option>
+                <option value="5">Broiler Litter</option>
+                <option value="9">Crusted Stockpile</option>
+                <option value="19">Dirt/Concrete lot</option>
+                <option vaule="63">Earthen Storage Basin</option>
+                <option value="68">Farrowing</option>
+                <option value="165">Finishing - Deep Pit</option>
+                <option value="19">Finishing - Hoop Barn</option>
+                <option value="53">Finishing - Open Front Scrape</option>
+                <option value="97">Finishing - Pull Plug</option>
+                <option value="29">Free Stall</option>
+                <option value="19">Free Stall - Scrape</option>
+                <option value="243">Gestation - Deep Pit</option>
+                <option value="146">Gestation - Pull Plug</option>
+                <option value="29">Loose Housing </option>
+                <option value="10">Turkey Litter</option>
+            </select>
+        </form>
+        <form action="type2.php">
+            <select onChange="Displayfactor();">
+                <option value="3">Anaerobic Lagoon - Non Purple</option>
+                <option value="2">Anaerobic Lagoon - Purple</option>
+                <option value="5">Broiler Litter</option>
+                <option value="9">Crusted Stockpile</option>
+                <option value="19">Dirt/Concrete lot</option>
+                <option vaule="63">Earthen Storage Basin</option>
+                <option value="68">Farrowing</option>
+                <option value="165">Finishing - Deep Pit</option>
+                <option value="19">Finishing - Hoop Barn</option>
+                <option value="53">Finishing - Open Front Scrape</option>
+                <option value="97">Finishing - Pull Plug</option>
+                <option value="29">Free Stall</option>
+                <option value="19">Free Stall - Scrape</option>
+                <option value="243">Gestation - Deep Pit</option>
+                <option value="146">Gestation - Pull Plug</option>
+                <option value="29">Loose Housing </option>
+                <option value="10">Turkey Litter</option>
+            </select>
+        </form>
+        <form action="type3.php">
+            <select onChange="Displayfactor();">
+                <option value="3">Anaerobic Lagoon - Non Purple</option>
+                <option value="2">Anaerobic Lagoon - Purple</option>
+                <option value="5">Broiler Litter</option>
+                <option value="9">Crusted Stockpile</option>
+                <option value="19">Dirt/Concrete lot</option>
+                <option vaule="63">Earthen Storage Basin</option>
+                <option value="68">Farrowing</option>
+                <option value="165">Finishing - Deep Pit</option>
+                <option value="19">Finishing - Hoop Barn</option>
+                <option value="53">Finishing - Open Front Scrape</option>
+                <option value="97">Finishing - Pull Plug</option>
+                <option value="29">Free Stall</option>
+                <option value="19">Free Stall - Scrape</option>
+                <option value="243">Gestation - Deep Pit</option>
+                <option value="146">Gestation - Pull Plug</option>
+                <option value="29">Loose Housing </option>
+                <option value="10">Turkey Litter</option>
+            </select>
+        </form>
+        <form action="type4.php">
+            <select onChange="Displayfactor();">
+                <option value="3">Anaerobic Lagoon - Non Purple</option>
+                <option value="2">Anaerobic Lagoon - Purple</option>
+                <option value="5">Broiler Litter</option>
+                <option value="9">Crusted Stockpile</option>
+                <option value="19">Dirt/Concrete lot</option>
+                <option vaule="63">Earthen Storage Basin</option>
+                <option value="68">Farrowing</option>
+                <option value="165">Finishing - Deep Pit</option>
+                <option value="19">Finishing - Hoop Barn</option>
+                <option value="53">Finishing - Open Front Scrape</option>
+                <option value="97">Finishing - Pull Plug</option>
+                <option value="29">Free Stall</option>
+                <option value="19">Free Stall - Scrape</option>
+                <option value="243">Gestation - Deep Pit</option>
+                <option value="146">Gestation - Pull Plug</option>
+                <option value="29">Loose Housing </option>
+                <option value="10">Turkey Litter</option>
+            </select>
+        </form>
+        <form action="type5.php">
+            <select onChange="Displayfactor();">
+                <option value="3">Anaerobic Lagoon - Non Purple</option>
+                <option value="2">Anaerobic Lagoon - Purple</option>
+                <option value="5">Broiler Litter</option>
+                <option value="9">Crusted Stockpile</option>
+                <option value="19">Dirt/Concrete lot</option>
+                <option vaule="63">Earthen Storage Basin</option>
+                <option value="68">Farrowing</option>
+                <option value="165">Finishing - Deep Pit</option>
+                <option value="19">Finishing - Hoop Barn</option>
+                <option value="53">Finishing - Open Front Scrape</option>
+                <option value="97">Finishing - Pull Plug</option>
+                <option value="29">Free Stall</option>
+                <option value="19">Free Stall - Scrape</option>
+                <option value="243">Gestation - Deep Pit</option>
+                <option value="146">Gestation - Pull Plug</option>
+                <option value="29">Loose Housing </option>
+                <option value="10">Turkey Litter</option>
+            </select>
+        </form>
+    </div>
+    <div class="emittingFactor">Emitting Factor:
+        <span id="f1"></span>
+        <span id="f2"></span>
+        <span id="f3"></span>
+        <span id="f4"></span>
+        <span id="f5"></span>
     </div>
     <div class="SubmitBotton" id="buttonid">
         <button>Submit</button>
+        <p>Date/Time: <span id="datetime"></span></p>
     </div>
-    <p>Date/Time: <span id="datetime"></span></p>
+
 </body>
 <!-- javascript file inport -->
 <script src="main.js"></script>
+
 </html>

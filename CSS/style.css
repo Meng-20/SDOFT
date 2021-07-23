@@ -34,13 +34,24 @@ a:visited{
 }
 .source p{
     display: inline-table;
-    margin-left: 50px;
+    margin-left: 140px;
+    color: darkblue;
 }
 .sourcetable form{
+
     display: inline-table;
 }
+
+.houseType form{
+    display: inline-table;
+}
+
 .datetime{
     position:fixed;
     right: 30px;
     bottom: 60 px;
+}
+
+.emittingFactor{
+    
 }
