@@ -143,3 +143,20 @@ var index1 = houseType[5].selectedIndex;
         <input type="number" name="length4" placeholder="Enter length of the 4th house" style="width: 200px;">
         <input type="number" name="length5" placeholder="Enter length of the 5th house" style="width: 200px;">
     </div>
+
+
+    var emit1 = document.getElementsById("f1");
+    var area1 = document.getElementsById("area1");
+    var control1 = document.getElementById("c1");
+    var result1 = document.getElementById("s1");
+    result1.innerHTML = 1000;
+
+    var emitFactor1 = document.getElementById("f1").value;
+    var controlFactor1=document.getElementsById("c1").value;
+    var area1=document.getElementsByTagId("area1").value;
+    var sourceFactor1 = document.getElementsById("s1");
+
+    
+    sourceFactor1.innerHTML = emitFactor1*controlFactor1*area1/10000;
+
+    //var emitFactor2 = document.getElementById("f2")
