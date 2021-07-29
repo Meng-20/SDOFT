@@ -118,6 +118,6 @@ function showTableData() {
 }
 
 function getCellValue(a,b) {
-    var tem=document.getElementById("are2");
+    var tem=document.getElementById("are3");
     document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
   }

@@ -16,8 +16,12 @@
         </style>
     </head>
 <body>
+    
+    <p><input type="button" id="bt" value="Show Table Data" onclick="getCellValue(3,5)" /></p>
+    <p id="info"></p>
+
     <div>
-        <table id="are1">
+        <table id="are1" hidden>
             <tbody>
                 <tr>
                     <th></th>
@@ -530,7 +534,7 @@
     </div>
     
     <div>
-        <table id="are2">
+        <table id="are2" hidden>
             <tbody>
                 <tr>
                     <th></th>
@@ -1043,7 +1047,7 @@
     </div>
     
     <div>
-        <table id="are3">
+        <table id="are3" hidden>
             <tbody>
                 <tr>
                     <th></th>
@@ -1555,5 +1559,5 @@
         </table>
     </div>
 </body>
-<script src="main.js"></script>
+<script src="../main.js"></script>
 </html>
