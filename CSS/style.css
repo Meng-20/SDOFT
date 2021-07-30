@@ -51,3 +51,9 @@ html {
     background: linear-gradient(to right, #e0ebae, #7abfec);
     height: 80%;
 }
+
+#distanceTable {
+    
+    border-collapse: collapse;
+    text-align:center;
+}

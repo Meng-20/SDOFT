@@ -1,0 +1,15 @@
+<html>
+    <form action="county.php" method="get">
+        <p style="color: midnightblue;"><strong>County of Site</strong> </p>
+        <label for="county">Choose your county from the list:</label>
+        <input list="counties" name="county" id="county">
+        <datalist onchange="isSelected(this.value);" id="counties">
+            <option>Aurora</option>
+            <option>Beadle</option>
+            <option>Bennett</option>
+            <option>Bon Homme</option>
+            <option>Brookings</option>
+            <option>Brown</option>
+        </datalist>
+    </form>
+</html>

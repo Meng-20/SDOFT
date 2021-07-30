@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
-    
+    <script src="../chart/Chart.bundle.min.js"></script>
     <title>SOUTH DAKOTA ODOR FOOTPRINT TOOL</title>
 </head>
 
 <body style="overflow: auto;">
-    
+
     <div class="box1">
         <h1>SOUTH DAKOTA ODOR FOOTPRINT TOOL</h1>
     </div>
@@ -30,19 +30,7 @@
     </div>
 
     <div>
-        <form action="county.php" method="get">
-            <p style="color: midnightblue;"><strong>County of Site</strong> </p>
-            <label for="county">Choose your county from the list:</label>
-            <input list="counties" name="county" id="county">
-            <datalist onchange="isSelected(this.value);" id="counties">
-                <option>Aurora</option>
-                <option>Beadle</option>
-                <option>Bennett</option>
-                <option>Bon Homme</option>
-                <option>Brookings</option>
-                <option>Brown</option>
-            </datalist>
-        </form>
+        <iframe src="../HTML/countySelect.html" frameborder="0" height="100px"></iframe>
     </div>
     <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
     <div class="source">
@@ -104,7 +92,7 @@
     <div class="houseType">
         <label for="houseType"> House Type:</label>
         <form action="type1.php">
-            <select onChange="Displayfactor();sourceFactor();">
+            <select onChange="Displayfactor();sourceFactor();totalFactor();">
                 <option value="0">Non-selected</option>
                 <option value="3">Anaerobic Lagoon - Non Purple</option>
                 <option value="2">Anaerobic Lagoon - Purple</option>
@@ -126,7 +114,7 @@
             </select>
         </form>
         <form action="type2.php">
-            <select onChange="Displayfactor();sourceFactor();">
+            <select onChange="Displayfactor();sourceFactor();totalFactor();">
                 <option value="0">Non-selected</option>
                 <option value="3">Anaerobic Lagoon - Non Purple</option>
                 <option value="2">Anaerobic Lagoon - Purple</option>
@@ -148,7 +136,7 @@
             </select>
         </form>
         <form action="type3.php">
-            <select onChange="Displayfactor(); sourceFactor();">
+            <select onChange="Displayfactor(); sourceFactor();totalFactor();">
                 <option value="0">Non-selected</option>
                 <option value="3">Anaerobic Lagoon - Non Purple</option>
                 <option value="2">Anaerobic Lagoon - Purple</option>
@@ -170,7 +158,7 @@
             </select>
         </form>
         <form action="type4.php">
-            <select onChange="Displayfactor(); sourceFactor();" >
+            <select onChange="Displayfactor(); sourceFactor();totalFactor();">
                 <option value="0">Non-selected</option>
                 <option value="3">Anaerobic Lagoon - Non Purple</option>
                 <option value="2">Anaerobic Lagoon - Purple</option>
@@ -192,7 +180,7 @@
             </select>
         </form>
         <form action="type5.php">
-            <select onChange="Displayfactor(); sourceFactor();">
+            <select onChange="Displayfactor(); sourceFactor();totalFactor();">
                 <option value="0">Non-selected</option>
                 <option value="3">Anaerobic Lagoon - Non Purple</option>
                 <option value="2">Anaerobic Lagoon - Purple</option>
@@ -214,12 +202,19 @@
             </select>
         </form>
     </div>
-    <div class="emittingFactor">Emitting Factor:
-        <span id="f1" style="margin-left: 85px;"></span>
-        <span id="f2" style="margin-left: 190px;"></span>
-        <span id="f3" style="margin-left: 195px;"></span>
-        <span id="f4" style="margin-left: 200px;"></span>
-        <span id="f5" style="margin-left: 205px;"></span>
+
+    <div>
+        <p>Emitting Factor:</p>
+        <table class="emittingFactor">
+            <tr class="row">
+                <td></td>
+                <td id="f1"></td>
+                <td id="f2"></td>
+                <td id="f3"></td>
+                <td id="f4"></td>
+                <td id="f5"></td>
+            </tr>
+        </table>
     </div>
 
     <br>
@@ -232,15 +227,15 @@
                     <td style="width: 100px;">Legth (ft)</td>
                     <td>
                         <input type="number" name="length1" placeholder="Enter length of the 1st building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="length2" placeholder="Enter length of the 2nd building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="length3" placeholder="Enter length of the 3rd building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="length4" placeholder="Enter length of the 4th building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="length5" placeholder="Enter length of the 5th building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                     </td>
                 </tr>
 
@@ -248,15 +243,15 @@
                     <td style="width: 100px;">Width (ft)</td>
                     <td>
                         <input type="number" name="width1" placeholder="Enter width of the 1st building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="width2" placeholder="Enter width of the 2nd building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="width3" placeholder="Enter width of the 3rd building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="width4" placeholder="Enter width of the 4th building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                         <input type="number" name="width5" placeholder="Enter width of the 5th building"
-                            onChange="area();sourceFactor();">
+                            onChange="area();sourceFactor();totalFactor();">
                     </td>
                 </tr>
 
@@ -281,7 +276,7 @@
             <tr>
                 <td style="width: 100px;"> Control：</td>
                 <td id="cc1">
-                    <select onchange="displayControlFactor();sourceFactor();" style="width:210px">
+                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
                         <option value="1">A No Odor Control </option>
                         <option value="0.1">Biofilter</option>
                         <option value="0.5">Geotextile Cover</option>
@@ -294,7 +289,7 @@
                     </select>
                 </td>
                 <td id="cc2">
-                    <select onchange="displayControlFactor();sourceFactor();" style="width:210px">
+                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
                         <option value="1">A No Odor Control </option>
                         <option value="0.1">Biofilter</option>
                         <option value="0.5">Geotextile Cover</option>
@@ -307,7 +302,7 @@
                     </select>
                 </td>
                 <td id="cc3">
-                    <select onchange="displayControlFactor();sourceFactor();" style="width:210px">
+                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
                         <option value="1">A No Odor Control </option>
                         <option value="0.1">Biofilter</option>
                         <option value="0.5">Geotextile Cover</option>
@@ -320,7 +315,7 @@
                     </select>
                 </td>
                 <td id="cc4">
-                    <select onchange="displayControlFactor();sourceFactor();" style="width:210px">
+                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
                         <option value="1">A No Odor Control </option>
                         <option value="0.1">Biofilter</option>
                         <option value="0.5">Geotextile Cover</option>
@@ -333,7 +328,7 @@
                     </select>
                 </td>
                 <td id="cc5">
-                    <select onchange="displayControlFactor();sourceFactor();" style="width:210px">
+                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
                         <option value="1">A No Odor Control </option>
                         <option value="0.1">Biofilter</option>
                         <option value="0.5">Geotextile Cover</option>
@@ -353,27 +348,94 @@
         <span id="c2" style="margin-left: 195px;"></span>
         <span id="c3" style="margin-left: 205px;"></span>
         <span id="c4" style="margin-left: 205px;"></span>
-        <span id="c5"style="margin-left: 200px;"></span>
+        <span id="c5" style="margin-left: 200px;"></span>
     </div>
-    <div class="sourceFactor" >Source Factor:
-        <span id="s1"style="margin-left: 93px;"></span>
+    <div class="sourceFactor">Source Factor:
+        <span id="s1" style="margin-left: 93px;"></span>
         <span id="s2" style="margin-left: 195px;"></span>
         <span id="s3" style="margin-left: 205px;"></span>
         <span id="s4" style="margin-left: 205px;"></span>
         <span id="s5" style="margin-left: 200px;"></span>
     </div>
     <br>
-    
-    <iframe src="../HTML/setbackTable.html" frameborder="0"></iframe>
-    
-    <br>
-    <br>
 
-    <div class="SubmitBotton" id="buttonid">
-        <button>Submit</button>
-        <p>Date/Time: <span id="datetime"></span></p>
+    <div>
+        <p style="color: midnightblue;"><strong>Total Odor Emitting Factor (TOEF) </strong></p>
+        <p id="TOEF"></p>
     </div>
 
+    <iframe src="../HTML/setbackTable.html" frameborder="0" height="100px"></iframe>
+
+    <br>
+
+    <table id="distanceTable" border="1px solid black;">
+        <caption style="color: midnightblue; font-weight:bold">SETBACK DISTANCES FROM ODOR SOURCE AT VARIOUS ODOR
+            ANNOYANCE-FREE FREQUENCIES IN FEET</caption>
+        <p></p>
+        <tr>
+            <th>Direction</th>
+            <th>99% Annoyance-free</th>
+            <th>98% Annoyance-free</th>
+            <th>97% Annoyance-free</th>
+            <th>96% Annoyance-free</th>
+            <th>94% Annoyance-free</th>
+            <th>91% Annoyance-free</th>
+        </tr>
+        <tr>
+            <td>Northeast</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Southeast</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Southwest</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Northwest</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+
+
+    </table>
+    <br>
+    <p><input type="button" id="bt" value="change table content" onclick="changeTableCell()" /></p>
+
+    <br>
+    <div class="SubmitBotton" id="buttonid">
+        <!-- <button>Submit</button> -->
+        
+    </div>
+
+    <div class="odorChart">
+        <button type="button" onclick="chart()">Click Me to Get the Odor Graph</button>
+        <canvas id="myChart" ></canvas>
+        <!--style="height:400; width:100%"-->
+    
+        <p>Date/Time: <span id="datetime"></span></p>
+    </div>
 </body>
 <!-- javascript file import -->
 <script src="../main.js"></script>
