@@ -57,3 +57,7 @@ html {
     border-collapse: collapse;
     text-align:center;
 }
+
+.ar p{
+    display: inline-table;
+}

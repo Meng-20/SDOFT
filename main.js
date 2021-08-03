@@ -147,6 +147,43 @@ function getCellValue3(a, b) {
     document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
 }
 
+function getCountyArea(el, dl){
+    if(el.value.trim() != ''){
+      var opSelected = dl.querySelector(`[value="${el.value}"]`);
+      var option = document.createElement("option");
+      option.value = opSelected.value;
+      option.text = opSelected.getAttribute('label');
+      document.getElementById('CountyArea').innerHTML= option.innerText;
+    }
+  }
+
+function changeDirection(el, dl){
+    var area;
+    if(el.value.trim() != ''){
+        var opSelected = dl.querySelector(`[value="${el.value}"]`);
+        var option = document.createElement("option");
+        option.value = opSelected.value;
+        option.text = opSelected.getAttribute('label');
+        area = option.innerText;
+      }
+    var x = document.getElementById("distanceTable").rows[1].cells;
+    var y = document.getElementById("distanceTable").rows[2].cells;
+    var z = document.getElementById("distanceTable").rows[3].cells;
+    var w = document.getElementById("distanceTable").rows[4].cells;
+    if(area=="1"){
+        x[0].innerHTML="North";
+        y[0].innerHTML="East";
+        z[0].innerHTML="South";
+        w[0].innerHTML="West";
+    }
+    else{
+        x[0].innerHTML="Northeast";
+        y[0].innerHTML="Southeast";
+        z[0].innerHTML="Southwest";
+        w[0].innerHTML="Northwest";
+    }
+}
+
 function changeTableCell() {
     var tem = 1;
     var x = document.getElementById("distanceTable").rows[1].cells;
@@ -194,7 +231,7 @@ function chart() {
                 borderColor: 'rgba(255, 206, 86)',
                 spanGaps: true,
                 fill: true,
-            },{
+            }, {
                 label: '96%',
                 data: [12, 12, 13, 13, 12, , 11, , 13, , 12, , 12, 12, 12, 13],
                 borderWidth: 1,
@@ -225,19 +262,19 @@ function chart() {
         },
         options: {
             scale: {
-               
-                    ticks: {
-                        color: 'red',
-                        //display: false,
-                        max: 20,
-                        min: 5,
-                    },
+
+                ticks: {
+                    color: 'red',
+                    //display: false,
+                    max: 20,
+                    min: 5,
+                },
             },
-            title:{
-              display: true,
-              text:'Odor Radar Graph',
-              fontSize: '24',
-              position: 'top'
+            title: {
+                display: true,
+                text: 'Odor Radar Graph',
+                fontSize: '24',
+                position: 'top'
             }
 
         }

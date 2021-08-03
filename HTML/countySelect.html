@@ -1,15 +1,86 @@
 <html>
-    <form action="county.php" method="get">
+    <div class="CountySelected">
+    <form action="county.php" method="get"> 
         <p style="color: midnightblue;"><strong>County of Site</strong> </p>
         <label for="county">Choose your county from the list:</label>
-        <input list="counties" name="county" id="county">
-        <datalist onchange="isSelected(this.value);" id="counties">
-            <option>Aurora</option>
-            <option>Beadle</option>
-            <option>Bennett</option>
-            <option>Bon Homme</option>
-            <option>Brookings</option>
-            <option>Brown</option>
-        </datalist>
-    </form>
+        <input id="county"  type="text" list="counties" onchange="AddValue(document.getElementById('county'), document.getElementById('counties'));" >
+        <!-- onchange="AddValue(document.getElementById('county'), document.getElementById('counties'));" -->
+        <datalist  id="counties">
+        <!--onchange="isSelected(this.value)  -->
+        <option label = "2" value="Aurora" ></option>
+        <option value="3">Beadle</option>
+        <option value="3">Bennett</option>
+        <option value="2">Bon Homme</option>
+        <option value="1">Brookings</option>
+        <option value="1">Brown</option>
+        <option value="2">Brule</option>
+        <option value="3">Buffalo</option>
+        <option value="3">Butte</option>
+        <option value="3">Campbell</option>
+        <option value="2">Charles Mix</option>
+        <option value="1">Clark</option>
+        <option value="2">Clay</option>
+        <option value="1">Codington</option>
+        <option value="3">Corson</option>
+        <option value="4">Custer</option>
+        <option value="2">Davison</option>
+        <option value="1">Day</option>
+        <option value="1">Deuel</option>
+        <option value="3">Dewey</option>
+        <option value="2">Douglas</option>
+        <option value="1">Edmunds</option>
+        <option value="4">Fall River</option>
+        <option value="1">Faulk</option>
+        <option value="1">Grant</option>
+        <option value="2">Gregory</option>
+        <option value="3">Haakon</option>
+        <option value="1">Hamlin</option>
+        <option value="3">Hand</option>
+        <option value="2">Hanson</option>
+        <option value="3">Harding</option>
+        <option value="3">Hughes</option>
+        <option value="2">Hutchinson</option>
+        <option value="3">Hyde</option>
+        <option value="3">Jackson</option>
+        <option value="3">Jerauld</option>
+        <option value="3">Jones</option>
+        <option value="1">Kingsbury</option>
+        <option value="1">Lake</option>
+        <option value="4">Lawrence</option>
+        <option value="2">Lincoln</option>
+        <option value="2">Lyman</option>
+        <option value="1">Marshall</option>
+        <option value="2">McCook</option>
+        <option value="1">McPherson</option>
+        <option value="3">Meade</option>
+        <option value="3">Mellette</option>
+        <option value="1">Miner</option>
+        <option value="2">Minnehaha</option>
+        <option value="1">Moody</option>
+        <option value="3">Pennington</option>
+        <option value="3">Perkins</option>
+        <option value="3">Potter</option>
+        <option value="1">Roberts</option>
+        <option value="3">Sanborn</option>
+        <option value="3">Shannon</option>
+        <option value="1">Spink</option>
+        <option value="3">Stanley</option>
+        <option value="3">Sully</option>
+        <option value="3">Todd</option>
+        <option value="2">Tripp</option>
+        <option value="2">Turner</option>
+        <option value="2">Union</option>
+        <option value="3">Walworth</option>
+        <option value="2">Yankton</option>
+        <option value="3">Ziebach</option>
+    </datalist>
+    
+</form> 
+<form>
+    <p>Area: </p>
+   <p id="Colors"></p>
+</form>
+</div>
+<script src="../main.js"></script>
 </html>
+

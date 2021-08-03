@@ -28,9 +28,89 @@
             </li>
         </ol>
     </div>
-
-    <div>
-        <iframe src="../HTML/countySelect.html" frameborder="0" height="100px"></iframe>
+        <!-- <iframe src="../HTML/countySelect.html" frameborder="0" height="200px"></iframe> -->
+  
+    <div class="CountySelected">
+        <form action="county.php" method="get"> 
+            <p style="color: midnightblue;"><strong>County of Site</strong> </p>
+            <label for="county">Choose your county from the list:</label>
+            <input id="county"  type="text" list="counties" 
+            onchange="getCountyArea(document.getElementById('county'), document.getElementById('counties'));
+             changeDirection(document.getElementById('county'), document.getElementById('counties'));" >
+            <!-- onchange="AddValue(document.getElementById('county'), document.getElementById('counties'));" -->
+            <datalist  id="counties">
+            <!--onchange="isSelected(this.value)  -->
+            <option label = "2" value="Aurora" ></option>
+            <option label="3" value="Beadle"></option>
+            <option label="3">Bennett</option>
+            <option label="2">Bon Homme</option>
+            <option label="1" value="Brookings"></option>
+            <option label="1">Brown</option>
+            <option label="2">Brule</option>
+            <option label="3">Buffalo</option>
+            <option label="3">Butte</option>
+            <option label="3">Campbell</option>
+            <option label="2">Charles Mix</option>
+            <option label="1">Clark</option>
+            <option label="2">Clay</option>
+            <option label="1">Codington</option>
+            <option label="3">Corson</option>
+            <option label="4">Custer</option>
+            <option label="2">Davison</option>
+            <option label="1">Day</option>
+            <option label="1">Deuel</option>
+            <option label="3">Dewey</option>
+            <option label="2">Douglas</option>
+            <option label="1">Edmunds</option>
+            <option label="4">Fall River</option>
+            <option label="1">Faulk</option>
+            <option label="1">Grant</option>
+            <option label="2">Gregory</option>
+            <option label="3">Haakon</option>
+            <option label="1">Hamlin</option>
+            <option label="3">Hand</option>
+            <option label="2">Hanson</option>
+            <option label="3">Harding</option>
+            <option label="3">Hughes</option>
+            <option label="2">Hutchinson</option>
+            <option label="3">Hyde</option>
+            <option label="3">Jackson</option>
+            <option label="3">Jerauld</option>
+            <option label="3">Jones</option>
+            <option label="1">Kingsbury</option>
+            <option label="1">Lake</option>
+            <option label="4">Lawrence</option>
+            <option label="2">Lincoln</option>
+            <option label="2">Lyman</option>
+            <option label="1">Marshall</option>
+            <option label="2">McCook</option>
+            <option label="1">McPherson</option>
+            <option label="3">Meade</option>
+            <option label="3">Mellette</option>
+            <option label="1">Miner</option>
+            <option label="2">Minnehaha</option>
+            <option label="1">Moody</option>
+            <option label="3">Pennington</option>
+            <option label="3">Perkins</option>
+            <option label="3">Potter</option>
+            <option label="1">Roberts</option>
+            <option label="3">Sanborn</option>
+            <option label="3">Shannon</option>
+            <option label="1">Spink</option>
+            <option label="3">Stanley</option>
+            <option label="3">Sully</option>
+            <option label="3">Todd</option>
+            <option label="2">Tripp</option>
+            <option label="2">Turner</option>
+            <option label="2">Union</option>
+            <option label="3">Walworth</option>
+            <option label="2">Yankton</option>
+            <option label="3">Ziebach</option>
+        </datalist>
+    </form>
+    <div class="ar">
+        <p>Area: </p>
+        <p id="CountyArea"></p>
     </div>
     <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
     <div class="source">
@@ -421,7 +501,7 @@
 
     </table>
     <br>
-    <p><input type="button" id="bt" value="change table content" onclick="changeTableCell()" /></p>
+    <p><input type="button" id="bt" value="change table content" onclick="changeTableCell(); changeDirection(document.getElementById('county'), document.getElementById('counties')); " /></p>
 
     <br>
     <div class="SubmitBotton" id="buttonid">
@@ -436,6 +516,8 @@
     
         <p>Date/Time: <span id="datetime"></span></p>
     </div>
+
+
 </body>
 <!-- javascript file import -->
 <script src="../main.js"></script>

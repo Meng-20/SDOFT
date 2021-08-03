@@ -1,34 +1,29 @@
+
 <!DOCTYPE html>
 <html>
-
+ 
 <head>
-    <script>
-        function changeContent() {
-            var mm = 9;
-            var x = document.getElementById('myTable').rows[0].cells;
-            x[0].innerHTML = mm;
-        }
-    </script>
+        <meta charset="UTF-8">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+                $(window).on('load', function () {
+                        $('#check').click(function () {
+                                alert($("#datalist_1").val());
+                                alert($("#txt_1").val());
+                        });
+                }); 
+        </script>
 </head>
-
+ 
 <body>
-    <table id="myTable" border="1">
-        <tr>
-            <td>Row1 cell1</td>
-            <td>Row1 cell2</td>
-        </tr>
-        <tr>
-            <td>Row2 cell1</td>
-            <td>Row2 cell2</td>
-        </tr>
-        <tr>
-            <td>Row3 cell1</td>
-            <td>Row3 cell2</td>
-        </tr>
-    </table>
-    <form>
-        <input type="button" onclick="changeContent()" value="Change content">
-    </form>
+        <input id="txt_1" list="datalist_1" />
+ 
+        <datalist id="datalist_1">
+                <option data-id="data_1" value="val_1"></option>
+                <option data-id="data_2" value="val_2"></option>
+                <option data-id="data_3" value="val_3"></option>
+        </datalist>
+        <button id="check">check</button>
 </body>
-
+ 
 </html>
