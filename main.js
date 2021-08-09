@@ -121,8 +121,10 @@ function totalFactor() {
     var t4 = ftext4 * ctext4 * width4 * length4 / 10000;
     var t5 = ftext5 * ctext5 * width5 * length5 / 10000;
     var tal = Number(t1) + Number(t2) + Number(t3) + Number(t4) + Number(t5);
-    document.getElementById("TOEF").innerHTML = tal.toFixed(0);
+    document.getElementById("TOEF").innerHTML = tal;
 }
+
+
 
 function showTableData() {
     document.getElementById('info').innerHTML = "";
@@ -143,58 +145,193 @@ function showTableData() {
 }
 
 function getCellValue3(a, b) {
-    var tem = document.getElementById("are3");
-    document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
+    var tem = document.getElementById("are1");
+    return tem.rows[a].cells[b].innerText;
 }
 
-function getCountyArea(el, dl){
-    if(el.value.trim() != ''){
-      var opSelected = dl.querySelector(`[value="${el.value}"]`);
-      var option = document.createElement("option");
-      option.value = opSelected.value;
-      option.text = opSelected.getAttribute('label');
-      document.getElementById('CountyArea').innerHTML= option.innerText;
-    }
-  }
+function getCellValue3(a, b) {
+    var tem = document.getElementById("are2");
+    return tem.rows[a].cells[b].innerText;
+}
 
-function changeDirection(el, dl){
+function getCellValue3(a, b) {
+    var tem = document.getElementById("are3");
+    document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
+    //return tem.rows[a].cells[b].innerText;
+}
+
+
+
+function getCountyArea(el, dl) {
+    if (el.value.trim() != '') {
+        var opSelected = dl.querySelector(`[value="${el.value}"]`);
+        var option = document.createElement("option");
+        option.value = opSelected.value;
+        option.text = opSelected.getAttribute('label');
+        document.getElementById('CountyArea').innerHTML = option.innerText;
+    }
+}
+
+function changeDirection(el, dl) {
     var area;
-    if(el.value.trim() != ''){
+    if (el.value.trim() != '') {
         var opSelected = dl.querySelector(`[value="${el.value}"]`);
         var option = document.createElement("option");
         option.value = opSelected.value;
         option.text = opSelected.getAttribute('label');
         area = option.innerText;
-      }
+    }
     var x = document.getElementById("distanceTable").rows[1].cells;
     var y = document.getElementById("distanceTable").rows[2].cells;
     var z = document.getElementById("distanceTable").rows[3].cells;
     var w = document.getElementById("distanceTable").rows[4].cells;
-    if(area=="1"){
-        x[0].innerHTML="North";
-        y[0].innerHTML="East";
-        z[0].innerHTML="South";
-        w[0].innerHTML="West";
+    if (area == "1") {
+        x[0].innerHTML = "North";
+        y[0].innerHTML = "East";
+        z[0].innerHTML = "South";
+        w[0].innerHTML = "West";
     }
-    else{
-        x[0].innerHTML="Northeast";
-        y[0].innerHTML="Southeast";
-        z[0].innerHTML="Southwest";
-        w[0].innerHTML="Northwest";
+    else {
+        x[0].innerHTML = "Northeast";
+        y[0].innerHTML = "Southeast";
+        z[0].innerHTML = "Southwest";
+        w[0].innerHTML = "Northwest";
     }
 }
 
-function changeTableCell() {
-    var tem = 1;
+function changeTableCell(el, dl) {
+    var area;
+    if (el.value.trim() != '') {
+        var opSelected = dl.querySelector(`[value="${el.value}"]`);
+        var option = document.createElement("option");
+        option.value = opSelected.value;
+        option.text = opSelected.getAttribute('label');
+        area = option.innerText;
+    }
+    var houseType = document.getElementsByTagName("select");
+    var ftext1 = houseType[5].value;
+    var ftext2 = houseType[6].value;
+    var ftext3 = houseType[7].value;
+    var ftext4 = houseType[8].value;
+    var ftext5 = houseType[9].value;
+    var controlType = document.getElementsByTagName("select");
+    var ctext1 = controlType[10].value;
+    var ctext2 = controlType[11].value;
+    var ctext3 = controlType[12].value;
+    var ctext4 = controlType[13].value;
+    var ctext5 = controlType[14].value;
+    var width1 = document.areaTable.width1.value;
+    var width2 = document.areaTable.width2.value;
+    var width3 = document.areaTable.width3.value;
+    var width4 = document.areaTable.width4.value;
+    var width5 = document.areaTable.width5.value;
+    var length1 = document.areaTable.length1.value;
+    var length2 = document.areaTable.length2.value;
+    var length3 = document.areaTable.length3.value;
+    var length4 = document.areaTable.length4.value;
+    var length5 = document.areaTable.length5.value;
+    var t1 = ftext1 * ctext1 * width1 * length1 / 10000;
+    var t2 = ftext2 * ctext2 * width2 * length2 / 10000;
+    var t3 = ftext3 * ctext3 * width3 * length3 / 10000;
+    var t4 = ftext4 * ctext4 * width4 * length4 / 10000;
+    var t5 = ftext5 * ctext5 * width5 * length5 / 10000;
+    var tal = Number(t1) + Number(t2) + Number(t3) + Number(t4) + Number(t5);
+    var N_99;
+    var N_98;
+    var N_97;
+    var N_96;
+    var N_94;
+    var N_91;
+    var E_99;
+    var E_98;
+    var E_97;
+    var E_96;
+    var E_94;
+    var E_91;
+    var S_99;
+    var S_98;
+    var S_97;
+    var S_96;
+    var S_94;
+    var S_91;
+    var W_99;
+    var W_98;
+    var W_97;
+    var W_96;
+    var W_94;
+    var W_91;
+    var aa;
+
+    if (area == 1) {
+        var n1 = 3;
+        var n2 = 3;
+        var temN1 = document.getElementById("are1").rows[n1 - 1].cells[n2].innerHTML;
+        var temN2 = document.getElementById("are1").rows[n1].cells[n2].innerHTML;
+        var temN3 = document.getElementById("are1").rows[n1 - 1].cells[n2 - 1].innerHTML;
+        var temN4 = document.getElementById("are1").rows[n1].cells[n2 - 1].innerHTML;
+        aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+        //nn = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+    }
+
+    else if (area == 2) {
+        //aa = document.getElementById("are2").rows[3].cells[5].innerHTML;
+        var n1 = 3;
+        var n2 = 3;
+        var temN1 = document.getElementById("are2").rows[n1 - 1].cells[n2].innerHTML;
+        var temN2 = document.getElementById("are2").rows[n1].cells[n2].innerHTML;
+        var temN3 = document.getElementById("are2").rows[n1 - 1].cells[n2 - 1].innerHTML;
+        var temN4 = document.getElementById("are2").rows[n1].cells[n2 - 1].innerHTML;
+        aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+    }
+
+    else {
+        //aa = document.getElementById("are3").rows[3].cells[5].innerHTML;
+        var n1 = 3;
+        var n2 = 3;
+        var temN1 = document.getElementById("are3").rows[n1 - 1].cells[n2].innerHTML;
+        var temN2 = document.getElementById("are3").rows[n1].cells[n2].innerHTML;
+        var temN3 = document.getElementById("are3").rows[n1 - 1].cells[n2 - 1].innerHTML;
+        var temN4 = document.getElementById("are3").rows[n1].cells[n2 - 1].innerHTML;
+        aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+    }
+
     var x = document.getElementById("distanceTable").rows[1].cells;
     var y = document.getElementById("distanceTable").rows[2].cells;
     var z = document.getElementById("distanceTable").rows[3].cells;
     var w = document.getElementById("distanceTable").rows[4].cells;
-    x[3].innerHTML = tem;
-    y[3].innerHTML = tem;
-    z[3].innerHTML = tem;
-    w[3].innerHTML = tem;
+    //the number of 99% N & NE
+    x[1].innerHTML = (aa * 5280).toFixed(0);
+    x[2].innerHTML = (aa * 5280).toFixed(0);
+    x[3].innerHTML = (aa * 5280).toFixed(0);
+    x[4].innerHTML = (aa * 5280).toFixed(0);
+    x[5].innerHTML = (aa * 5280).toFixed(0);
+    x[6].innerHTML = (aa * 5280).toFixed(0);
+
+    y[1].innerHTML = (aa * 5280).toFixed(0);
+    z[1].innerHTML = 1 * 5280;
+    w[1].innerHTML = 1 * 5280;
+    
+    y[2].innerHTML = (aa * 5280).toFixed(0);
+    z[2].innerHTML = 2 * 5280;
+    w[2].innerHTML = 2 * 5280;
+    
+    y[3].innerHTML = (aa * 5280).toFixed(0);
+    z[3].innerHTML = 3 * 5280;
+    w[3].innerHTML = 3 * 5280;
+    
+    y[4].innerHTML = (aa * 5280).toFixed(0);
+    z[4].innerHTML = 4 * 5280;
+    w[4].innerHTML = 4 * 5280;
+    
+    y[5].innerHTML = (aa * 5280).toFixed(0);
+    z[5].innerHTML = 5 * 5280;
+    w[5].innerHTML = 5 * 5280;
+    
+    y[6].innerHTML = (aa * 5280).toFixed(0);
+    z[6].innerHTML = 6 * 5280;
+    w[6].innerHTML = 6 * 5280;
 }
+
 
 function chart() {
     var x = 20;

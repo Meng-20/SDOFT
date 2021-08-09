@@ -360,3 +360,142 @@ var index1 = houseType[5].selectedIndex;
 <br>
 <br>
 <br>
+
+if (area == 1) {
+    if (tal < 50) {
+        var n_99_1 = 3;
+        var n_99_2 = 3;
+        var e_99_1 = 14;
+        var e_99_2 = 3;
+        var s_99_1 = 25;
+        var s_99_2 = 3;
+        var w_99_1 = 36;
+        var w_99_2 = 3;
+    }
+    if (tal < 100) {
+        var n_99_1 = 4;
+        var n_99_2 = 3;
+        var e_99_1 = 15;
+        var e_99_2 = 3;
+        var s_99_1 = 26;
+        var s_99_2 = 3;
+        var w_99_1 = 37;
+        var w_99_2 = 3;
+    }
+    if (tal < 200) {
+        var n_99_1 = 5;
+        var n_99_2 = 3;
+        var e_99_1 = 16;
+        var e_99_2 = 3;
+        var s_99_1 = 27;
+        var s_99_2 = 3;
+        var w_99_1 = 38;
+        var w_99_2 = 3;
+    }
+    if (tal < 300) {
+        var n_99_1 = 6;
+        var n_99_2 = 3;
+        var e_99_1 = 17;
+        var e_99_2 = 3;
+        var s_99_1 = 28;
+        var s_99_2 = 3;
+        var w_99_1 = 39;
+        var w_99_2 = 3;
+    }
+    if (tal < 400) {
+        var n_99_1 = 7;
+        var n_99_2 = 3;
+        var e_99_1 = 18;
+        var e_99_2 = 3;
+        var s_99_1 = 29;
+        var s_99_2 = 3;
+        var w_99_1 = 40;
+        var w_99_2 = 3;
+    }
+    if (tal < 500) {
+        var n_99_1 = 8;
+        var n_99_2 = 3;
+        var e_99_1 = 19;
+        var e_99_2 = 3;
+        var s_99_1 = 30;
+        var s_99_2 = 3;
+        var w_99_1 = 41;
+        var w_99_2 = 3;
+    }
+    if (tal < 1000) {
+        var n_99_1 = 9;
+        var n_99_2 = 3;
+        var e_99_1 = 20;
+        var e_99_2 = 3;
+        var s_99_1 = 31;
+        var s_99_2 = 3;
+        var w_99_1 = 42;
+        var w_99_2 = 3;
+    }
+    if (tal < 2000) {
+        var n_99_1 = 10;
+        var n_99_2 = 3;
+        var e_99_1 = 21;
+        var e_99_2 = 3;
+        var s_99_1 = 32;
+        var s_99_2 = 3;
+        var w_99_1 = 43;
+        var w_99_2 = 3;
+    }
+    if (tal < 3000) {
+        var n_99_1 = 11;
+        var n_99_2 = 3;
+        var e_99_1 = 22;
+        var e_99_2 = 3;
+        var s_99_1 = 33;
+        var s_99_2 = 3;
+        var w_99_1 = 44;
+        var w_99_2 = 3;
+    }
+    if (tal < 4000) {
+        var n_99_1 = 12;
+        var n_99_2 = 3;
+        var e_99_1 = 23;
+        var e_99_2 = 3;
+        var s_99_1 = 34;
+        var s_99_2 = 3;
+        var w_99_1 = 45;
+        var w_99_2 = 3;
+    }
+    //the table value of 99%
+    var tem99_1 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2].innerHTML;
+    var tem99_2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2].innerHTML;
+    //N 98% 
+    var tem98_1 = document.getElementById("are1").rows[n_99_1 -1].cells[n_99_2+1].innerHTML;
+    var tem98_2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2+1].innerHTML;
+    //N 97%
+    var tem97_1 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2+2].innerHTML;
+    var tem97_2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2+2].innerHTML;
+    //N 96%
+    var tem96_1 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2+3].innerHTML;
+    var tem96_2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2+3].innerHTML;
+    //N 94%
+    var tem94_1 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2+4].innerHTML;
+    var tem94_2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2+4].innerHTML;
+    //N 91%
+    var tem91_1 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2+5].innerHTML;
+    var tem91_2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2+5].innerHTML;
+    //the value of distnce
+    var temN3 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2 - 1].innerHTML;
+    var temN4 = document.getElementById("are1").rows[n_99_1].cells[n_99_2 - 1].innerHTML;
+    N_99 = tem99_1 + (tem99_2 - tem99_1) * (tal - temN3) / (temN4 - temN3);
+    N_98 = tem98_1 + (tem98_2 - tem98_1) * (tal - temN3) / (temN4 - temN3);
+    N_97 = tem97_1 + (tem97_2 - tem97_1) * (tal - temN3) / (temN4 - temN3);
+    N_96 = tem96_1 + (tem96_2 - tem96_1) * (tal - temN3) / (temN4 - temN3);
+    N_94 = tem94_1 + (tem94_2 - tem94_1) * (tal - temN3) / (temN4 - temN3);
+    N_91 = tem91_1 + (tem91_2 - tem91_1) * (tal - temN3) / (temN4 - temN3);
+}
+
+if (tal < 2000) {
+    var n1 = 10;
+    var n2 = 3;
+ }
+ else{
+    var n1 = 3;
+    var n2 = 3;
+ }

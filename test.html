@@ -1,29 +1,37 @@
-
 <!DOCTYPE html>
 <html>
- 
 <head>
-        <meta charset="UTF-8">
-        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-                $(window).on('load', function () {
-                        $('#check').click(function () {
-                                alert($("#datalist_1").val());
-                                alert($("#txt_1").val());
-                        });
-                }); 
-        </script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
 </head>
- 
+<script>
+document.write("<h1>这是一个标题</h1>");
+</script>
+<script>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="我的第一个 JavaScript 函数";
+}
+</script>
+<script>
+function test()
+{
+var a =  123;
+var c =  "qwe";
+if(1==2){
+var d=234;
+}
+else{
+d=567;
+}
+d=778899;
+document.getElementById("demo").innerHTML=d;
+}
+</script>
 <body>
-        <input id="txt_1" list="datalist_1" />
- 
-        <datalist id="datalist_1">
-                <option data-id="data_1" value="val_1"></option>
-                <option data-id="data_2" value="val_2"></option>
-                <option data-id="data_3" value="val_3"></option>
-        </datalist>
-        <button id="check">check</button>
+<p id="demo">一个段落</p>
+<button type="button" οnclick="myFunction()">尝试一下</button>
+<p>
+<button type="button" οnclick="test()">测试js</button>
 </body>
- 
 </html>
