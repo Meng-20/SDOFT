@@ -499,3 +499,18 @@ if (tal < 2000) {
     var n1 = 3;
     var n2 = 3;
  }
+
+
+ if (area == 1) {
+    
+    var n1 = 3;
+    var n2 = 3;
+
+    
+    var temN1 = document.getElementById("are1").rows[n1 - 1].cells[n2].innerHTML;
+    var temN2 = document.getElementById("are1").rows[n1].cells[n2].innerHTML;
+    var temN3 = document.getElementById("are1").rows[n1 - 1].cells[n2 - 1].innerHTML;
+    var temN4 = document.getElementById("are1").rows[n1].cells[n2 - 1].innerHTML;
+    aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+    N_99 = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+}

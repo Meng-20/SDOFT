@@ -144,14 +144,16 @@ function showTableData() {
     }
 }
 
-function getCellValue3(a, b) {
+function getCellValue1(a, b) {
     var tem = document.getElementById("are1");
-    return tem.rows[a].cells[b].innerText;
+    document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
+    //return tem.rows[a].cells[b].innerText;
 }
 
-function getCellValue3(a, b) {
+function getCellValue2(a, b) {
     var tem = document.getElementById("are2");
-    return tem.rows[a].cells[b].innerText;
+    document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
+    //return tem.rows[a].cells[b].innerText;
 }
 
 function getCellValue3(a, b) {
@@ -260,76 +262,336 @@ function changeTableCell(el, dl) {
     var W_96;
     var W_94;
     var W_91;
-    var aa;
+    
 
     if (area == 1) {
-        var n1 = 3;
-        var n2 = 3;
-        var temN1 = document.getElementById("are1").rows[n1 - 1].cells[n2].innerHTML;
-        var temN2 = document.getElementById("are1").rows[n1].cells[n2].innerHTML;
-        var temN3 = document.getElementById("are1").rows[n1 - 1].cells[n2 - 1].innerHTML;
-        var temN4 = document.getElementById("are1").rows[n1].cells[n2 - 1].innerHTML;
-        aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
-        //nn = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+        if (tal < 50) {
+            var n_99_1 = 3;
+            var n_99_2 = 3;
+            var n_98_1 = 3;
+            var n_98_2 = 4;
+            var e_99_1 = 14;
+            var e_99_2 = 3;
+            var s_99_1 = 25;
+            var s_99_2 = 3;
+            var w_99_1 = 36;
+            var w_99_2 = 3;
+        }
+        else if (tal < 100) {
+            var n_99_1 = 4;
+            var n_99_2 = 3;
+            var n_98_1 = 4;
+            var n_98_2 = 4;
+            var e_99_1 = 15;
+            var e_99_2 = 3;
+            var s_99_1 = 26;
+            var s_99_2 = 3;
+            var w_99_1 = 37;
+            var w_99_2 = 3;
+        }
+        else if (tal < 200) {
+            var n_99_1 = 5;
+            var n_99_2 = 3;
+            var n_98_1 = 5;
+            var n_98_2 = 4;
+            var e_99_1 = 16;
+            var e_99_2 = 3;
+            var s_99_1 = 27;
+            var s_99_2 = 3;
+            var w_99_1 = 38;
+            var w_99_2 = 3;
+        }
+        else if (tal < 300) {
+            var n_99_1 = 6;
+            var n_99_2 = 3;
+            var n_98_1 = 6;
+            var n_98_2 = 4;
+            var e_99_1 = 17;
+            var e_99_2 = 3;
+            var s_99_1 = 28;
+            var s_99_2 = 3;
+            var w_99_1 = 39;
+            var w_99_2 = 3;
+        }
+        else if (tal < 400) {
+            var n_99_1 = 7;
+            var n_99_2 = 3;
+            var n_98_1 = 7;
+            var n_98_2 = 4;
+            var e_99_1 = 18;
+            var e_99_2 = 3;
+            var s_99_1 = 29;
+            var s_99_2 = 3;
+            var w_99_1 = 40;
+            var w_99_2 = 3;
+        }
+        else if (tal < 500) {
+            var n_99_1 = 8;
+            var n_99_2 = 3;
+            var n_98_1 = 8;
+            var n_98_2 = 4;
+            var e_99_1 = 19;
+            var e_99_2 = 3;
+            var s_99_1 = 30;
+            var s_99_2 = 3;
+            var w_99_1 = 41;
+            var w_99_2 = 3;
+        }
+        else if (tal < 1000) {
+            var n_99_1 = 9;
+            var n_99_2 = 3;
+            var n_98_1 = 9;
+            var n_98_2 = 4;
+            var e_99_1 = 20;
+            var e_99_2 = 3;
+            var s_99_1 = 31;
+            var s_99_2 = 3;
+            var w_99_1 = 42;
+            var w_99_2 = 3;
+        }
+        else if (tal < 2000) {
+            var n_99_1 = 10;
+            var n_99_2 = 3;
+            var n_98_1 = 10;
+            var n_98_2 = 4;
+            var e_99_1 = 21;
+            var e_99_2 = 3;
+            var s_99_1 = 32;
+            var s_99_2 = 3;
+            var w_99_1 = 43;
+            var w_99_2 = 3;
+        }
+        else if (tal < 3000) {
+            var n_99_1 = 11;
+            var n_99_2 = 3;
+            var n_98_1 = 11;
+            var n_98_2 = 4;
+            var e_99_1 = 22;
+            var e_99_2 = 3;
+            var s_99_1 = 33;
+            var s_99_2 = 3;
+            var w_99_1 = 44;
+            var w_99_2 = 3;
+        }
+        else if (tal < 4000) {
+            var n_99_1 = 12;
+            var n_99_2 = 3;
+            var n_98_1 = 12;
+            var n_98_2 = 4;
+            var e_99_1 = 23;
+            var e_99_2 = 3;
+            var s_99_1 = 34;
+            var s_99_2 = 3;
+            var w_99_1 = 45;
+            var w_99_2 = 3;
+        }
+        else{
+            var n_99_1 = 0;
+            var n_99_2 = 0;
+            var n_98_1 = 0;
+            var n_98_2 = 0;
+            var e_99_1 = 0;
+            var e_99_2 = 0;
+            var s_99_1 = 0;
+            var s_99_2 = 0;
+            var w_99_1 = 0;
+            var w_99_2 = 0;
+        }
+        var temN1 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2].innerHTML;
+        var temN2 = document.getElementById("are1").rows[n_99_1].cells[n_99_2].innerHTML;
+        var temN3 = document.getElementById("are1").rows[n_99_1 - 1].cells[n_99_2 - 1].innerHTML;
+        var temN4 = document.getElementById("are1").rows[n_99_1].cells[n_99_2 - 1].innerHTML;
+        N_99 = Number(temN1) + Number((temN2 - temN1) * (tal - temN3) / (temN4 - temN3));
+
+        var temN11 = document.getElementById("are1").rows[n_98_1 - 1].cells[n_98_2].innerHTML;
+        var temN22 = document.getElementById("are1").rows[n_98_1].cells[n_98_2].innerHTML;
+        
+        N_98 = Number(temN11) + Number((temN22 - temN11) * (tal - temN3) / (temN4 - temN3));
+
+        var temE1 = document.getElementById("are1").rows[e_99_1 - 1].cells[e_99_2].innerHTML;
+        var temE2 = document.getElementById("are1").rows[e_99_1].cells[e_99_2].innerHTML;
+        var temE3 = document.getElementById("are1").rows[e_99_1 - 1].cells[e_99_2 - 1].innerHTML;
+        var temE4 = document.getElementById("are1").rows[e_99_1].cells[e_99_2 - 1].innerHTML;
+        E_99 = Number(temE1) + Number((temE2 - temE1) * (tal - temE3) / (temE4 - temE3));
+        var temS1 = document.getElementById("are1").rows[s_99_1 - 1].cells[s_99_2].innerHTML;
+        var temS2 = document.getElementById("are1").rows[s_99_1].cells[s_99_2].innerHTML;
+        var temS3 = document.getElementById("are1").rows[s_99_1 - 1].cells[s_99_2 - 1].innerHTML;
+        var temS4 = document.getElementById("are1").rows[s_99_1].cells[s_99_2 - 1].innerHTML;
+        S_99 = Number(temS1) + Number((temS2 - temS1) * (tal - temS3) / (temS4 - temS3));
+        var temW1 = document.getElementById("are1").rows[w_99_1 - 1].cells[w_99_2].innerHTML;
+        var temW2 = document.getElementById("are1").rows[w_99_1].cells[w_99_2].innerHTML;
+        var temW3 = document.getElementById("are1").rows[w_99_1 - 1].cells[w_99_2 - 1].innerHTML;
+        var temW4 = document.getElementById("are1").rows[w_99_1].cells[w_99_2 - 1].innerHTML;
+        W_99 = Number(temW1) + Number((temW2 - temW1) * (tal - temW3) / (temW4 - temW3));
+        
     }
 
     else if (area == 2) {
-        //aa = document.getElementById("are2").rows[3].cells[5].innerHTML;
-        var n1 = 3;
-        var n2 = 3;
-        var temN1 = document.getElementById("are2").rows[n1 - 1].cells[n2].innerHTML;
-        var temN2 = document.getElementById("are2").rows[n1].cells[n2].innerHTML;
-        var temN3 = document.getElementById("are2").rows[n1 - 1].cells[n2 - 1].innerHTML;
-        var temN4 = document.getElementById("are2").rows[n1].cells[n2 - 1].innerHTML;
-        aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+        if (tal < 50) {
+            var n_99_1 = 3;
+            var n_99_2 = 3;
+            var e_99_1 = 14;
+            var e_99_2 = 3;
+            var s_99_1 = 25;
+            var s_99_2 = 3;
+            var w_99_1 = 36;
+            var w_99_2 = 3;
+        }
+        else if (tal < 100) {
+            var n_99_1 = 4;
+            var n_99_2 = 3;
+            var e_99_1 = 15;
+            var e_99_2 = 3;
+            var s_99_1 = 26;
+            var s_99_2 = 3;
+            var w_99_1 = 37;
+            var w_99_2 = 3;
+        }
+        else if (tal < 200) {
+            var n_99_1 = 5;
+            var n_99_2 = 3;
+            var e_99_1 = 16;
+            var e_99_2 = 3;
+            var s_99_1 = 27;
+            var s_99_2 = 3;
+            var w_99_1 = 38;
+            var w_99_2 = 3;
+        }
+        else if (tal < 300) {
+            var n_99_1 = 6;
+            var n_99_2 = 3;
+            var e_99_1 = 17;
+            var e_99_2 = 3;
+            var s_99_1 = 28;
+            var s_99_2 = 3;
+            var w_99_1 = 39;
+            var w_99_2 = 3;
+        }
+        else if (tal < 400) {
+            var n_99_1 = 7;
+            var n_99_2 = 3;
+            var e_99_1 = 18;
+            var e_99_2 = 3;
+            var s_99_1 = 29;
+            var s_99_2 = 3;
+            var w_99_1 = 40;
+            var w_99_2 = 3;
+        }
+        else if (tal < 500) {
+            var n_99_1 = 8;
+            var n_99_2 = 3;
+            var e_99_1 = 19;
+            var e_99_2 = 3;
+            var s_99_1 = 30;
+            var s_99_2 = 3;
+            var w_99_1 = 41;
+            var w_99_2 = 3;
+        }
+        else if (tal < 1000) {
+            var n_99_1 = 9;
+            var n_99_2 = 3;
+            var e_99_1 = 20;
+            var e_99_2 = 3;
+            var s_99_1 = 31;
+            var s_99_2 = 3;
+            var w_99_1 = 42;
+            var w_99_2 = 3;
+        }
+        else if (tal < 2000) {
+            var n_99_1 = 10;
+            var n_99_2 = 3;
+            var e_99_1 = 21;
+            var e_99_2 = 3;
+            var s_99_1 = 32;
+            var s_99_2 = 3;
+            var w_99_1 = 43;
+            var w_99_2 = 3;
+        }
+        else if (tal < 3000) {
+            var n_99_1 = 11;
+            var n_99_2 = 3;
+            var e_99_1 = 22;
+            var e_99_2 = 3;
+            var s_99_1 = 33;
+            var s_99_2 = 3;
+            var w_99_1 = 44;
+            var w_99_2 = 3;
+        }
+        else if (tal < 4000) {
+            var n_99_1 = 12;
+            var n_99_2 = 3;
+            var e_99_1 = 23;
+            var e_99_2 = 3;
+            var s_99_1 = 34;
+            var s_99_2 = 3;
+            var w_99_1 = 45;
+            var w_99_2 = 3;
+        }
+        else{
+            var n_99_1 = 0;
+            var n_99_2 = 0;
+            var e_99_1 = 0;
+            var e_99_2 = 0;
+            var s_99_1 = 0;
+            var s_99_2 = 0;
+            var w_99_1 = 0;
+            var w_99_2 = 0;
+        }
+        var temN1 = document.getElementById("are2").rows[n_99_1 - 1].cells[n_99_2].innerHTML;
+        var temN2 = document.getElementById("are2").rows[n_99_1].cells[n_99_2].innerHTML;
+        var temN3 = document.getElementById("are2").rows[n_99_1 - 1].cells[n_99_2 - 1].innerHTML;
+        var temN4 = document.getElementById("are2").rows[n_99_1].cells[n_99_2 - 1].innerHTML;
+        N_99 = Number(temN1) + Number((temN2 - temN1) * (tal - temN3) / (temN4 - temN3));
     }
 
     else {
         //aa = document.getElementById("are3").rows[3].cells[5].innerHTML;
-        var n1 = 3;
+        var n1 = 4;
         var n2 = 3;
         var temN1 = document.getElementById("are3").rows[n1 - 1].cells[n2].innerHTML;
         var temN2 = document.getElementById("are3").rows[n1].cells[n2].innerHTML;
         var temN3 = document.getElementById("are3").rows[n1 - 1].cells[n2 - 1].innerHTML;
         var temN4 = document.getElementById("are3").rows[n1].cells[n2 - 1].innerHTML;
-        aa = temN1 + (temN2 - temN1) * (tal - temN3) / (temN4 - temN3);
+        N_99 = Number(temN1) + Number((temN2 - temN1) * (tal - temN3) / (temN4 - temN3));
     }
 
+    var aa=N_99;
+    //north & northeast line
     var x = document.getElementById("distanceTable").rows[1].cells;
+    //east & southeast
     var y = document.getElementById("distanceTable").rows[2].cells;
+    //south & southwest
     var z = document.getElementById("distanceTable").rows[3].cells;
+    //west & southwest
     var w = document.getElementById("distanceTable").rows[4].cells;
     //the number of 99% N & NE
-    x[1].innerHTML = (aa * 5280).toFixed(0);
-    x[2].innerHTML = (aa * 5280).toFixed(0);
-    x[3].innerHTML = (aa * 5280).toFixed(0);
-    x[4].innerHTML = (aa * 5280).toFixed(0);
-    x[5].innerHTML = (aa * 5280).toFixed(0);
-    x[6].innerHTML = (aa * 5280).toFixed(0);
+    x[1].innerHTML = (N_99* 5280).toFixed(0);
+    x[2].innerHTML = (N_98* 5280).toFixed(0);
+    x[3].innerHTML = temN3;
+    x[4].innerHTML = temN4;
+    x[5].innerHTML = temN1;
+    x[6].innerHTML = temN3;
 
-    y[1].innerHTML = (aa * 5280).toFixed(0);
-    z[1].innerHTML = 1 * 5280;
-    w[1].innerHTML = 1 * 5280;
-    
-    y[2].innerHTML = (aa * 5280).toFixed(0);
-    z[2].innerHTML = 2 * 5280;
-    w[2].innerHTML = 2 * 5280;
-    
-    y[3].innerHTML = (aa * 5280).toFixed(0);
-    z[3].innerHTML = 3 * 5280;
-    w[3].innerHTML = 3 * 5280;
-    
-    y[4].innerHTML = (aa * 5280).toFixed(0);
-    z[4].innerHTML = 4 * 5280;
-    w[4].innerHTML = 4 * 5280;
-    
-    y[5].innerHTML = (aa * 5280).toFixed(0);
-    z[5].innerHTML = 5 * 5280;
-    w[5].innerHTML = 5 * 5280;
-    
-    y[6].innerHTML = (aa * 5280).toFixed(0);
-    z[6].innerHTML = 6 * 5280;
-    w[6].innerHTML = 6 * 5280;
+    y[1].innerHTML = (E_99 * 5280).toFixed(0);
+    y[2].innerHTML = (0.1 * 5280).toFixed(0);
+    y[3].innerHTML = (1 * 5280).toFixed(0);
+    y[4].innerHTML = (1 * 5280).toFixed(0);
+    y[5].innerHTML = (1 * 5280).toFixed(0);
+    y[6].innerHTML = (1 * 5280).toFixed(0);
+
+    z[1].innerHTML = (S_99 * 5280).toFixed(0);
+    z[2].innerHTML = (S_99 * 5280).toFixed(0);
+    z[3].innerHTML = (S_99 * 5280).toFixed(0);
+    z[4].innerHTML = (S_99 * 5280).toFixed(0);
+    z[5].innerHTML = (S_99 * 5280).toFixed(0);
+    z[6].innerHTML = (S_99 * 5280).toFixed(0);
+
+    w[1].innerHTML = (W_99 * 5280).toFixed(0);
+    w[2].innerHTML = (W_99 * 5280).toFixed(0);
+    w[3].innerHTML = (W_99 * 5280).toFixed(0);
+    w[4].innerHTML = (W_99 * 5280).toFixed(0);
+    w[5].innerHTML = (W_99 * 5280).toFixed(0);
+    w[6].innerHTML = (W_99 * 5280).toFixed(0);
 }
 
 
