@@ -10,13 +10,13 @@ border: 5px rgb(237, 100, 157);
 .list{
     list-style: inherit;
 }
-button{
+/* button{
     background-color: green;
     color: seashell;
 }
 button:hover{
     background-color: chartreuse;
-}
+} */
 a{
     text-decoration: none;
     color: cornflowerblue;

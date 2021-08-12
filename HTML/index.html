@@ -23,9 +23,9 @@
             <li>Select housing or manure storage type from drop down list for each odor source at the site.</li>
             <li>Enter size (width and length) of emitting surface for each odor source at the site.</li>
             <li>Enter odor control technology if any from drop down list for each odor source at the site.</li>
-            <li>View annoyance-free distances at bottom of page (scroll down).</li>
-            <li>Select the annoyance-free curves to be graphed by checking the square on the left bottom of this page.
-            </li>
+            <li>Click the botton and view annoyance-free distances at bottom of page.</li>
+            <li>Click the botton and view annoyance-free curves (scroll down).</li>
+            <li>Select the annoyance-free curves to be graphed by checking the square on the top of this graph.</li>
         </ol>
     </div>
         <!-- <iframe src="../HTML/countySelect.html" frameborder="0" height="200px"></iframe> -->
@@ -108,10 +108,12 @@
             <option label="3">Ziebach</option>
         </datalist>
     </form>
-    <div class="ar">
+    <p><strong>Note:</strong> The number under each county indicates the county area classification.</p>
+    <div class="ar" hidden>
         <p>Area: </p>
         <p id="CountyArea"></p>
     </div>
+    <br>
     <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
     <div class="source">
         <!-- <p style="color: midnightblue;"><strong>Source Type</strong></p> -->
@@ -282,7 +284,6 @@
             </select>
         </form>
     </div>
-
     <div>
         <p>Emitting Factor:</p>
         <table class="emittingFactor">
@@ -441,7 +442,6 @@
 
     <div>
         <p style="color: midnightblue;"><strong>Total Odor Emitting Factor (TOEF) </strong></p>
-        <p></p>
         <p id="TOEF"></p>
     </div>
 
@@ -1985,14 +1985,14 @@
         </table>
     </div>
 
-    <p><input type="button" id="bt" value="Show Table Data" onclick="getCellValue1(10,3)" /></p>
+    <!-- <p><input type="button" id="bt" value="Show Table Data" onclick="getCellValue1(10,3)" /></p>
     <p id="info"></p>
-    <br>
+    <br> -->
 
     <table id="distanceTable" border="1px solid black;">
         <caption style="color: midnightblue; font-weight:bold">SETBACK DISTANCES FROM ODOR SOURCE AT VARIOUS ODOR
             ANNOYANCE-FREE FREQUENCIES IN FEET</caption>
-        <p></p>
+        <br>
         <tr>
             <th>Direction</th>
             <th>99% Annoyance-free</th>
@@ -2041,23 +2041,15 @@
 
 
     </table>
-   
-    <p><input type="button" id="bt" value="Click Me to Get the Annoyance-free Table" onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " /></p>
-    
     <br>
-    <div class="SubmitBotton" id="buttonid">
-        <!-- <button>Submit</button> -->
-        
-    </div>
-
-    <div class="odorChart">
-        <button type="button" onclick="chart()">Click Me to Get the Odor Graph</button>
-        <canvas id="myChart" ></canvas>
-        <!--style="height:400; width:100%"-->
+    <input type="button" id="bt" value="Click Me to Get/Update the Annoyance-free Table" onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " />
     
-        <p>Date/Time: <span id="datetime"></span></p>
+    <div class="odorChart">
+        <button type="button" onclick="chart(document.getElementById('county'), document.getElementById('counties'))">Click Me to Get/Update the Odor Graph</button>
+        <canvas id="myChart" ></canvas>
+        <p style="position:inherit">Date/Time: <span id="datetime"></span></p>
     </div>
-
+    <input type="button" value="Print This Page" onclick="printpage()"/>
 
 </body>
 <!-- javascript file import -->
