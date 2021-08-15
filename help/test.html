@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<script>
-document.write("<h1>这是一个标题</h1>");
-</script>
-<script>
-function myFunction()
-{
-document.getElementById("demo").innerHTML="我的第一个 JavaScript 函数";
-}
-</script>
-<script>
-function test()
-{
-var a =  123;
-var c =  "qwe";
-if(1==2){
-var d=234;
-}
-else{
-d=567;
-}
-d=778899;
-document.getElementById("demo").innerHTML=d;
-}
-</script>
-<body>
-<p id="demo">一个段落</p>
-<button type="button" οnclick="myFunction()">尝试一下</button>
-<p>
-<button type="button" οnclick="test()">测试js</button>
+  <head>
+    
+  </head>
+  <body>
+    <form id="form1" runat="server" method="post">
+    <!--省份下拉菜单 -->
+    <select id="main">
+    </select>
+    <!--城市下拉菜单-->
+    <select id="sub">
+    </select>
+ 
+    <script type="text/javascript">
+ 
+        var data = [
+        {
+            p: "省1",
+            c: ["市a", "市b"]
+        },
+        {
+            p: "省2",
+            c: ["市c", "市d", "市e"]
+        }
+        ]
+ 
+        var main = document.getElementById("main");
+        var sub = document.getElementById("sub");
+ 
+        for (var i = 0; i < data.length; i++) {
+            var opt = document.createElement("option");
+            opt.value = i;
+            opt.innerText = data[i].p;
+            main.options.add(opt);
+        }
+ 
+        main.onchange = MainChange;
+ 
+        function MainChange() {
+            var index = parseInt(main[main.selectedIndex].value);
+            var c = data[index].c;
+            console.log(c);
+            sub.options.length = 0;
+            for (var i = 0; i < c.length; i++) {
+                console.log(i);
+                var opt = document.createElement("option");
+                opt.value = i;
+                opt.innerText = c[i];
+                console.log(opt);
+                sub.options.add(opt);
+            }
+        }
+ 
+        main.selectedIndex = 0;
+        MainChange();
+     
+    </script>
+ 
+    </form>
 </body>
 </html>

@@ -123,7 +123,7 @@ function totalFactor() {
     var tal = Number(t1) + Number(t2) + Number(t3) + Number(t4) + Number(t5);
     if (tal > 4000)
         alert("Hello, the valid total odor emitting factor should be between 0 to 4000.\nPlease check your input.");
-    document.getElementById("TOEF").innerHTML = tal.toFixed(0);
+    document.getElementById("TOEF").innerHTML = tal;//.toFixed(0);
 }
 
 function showTableData() {
@@ -169,7 +169,7 @@ function getCountyArea(el, dl) {
         var opSelected = dl.querySelector(`[value="${el.value}"]`);
         var option = document.createElement("option");
         option.value = opSelected.value;
-        option.text = opSelected.getAttribute('label');
+        option.text = opSelected.getAttribute('data-value');
         document.getElementById('CountyArea').innerHTML = option.innerText;
     }
 }
@@ -180,7 +180,7 @@ function changeDirection(el, dl) {
         var opSelected = dl.querySelector(`[value="${el.value}"]`);
         var option = document.createElement("option");
         option.value = opSelected.value;
-        option.text = opSelected.getAttribute('label');
+        option.text = opSelected.getAttribute('data-value');
         area = option.innerText;
     }
     var x = document.getElementById("distanceTable").rows[1].cells;
@@ -207,7 +207,7 @@ function changeTableCell(el, dl) {
         var opSelected = dl.querySelector(`[value="${el.value}"]`);
         var option = document.createElement("option");
         option.value = opSelected.value;
-        option.text = opSelected.getAttribute('label');
+        option.text = opSelected.getAttribute('data-value');
         area = option.innerText;
     }
     var houseType = document.getElementsByTagName("select");
@@ -1170,13 +1170,12 @@ function changeTableCell(el, dl) {
 
 
 function chart(el, dl) {
-
     var area;
     if (el.value.trim() != '') {
         var opSelected = dl.querySelector(`[value="${el.value}"]`);
         var option = document.createElement("option");
         option.value = opSelected.value;
-        option.text = opSelected.getAttribute('label');
+        option.text = opSelected.getAttribute('data-value');
         area = option.innerText;
     }
     var houseType = document.getElementsByTagName("select");
