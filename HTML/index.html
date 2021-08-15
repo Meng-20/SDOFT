@@ -28,2028 +28,2028 @@
             <li>Select the annoyance-free curves to be graphed by checking the square on the top of this graph.</li>
         </ol>
     </div>
-        <!-- <iframe src="../HTML/countySelect.html" frameborder="0" height="200px"></iframe> -->
-  
+    <!-- <iframe src="../HTML/countySelect.html" frameborder="0" height="200px"></iframe> -->
+
     <div class="CountySelected">
-        <form action="county.php" method="get"> 
+        <form action="county.php" method="get">
             <p style="color: midnightblue;"><strong>County of Site</strong> </p>
             <label for="county">Choose your county from the list:</label>
-            <input id="county"  type="text" list="counties" 
-            onchange="getCountyArea(document.getElementById('county'), document.getElementById('counties'));
-             changeDirection(document.getElementById('county'), document.getElementById('counties'));" >
+            <input id="county" type="text" list="counties" onchange="getCountyArea(document.getElementById('county'), document.getElementById('counties'));
+             changeDirection(document.getElementById('county'), document.getElementById('counties'));">
             <!-- onchange="AddValue(document.getElementById('county'), document.getElementById('counties'));" -->
-            <datalist  id="counties">
-            <!--onchange="isSelected(this.value)  -->
-            <option label = "2" value="Aurora" ></option>
-            <option label="3" value="Beadle"></option>
-            <option label="3" value="Bennett"></option>
-            <option label="2" value="Bon Homme"></option>
-            <option label="1" value="Brookings"></option>
-            <option label="1">Brown</option>
-            <option label="2">Brule</option>
-            <option label="3">Buffalo</option>
-            <option label="3">Butte</option>
-            <option label="3">Campbell</option>
-            <option label="2">Charles Mix</option>
-            <option label="1">Clark</option>
-            <option label="2">Clay</option>
-            <option label="1">Codington</option>
-            <option label="3">Corson</option>
-            <option label="4">Custer</option>
-            <option label="2">Davison</option>
-            <option label="1">Day</option>
-            <option label="1">Deuel</option>
-            <option label="3">Dewey</option>
-            <option label="2">Douglas</option>
-            <option label="1">Edmunds</option>
-            <option label="4">Fall River</option>
-            <option label="1">Faulk</option>
-            <option label="1">Grant</option>
-            <option label="2">Gregory</option>
-            <option label="3">Haakon</option>
-            <option label="1">Hamlin</option>
-            <option label="3">Hand</option>
-            <option label="2">Hanson</option>
-            <option label="3">Harding</option>
-            <option label="3">Hughes</option>
-            <option label="2">Hutchinson</option>
-            <option label="3">Hyde</option>
-            <option label="3">Jackson</option>
-            <option label="3">Jerauld</option>
-            <option label="3">Jones</option>
-            <option label="1">Kingsbury</option>
-            <option label="1">Lake</option>
-            <option label="4">Lawrence</option>
-            <option label="2">Lincoln</option>
-            <option label="2">Lyman</option>
-            <option label="1">Marshall</option>
-            <option label="2">McCook</option>
-            <option label="1">McPherson</option>
-            <option label="3">Meade</option>
-            <option label="3">Mellette</option>
-            <option label="1">Miner</option>
-            <option label="2">Minnehaha</option>
-            <option label="1">Moody</option>
-            <option label="3">Pennington</option>
-            <option label="3">Perkins</option>
-            <option label="3">Potter</option>
-            <option label="1">Roberts</option>
-            <option label="3">Sanborn</option>
-            <option label="3">Shannon</option>
-            <option label="1">Spink</option>
-            <option label="3">Stanley</option>
-            <option label="3">Sully</option>
-            <option label="3">Todd</option>
-            <option label="2">Tripp</option>
-            <option label="2">Turner</option>
-            <option label="2">Union</option>
-            <option label="3">Walworth</option>
-            <option label="2">Yankton</option>
-            <option label="3">Ziebach</option>
-        </datalist>
-    </form>
-    <p><strong>Note:</strong> The number under each county indicates the county area classification.</p>
-    <div class="ar" hidden>
-        <p>Area: </p>
-        <p id="CountyArea"></p>
-    </div>
-    <br>
-    <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
-    <div class="source">
-        <!-- <p style="color: midnightblue;"><strong>Source Type</strong></p> -->
-        <p style="margin-left: 160px;">Source 1</p>
-        <p style="margin-left: 160px;">Source 2</p>
-        <p style="margin-left: 150px;">Source 3</p>
-        <p style="margin-left: 140px;">Source 4</p>
-        <p style="margin-left: 120px;">Source 5</p>
-    </div>
-    <div class="sourcetable">
-        <label for="sourcetable">Source Type:</label>
-        <form action="source1.php">
-            <select style="width:210px">
-                <option>Non-selected</option>
-                <option>Cattle Yard</option>
-                <option>Dairy Barn</option>
-                <option>Swine Barn</option>
-                <option>Manure Storage</option>
-            </select>
+            <datalist id="counties">
+                <!--onchange="isSelected(this.value)  -->
+                <option label="2" value="Aurora"></option>
+                <option label="3" value="Beadle"></option>
+                <option label="3" value="Bennett"></option>
+                <option label="2" value="Bon Homme"></option>
+                <option label="1" value="Brookings"></option>
+                <option label="1">Brown</option>
+                <option label="2">Brule</option>
+                <option label="3">Buffalo</option>
+                <option label="3">Butte</option>
+                <option label="3">Campbell</option>
+                <option label="2">Charles Mix</option>
+                <option label="1">Clark</option>
+                <option label="2">Clay</option>
+                <option label="1">Codington</option>
+                <option label="3">Corson</option>
+                <option label="4">Custer</option>
+                <option label="2">Davison</option>
+                <option label="1">Day</option>
+                <option label="1">Deuel</option>
+                <option label="3">Dewey</option>
+                <option label="2">Douglas</option>
+                <option label="1">Edmunds</option>
+                <option label="4">Fall River</option>
+                <option label="1">Faulk</option>
+                <option label="1">Grant</option>
+                <option label="2">Gregory</option>
+                <option label="3">Haakon</option>
+                <option label="1">Hamlin</option>
+                <option label="3">Hand</option>
+                <option label="2">Hanson</option>
+                <option label="3">Harding</option>
+                <option label="3">Hughes</option>
+                <option label="2">Hutchinson</option>
+                <option label="3">Hyde</option>
+                <option label="3">Jackson</option>
+                <option label="3">Jerauld</option>
+                <option label="3">Jones</option>
+                <option label="1">Kingsbury</option>
+                <option label="1">Lake</option>
+                <option label="4">Lawrence</option>
+                <option label="2">Lincoln</option>
+                <option label="2">Lyman</option>
+                <option label="1">Marshall</option>
+                <option label="2">McCook</option>
+                <option label="1">McPherson</option>
+                <option label="3">Meade</option>
+                <option label="3">Mellette</option>
+                <option label="1">Miner</option>
+                <option label="2">Minnehaha</option>
+                <option label="1">Moody</option>
+                <option label="3">Pennington</option>
+                <option label="3">Perkins</option>
+                <option label="3">Potter</option>
+                <option label="1">Roberts</option>
+                <option label="3">Sanborn</option>
+                <option label="3">Shannon</option>
+                <option label="1">Spink</option>
+                <option label="3">Stanley</option>
+                <option label="3">Sully</option>
+                <option label="3">Todd</option>
+                <option label="2">Tripp</option>
+                <option label="2">Turner</option>
+                <option label="2">Union</option>
+                <option label="3">Walworth</option>
+                <option label="2">Yankton</option>
+                <option label="3">Ziebach</option>
+            </datalist>
         </form>
-        <form action="source2.php">
-            <select style="width:210px">
-                <option>Non-selected</option>
-                <option>Cattle Yard</option>
-                <option>Dairy Barn</option>
-                <option>Swine Barn</option>
-                <option>Manure Storage</option>
-            </select>
-        </form>
-        <form action="source3.php">
-            <select style="width:210px">
-                <option>Non-selected</option>
-                <option>Cattle Yard</option>
-                <option>Dairy Barn</option>
-                <option>Swine Barn</option>
-                <option>Manure Storage</option>
-            </select>
-        </form>
-        <form action="source4.php">
-            <select style="width:210px">
-                <option>Non-selected</option>
-                <option>Cattle Yard</option>
-                <option>Dairy Barn</option>
-                <option>Swine Barn</option>
-                <option>Manure Storage</option>
-            </select>
-        </form>
-        <form action="source5.php">
-            <select style="width:210px">
-                <option>Non-selected</option>
-                <option>Cattle Yard</option>
-                <option>Dairy Barn</option>
-                <option>Swine Barn</option>
-                <option>Manure Storage</option>
-            </select>
-        </form>
-    </div>
-    <div class="houseType">
-        <label for="houseType"> House Type:</label>
-        <form action="type1.php">
-            <select onChange="Displayfactor();sourceFactor();totalFactor();">
-                <option value="0">Non-selected</option>
-                <option value="3">Anaerobic Lagoon - Non Purple</option>
-                <option value="2">Anaerobic Lagoon - Purple</option>
-                <option value="5">Broiler Litter</option>
-                <option value="9">Crusted Stockpile</option>
-                <option value="19">Dirt/Concrete lot</option>
-                <option value="63">Earthen Storage Basin</option>
-                <option value="68">Farrowing</option>
-                <option value="165">Finishing - Deep Pit</option>
-                <option value="19">Finishing - Hoop Barn</option>
-                <option value="53">Finishing - Open Front Scrape</option>
-                <option value="97">Finishing - Pull Plug</option>
-                <option value="29">Free Stall</option>
-                <option value="19">Free Stall - Scrape</option>
-                <option value="243">Gestation - Deep Pit</option>
-                <option value="146">Gestation - Pull Plug</option>
-                <option value="29">Loose Housing </option>
-                <option value="10">Turkey Litter</option>
-            </select>
-        </form>
-        <form action="type2.php">
-            <select onChange="Displayfactor();sourceFactor();totalFactor();">
-                <option value="0">Non-selected</option>
-                <option value="3">Anaerobic Lagoon - Non Purple</option>
-                <option value="2">Anaerobic Lagoon - Purple</option>
-                <option value="5">Broiler Litter</option>
-                <option value="9">Crusted Stockpile</option>
-                <option value="19">Dirt/Concrete lot</option>
-                <option value="63">Earthen Storage Basin</option>
-                <option value="68">Farrowing</option>
-                <option value="165">Finishing - Deep Pit</option>
-                <option value="19">Finishing - Hoop Barn</option>
-                <option value="53">Finishing - Open Front Scrape</option>
-                <option value="97">Finishing - Pull Plug</option>
-                <option value="29">Free Stall</option>
-                <option value="19">Free Stall - Scrape</option>
-                <option value="243">Gestation - Deep Pit</option>
-                <option value="146">Gestation - Pull Plug</option>
-                <option value="29">Loose Housing </option>
-                <option value="10">Turkey Litter</option>
-            </select>
-        </form>
-        <form action="type3.php">
-            <select onChange="Displayfactor(); sourceFactor();totalFactor();">
-                <option value="0">Non-selected</option>
-                <option value="3">Anaerobic Lagoon - Non Purple</option>
-                <option value="2">Anaerobic Lagoon - Purple</option>
-                <option value="5">Broiler Litter</option>
-                <option value="9">Crusted Stockpile</option>
-                <option value="19">Dirt/Concrete lot</option>
-                <option value="63">Earthen Storage Basin</option>
-                <option value="68">Farrowing</option>
-                <option value="165">Finishing - Deep Pit</option>
-                <option value="19">Finishing - Hoop Barn</option>
-                <option value="53">Finishing - Open Front Scrape</option>
-                <option value="97">Finishing - Pull Plug</option>
-                <option value="29">Free Stall</option>
-                <option value="19">Free Stall - Scrape</option>
-                <option value="243">Gestation - Deep Pit</option>
-                <option value="146">Gestation - Pull Plug</option>
-                <option value="29">Loose Housing </option>
-                <option value="10">Turkey Litter</option>
-            </select>
-        </form>
-        <form action="type4.php">
-            <select onChange="Displayfactor(); sourceFactor();totalFactor();">
-                <option value="0">Non-selected</option>
-                <option value="3">Anaerobic Lagoon - Non Purple</option>
-                <option value="2">Anaerobic Lagoon - Purple</option>
-                <option value="5">Broiler Litter</option>
-                <option value="9">Crusted Stockpile</option>
-                <option value="19">Dirt/Concrete lot</option>
-                <option value="63">Earthen Storage Basin</option>
-                <option value="68">Farrowing</option>
-                <option value="165">Finishing - Deep Pit</option>
-                <option value="19">Finishing - Hoop Barn</option>
-                <option value="53">Finishing - Open Front Scrape</option>
-                <option value="97">Finishing - Pull Plug</option>
-                <option value="29">Free Stall</option>
-                <option value="19">Free Stall - Scrape</option>
-                <option value="243">Gestation - Deep Pit</option>
-                <option value="146">Gestation - Pull Plug</option>
-                <option value="29">Loose Housing </option>
-                <option value="10">Turkey Litter</option>
-            </select>
-        </form>
-        <form action="type5.php">
-            <select onChange="Displayfactor(); sourceFactor();totalFactor();">
-                <option value="0">Non-selected</option>
-                <option value="3">Anaerobic Lagoon - Non Purple</option>
-                <option value="2">Anaerobic Lagoon - Purple</option>
-                <option value="5">Broiler Litter</option>
-                <option value="9">Crusted Stockpile</option>
-                <option value="19">Dirt/Concrete lot</option>
-                <option value="63">Earthen Storage Basin</option>
-                <option value="68">Farrowing</option>
-                <option value="165">Finishing - Deep Pit</option>
-                <option value="19">Finishing - Hoop Barn</option>
-                <option value="53">Finishing - Open Front Scrape</option>
-                <option value="97">Finishing - Pull Plug</option>
-                <option value="29">Free Stall</option>
-                <option value="19">Free Stall - Scrape</option>
-                <option value="243">Gestation - Deep Pit</option>
-                <option value="146">Gestation - Pull Plug</option>
-                <option value="29">Loose Housing </option>
-                <option value="10">Turkey Litter</option>
-            </select>
-        </form>
-    </div>
-    <div>
-        <p>Emitting Factor:</p>
-        <table class="emittingFactor">
-            <tr class="row">
-                <td></td>
-                <td id="f1"></td>
-                <td id="f2"></td>
-                <td id="f3"></td>
-                <td id="f4"></td>
-                <td id="f5"></td>
-            </tr>
-        </table>
-    </div>
-
-    <br>
-    <div>
-        <form name="areaTable">
-            <table>
-                <p style="color: midnightblue;"><strong>Enter the width and length of the buildings</strong></p>
-
-                <tr>
-                    <td style="width: 100px;">Legth (ft)</td>
-                    <td>
-                        <input type="number" name="length1" placeholder="Enter length of the 1st building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="length2" placeholder="Enter length of the 2nd building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="length3" placeholder="Enter length of the 3rd building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="length4" placeholder="Enter length of the 4th building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="length5" placeholder="Enter length of the 5th building"
-                            onChange="area();sourceFactor();totalFactor();">
-                    </td>
+        <p><strong>Note:</strong> The number under each county indicates the county area classification.</p>
+        <div class="ar" hidden>
+            <p>Area: </p>
+            <p id="CountyArea"></p>
+        </div>
+   
+        <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
+        <div class="source">
+            <!-- <p style="color: midnightblue;"><strong>Source Type</strong></p> -->
+            <p style="margin-left: 160px;">Source 1</p>
+            <p style="margin-left: 160px;">Source 2</p>
+            <p style="margin-left: 150px;">Source 3</p>
+            <p style="margin-left: 140px;">Source 4</p>
+            <p style="margin-left: 120px;">Source 5</p>
+        </div>
+        <div class="sourcetable">
+            <label for="sourcetable">Source Type:</label>
+            <form action="source1.php">
+                <select style="width:210px">
+                    <option>Non-selected</option>
+                    <option>Cattle Yard</option>
+                    <option>Dairy Barn</option>
+                    <option>Swine Barn</option>
+                    <option>Manure Storage</option>
+                </select>
+            </form>
+            <form action="source2.php">
+                <select style="width:210px">
+                    <option>Non-selected</option>
+                    <option>Cattle Yard</option>
+                    <option>Dairy Barn</option>
+                    <option>Swine Barn</option>
+                    <option>Manure Storage</option>
+                </select>
+            </form>
+            <form action="source3.php">
+                <select style="width:210px">
+                    <option>Non-selected</option>
+                    <option>Cattle Yard</option>
+                    <option>Dairy Barn</option>
+                    <option>Swine Barn</option>
+                    <option>Manure Storage</option>
+                </select>
+            </form>
+            <form action="source4.php">
+                <select style="width:210px">
+                    <option>Non-selected</option>
+                    <option>Cattle Yard</option>
+                    <option>Dairy Barn</option>
+                    <option>Swine Barn</option>
+                    <option>Manure Storage</option>
+                </select>
+            </form>
+            <form action="source5.php">
+                <select style="width:210px">
+                    <option>Non-selected</option>
+                    <option>Cattle Yard</option>
+                    <option>Dairy Barn</option>
+                    <option>Swine Barn</option>
+                    <option>Manure Storage</option>
+                </select>
+            </form>
+        </div>
+        <div class="houseType">
+            <label for="houseType"> House Type:</label>
+            <form action="type1.php">
+                <select onChange="Displayfactor();sourceFactor();totalFactor();">
+                    <option value="0">Non-selected</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option value="5">Broiler Litter</option>
+                    <option value="9">Crusted Stockpile</option>
+                    <option value="19">Dirt/Concrete lot</option>
+                    <option value="63">Earthen Storage Basin</option>
+                    <option value="68">Farrowing</option>
+                    <option value="165">Finishing - Deep Pit</option>
+                    <option value="19">Finishing - Hoop Barn</option>
+                    <option value="53">Finishing - Open Front Scrape</option>
+                    <option value="97">Finishing - Pull Plug</option>
+                    <option value="29">Free Stall</option>
+                    <option value="19">Free Stall - Scrape</option>
+                    <option value="243">Gestation - Deep Pit</option>
+                    <option value="146">Gestation - Pull Plug</option>
+                    <option value="29">Loose Housing </option>
+                    <option value="10">Turkey Litter</option>
+                </select>
+            </form>
+            <form action="type2.php">
+                <select onChange="Displayfactor();sourceFactor();totalFactor();">
+                    <option value="0">Non-selected</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option value="5">Broiler Litter</option>
+                    <option value="9">Crusted Stockpile</option>
+                    <option value="19">Dirt/Concrete lot</option>
+                    <option value="63">Earthen Storage Basin</option>
+                    <option value="68">Farrowing</option>
+                    <option value="165">Finishing - Deep Pit</option>
+                    <option value="19">Finishing - Hoop Barn</option>
+                    <option value="53">Finishing - Open Front Scrape</option>
+                    <option value="97">Finishing - Pull Plug</option>
+                    <option value="29">Free Stall</option>
+                    <option value="19">Free Stall - Scrape</option>
+                    <option value="243">Gestation - Deep Pit</option>
+                    <option value="146">Gestation - Pull Plug</option>
+                    <option value="29">Loose Housing </option>
+                    <option value="10">Turkey Litter</option>
+                </select>
+            </form>
+            <form action="type3.php">
+                <select onChange="Displayfactor(); sourceFactor();totalFactor();">
+                    <option value="0">Non-selected</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option value="5">Broiler Litter</option>
+                    <option value="9">Crusted Stockpile</option>
+                    <option value="19">Dirt/Concrete lot</option>
+                    <option value="63">Earthen Storage Basin</option>
+                    <option value="68">Farrowing</option>
+                    <option value="165">Finishing - Deep Pit</option>
+                    <option value="19">Finishing - Hoop Barn</option>
+                    <option value="53">Finishing - Open Front Scrape</option>
+                    <option value="97">Finishing - Pull Plug</option>
+                    <option value="29">Free Stall</option>
+                    <option value="19">Free Stall - Scrape</option>
+                    <option value="243">Gestation - Deep Pit</option>
+                    <option value="146">Gestation - Pull Plug</option>
+                    <option value="29">Loose Housing </option>
+                    <option value="10">Turkey Litter</option>
+                </select>
+            </form>
+            <form action="type4.php">
+                <select onChange="Displayfactor(); sourceFactor();totalFactor();">
+                    <option value="0">Non-selected</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option value="5">Broiler Litter</option>
+                    <option value="9">Crusted Stockpile</option>
+                    <option value="19">Dirt/Concrete lot</option>
+                    <option value="63">Earthen Storage Basin</option>
+                    <option value="68">Farrowing</option>
+                    <option value="165">Finishing - Deep Pit</option>
+                    <option value="19">Finishing - Hoop Barn</option>
+                    <option value="53">Finishing - Open Front Scrape</option>
+                    <option value="97">Finishing - Pull Plug</option>
+                    <option value="29">Free Stall</option>
+                    <option value="19">Free Stall - Scrape</option>
+                    <option value="243">Gestation - Deep Pit</option>
+                    <option value="146">Gestation - Pull Plug</option>
+                    <option value="29">Loose Housing </option>
+                    <option value="10">Turkey Litter</option>
+                </select>
+            </form>
+            <form action="type5.php">
+                <select onChange="Displayfactor(); sourceFactor();totalFactor();">
+                    <option value="0">Non-selected</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option value="5">Broiler Litter</option>
+                    <option value="9">Crusted Stockpile</option>
+                    <option value="19">Dirt/Concrete lot</option>
+                    <option value="63">Earthen Storage Basin</option>
+                    <option value="68">Farrowing</option>
+                    <option value="165">Finishing - Deep Pit</option>
+                    <option value="19">Finishing - Hoop Barn</option>
+                    <option value="53">Finishing - Open Front Scrape</option>
+                    <option value="97">Finishing - Pull Plug</option>
+                    <option value="29">Free Stall</option>
+                    <option value="19">Free Stall - Scrape</option>
+                    <option value="243">Gestation - Deep Pit</option>
+                    <option value="146">Gestation - Pull Plug</option>
+                    <option value="29">Loose Housing </option>
+                    <option value="10">Turkey Litter</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <p>Emitting Factor:</p>
+            <table class="emittingFactor">
+                <tr class="row">
+                    <td></td>
+                    <td id="f1"></td>
+                    <td id="f2"></td>
+                    <td id="f3"></td>
+                    <td id="f4"></td>
+                    <td id="f5"></td>
                 </tr>
+            </table>
+        </div>
 
+        <br>
+        <div>
+            <form name="areaTable">
+                <table>
+                    <p style="color: midnightblue;"><strong>Enter the width and length of the buildings</strong></p>
+
+                    <tr>
+                        <td style="width: 100px;">Legth (ft)</td>
+                        <td>
+                            <input type="number" name="length1" placeholder="Enter length of the 1st building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="length2" placeholder="Enter length of the 2nd building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="length3" placeholder="Enter length of the 3rd building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="length4" placeholder="Enter length of the 4th building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="length5" placeholder="Enter length of the 5th building"
+                                onChange="area();sourceFactor();totalFactor();">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 100px;">Width (ft)</td>
+                        <td>
+                            <input type="number" name="width1" placeholder="Enter width of the 1st building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="width2" placeholder="Enter width of the 2nd building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="width3" placeholder="Enter width of the 3rd building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="width4" placeholder="Enter width of the 4th building"
+                                onChange="area();sourceFactor();totalFactor();">
+                            <input type="number" name="width5" placeholder="Enter width of the 5th building"
+                                onChange="area();sourceFactor();totalFactor();">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 100px;"> Area (sq ft)：</td>
+                        <td>
+                            <span class="result1" id="area1" style="margin-left: 90px;"></span>
+                            <span class="result2" id="area2" style="margin-left: 160px;"></span>
+                            <span class="result3" id="area3" style="margin-left: 170px;"></span>
+                            <span class="result4" id="area4" style="margin-left: 175px;"></span>
+                            <span class="result5" id="area5" style="margin-left: 170px;"></span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <br>
+        <div>
+            <table class="controlTable">
+                <p style="color: midnightblue;"><strong>Odor Control Technology and Odor Control Factor</strong></p>
                 <tr>
-                    <td style="width: 100px;">Width (ft)</td>
-                    <td>
-                        <input type="number" name="width1" placeholder="Enter width of the 1st building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="width2" placeholder="Enter width of the 2nd building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="width3" placeholder="Enter width of the 3rd building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="width4" placeholder="Enter width of the 4th building"
-                            onChange="area();sourceFactor();totalFactor();">
-                        <input type="number" name="width5" placeholder="Enter width of the 5th building"
-                            onChange="area();sourceFactor();totalFactor();">
+                    <td style="width: 100px;"> Control：</td>
+                    <td id="cc1">
+                        <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
+                            <option value="1">A No Odor Control </option>
+                            <option value="0.1">Biofilter</option>
+                            <option value="0.5">Geotextile Cover</option>
+                            <option value="0.1">Impermeable Cover</option>
+                            <option value="0.5">Oil Sprinkling</option>
+                            <option value="0.5">Straw Cover 2 in</option>
+                            <option value="0.4">Straw Cover 4 in</option>
+                            <option value="0.3">Straw Cover 6 in</option>
+                            <option value="0.2">Straw Cover 8 in</option>
+                        </select>
                     </td>
-                </tr>
-
-                <tr>
-                    <td style="width: 100px;"> Area (sq ft)：</td>
-                    <td>
-                        <span class="result1" id="area1" style="margin-left: 90px;"></span>
-                        <span class="result2" id="area2" style="margin-left: 160px;"></span>
-                        <span class="result3" id="area3" style="margin-left: 170px;"></span>
-                        <span class="result4" id="area4" style="margin-left: 175px;"></span>
-                        <span class="result5" id="area5" style="margin-left: 170px;"></span>
+                    <td id="cc2">
+                        <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
+                            <option value="1">A No Odor Control </option>
+                            <option value="0.1">Biofilter</option>
+                            <option value="0.5">Geotextile Cover</option>
+                            <option value="0.1">Impermeable Cover</option>
+                            <option value="0.5">Oil Sprinkling</option>
+                            <option value="0.5">Straw Cover 2 in</option>
+                            <option value="0.4">Straw Cover 4 in</option>
+                            <option value="0.3">Straw Cover 6 in</option>
+                            <option value="0.2">Straw Cover 8 in</option>
+                        </select>
+                    </td>
+                    <td id="cc3">
+                        <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
+                            <option value="1">A No Odor Control </option>
+                            <option value="0.1">Biofilter</option>
+                            <option value="0.5">Geotextile Cover</option>
+                            <option value="0.1">Impermeable Cover</option>
+                            <option value="0.5">Oil Sprinkling</option>
+                            <option value="0.5">Straw Cover 2 in</option>
+                            <option value="0.4">Straw Cover 4 in</option>
+                            <option value="0.3">Straw Cover 6 in</option>
+                            <option value="0.2">Straw Cover 8 in</option>
+                        </select>
+                    </td>
+                    <td id="cc4">
+                        <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
+                            <option value="1">A No Odor Control </option>
+                            <option value="0.1">Biofilter</option>
+                            <option value="0.5">Geotextile Cover</option>
+                            <option value="0.1">Impermeable Cover</option>
+                            <option value="0.5">Oil Sprinkling</option>
+                            <option value="0.5">Straw Cover 2 in</option>
+                            <option value="0.4">Straw Cover 4 in</option>
+                            <option value="0.3">Straw Cover 6 in</option>
+                            <option value="0.2">Straw Cover 8 in</option>
+                        </select>
+                    </td>
+                    <td id="cc5">
+                        <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
+                            <option value="1">A No Odor Control </option>
+                            <option value="0.1">Biofilter</option>
+                            <option value="0.5">Geotextile Cover</option>
+                            <option value="0.1">Impermeable Cover</option>
+                            <option value="0.5">Oil Sprinkling</option>
+                            <option value="0.5">Straw Cover 2 in</option>
+                            <option value="0.4">Straw Cover 4 in</option>
+                            <option value="0.3">Straw Cover 6 in</option>
+                            <option value="0.2">Straw Cover 8 in</option>
+                        </select>
                     </td>
                 </tr>
             </table>
-        </form>
-    </div>
-    <br>
-    <div>
+        </div>
+        <div class="controlFactor">Control Factor:
+            <span id="c1" style="margin-left: 90px;"></span>
+            <span id="c2" style="margin-left: 195px;"></span>
+            <span id="c3" style="margin-left: 205px;"></span>
+            <span id="c4" style="margin-left: 205px;"></span>
+            <span id="c5" style="margin-left: 200px;"></span>
+        </div>
+        <div class="sourceFactor">Source Factor:
+            <span id="s1" style="margin-left: 93px;"></span>
+            <span id="s2" style="margin-left: 195px;"></span>
+            <span id="s3" style="margin-left: 205px;"></span>
+            <span id="s4" style="margin-left: 205px;"></span>
+            <span id="s5" style="margin-left: 200px;"></span>
+        </div>
+        <br>
 
-        <table class="controlTable">
-            <p style="color: midnightblue;"><strong>Odor Control Technology and Odor Control Factor</strong></p>
-            <tr>
-                <td style="width: 100px;"> Control：</td>
-                <td id="cc1">
-                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                        <option value="1">A No Odor Control </option>
-                        <option value="0.1">Biofilter</option>
-                        <option value="0.5">Geotextile Cover</option>
-                        <option value="0.1">Impermeable Cover</option>
-                        <option value="0.5">Oil Sprinkling</option>
-                        <option value="0.5">Straw Cover 2 in</option>
-                        <option value="0.4">Straw Cover 4 in</option>
-                        <option value="0.3">Straw Cover 6 in</option>
-                        <option value="0.2">Straw Cover 8 in</option>
-                    </select>
-                </td>
-                <td id="cc2">
-                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                        <option value="1">A No Odor Control </option>
-                        <option value="0.1">Biofilter</option>
-                        <option value="0.5">Geotextile Cover</option>
-                        <option value="0.1">Impermeable Cover</option>
-                        <option value="0.5">Oil Sprinkling</option>
-                        <option value="0.5">Straw Cover 2 in</option>
-                        <option value="0.4">Straw Cover 4 in</option>
-                        <option value="0.3">Straw Cover 6 in</option>
-                        <option value="0.2">Straw Cover 8 in</option>
-                    </select>
-                </td>
-                <td id="cc3">
-                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                        <option value="1">A No Odor Control </option>
-                        <option value="0.1">Biofilter</option>
-                        <option value="0.5">Geotextile Cover</option>
-                        <option value="0.1">Impermeable Cover</option>
-                        <option value="0.5">Oil Sprinkling</option>
-                        <option value="0.5">Straw Cover 2 in</option>
-                        <option value="0.4">Straw Cover 4 in</option>
-                        <option value="0.3">Straw Cover 6 in</option>
-                        <option value="0.2">Straw Cover 8 in</option>
-                    </select>
-                </td>
-                <td id="cc4">
-                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                        <option value="1">A No Odor Control </option>
-                        <option value="0.1">Biofilter</option>
-                        <option value="0.5">Geotextile Cover</option>
-                        <option value="0.1">Impermeable Cover</option>
-                        <option value="0.5">Oil Sprinkling</option>
-                        <option value="0.5">Straw Cover 2 in</option>
-                        <option value="0.4">Straw Cover 4 in</option>
-                        <option value="0.3">Straw Cover 6 in</option>
-                        <option value="0.2">Straw Cover 8 in</option>
-                    </select>
-                </td>
-                <td id="cc5">
-                    <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                        <option value="1">A No Odor Control </option>
-                        <option value="0.1">Biofilter</option>
-                        <option value="0.5">Geotextile Cover</option>
-                        <option value="0.1">Impermeable Cover</option>
-                        <option value="0.5">Oil Sprinkling</option>
-                        <option value="0.5">Straw Cover 2 in</option>
-                        <option value="0.4">Straw Cover 4 in</option>
-                        <option value="0.3">Straw Cover 6 in</option>
-                        <option value="0.2">Straw Cover 8 in</option>
-                    </select>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="controlFactor">Control Factor:
-        <span id="c1" style="margin-left: 90px;"></span>
-        <span id="c2" style="margin-left: 195px;"></span>
-        <span id="c3" style="margin-left: 205px;"></span>
-        <span id="c4" style="margin-left: 205px;"></span>
-        <span id="c5" style="margin-left: 200px;"></span>
-    </div>
-    <div class="sourceFactor">Source Factor:
-        <span id="s1" style="margin-left: 93px;"></span>
-        <span id="s2" style="margin-left: 195px;"></span>
-        <span id="s3" style="margin-left: 205px;"></span>
-        <span id="s4" style="margin-left: 205px;"></span>
-        <span id="s5" style="margin-left: 200px;"></span>
-    </div>
-    <br>
+        <div>
+            <p style="color: midnightblue;"><strong>Total Odor Emitting Factor (TOEF) </strong></p>
+            <p id="TOEF"></p>
+        </div>
 
-    <div>
-        <p style="color: midnightblue;"><strong>Total Odor Emitting Factor (TOEF) </strong></p>
-        <p id="TOEF"></p>
-    </div>
+        <!-- <iframe src="../HTML/setbackTable.html" frameborder="0" height="100px"></iframe> -->
+        <div>
+            <table id="are1" hidden>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>N</td>
+                        <td>1</td>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                        <td>D</td>
+                        <td>E</td>
+                        <td>F</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>N</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>N</td>
+                        <td>50</td>
+                        <td>0.33108</td>
+                        <td>0.15438</td>
+                        <td>0.1054</td>
+                        <td>0.08618</td>
+                        <td>0.0775</td>
+                        <td>0.062</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>N</td>
+                        <td>100</td>
+                        <td>0.774566</td>
+                        <td>0.416268</td>
+                        <td>0.31465</td>
+                        <td>0.2604</td>
+                        <td>0.195734</td>
+                        <td>0.147374</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>N</td>
+                        <td>200</td>
+                        <td>1.12902</td>
+                        <td>0.624216</td>
+                        <td>0.455142</td>
+                        <td>0.370512</td>
+                        <td>0.277698</td>
+                        <td>0.205282</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>N</td>
+                        <td>300</td>
+                        <td>1.412732</td>
+                        <td>0.773388</td>
+                        <td>0.577034</td>
+                        <td>0.46376</td>
+                        <td>0.33852</td>
+                        <td>0.249674</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>N</td>
+                        <td>400</td>
+                        <td>1.662468</td>
+                        <td>0.925102</td>
+                        <td>0.666562</td>
+                        <td>0.529666</td>
+                        <td>0.38781</td>
+                        <td>0.288424</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>N</td>
+                        <td>500</td>
+                        <td>1.86403</td>
+                        <td>1.061502</td>
+                        <td>0.760492</td>
+                        <td>0.591108</td>
+                        <td>0.430218</td>
+                        <td>0.307892</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>N</td>
+                        <td>1000</td>
+                        <td>2.646346</td>
+                        <td>1.60983</td>
+                        <td>1.103972</td>
+                        <td>0.830118</td>
+                        <td>0.595572</td>
+                        <td>0.419244</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>N</td>
+                        <td>2000</td>
+                        <td>4.015182</td>
+                        <td>2.252708</td>
+                        <td>1.585402</td>
+                        <td>1.153758</td>
+                        <td>0.762104</td>
+                        <td>0.545166</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>N</td>
+                        <td>3000</td>
+                        <td>4.98821</td>
+                        <td>2.870166</td>
+                        <td>1.922</td>
+                        <td>1.396178</td>
+                        <td>0.940354</td>
+                        <td>0.6014</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>N</td>
+                        <td>4000</td>
+                        <td>5.983372</td>
+                        <td>3.469582</td>
+                        <td>2.207696</td>
+                        <td>1.580256</td>
+                        <td>1.048544</td>
+                        <td>0.691424</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>E</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>E</td>
+                        <td>50</td>
+                        <td>0.18414</td>
+                        <td>0.12648</td>
+                        <td>0.10478</td>
+                        <td>0.09176</td>
+                        <td>0.07812</td>
+                        <td>0.06634</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>E</td>
+                        <td>100</td>
+                        <td>0.510446</td>
+                        <td>0.248</td>
+                        <td>0.2046</td>
+                        <td>0.174096</td>
+                        <td>0.128712</td>
+                        <td>0.071424</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>E</td>
+                        <td>200</td>
+                        <td>0.737676</td>
+                        <td>0.3782</td>
+                        <td>0.274784</td>
+                        <td>0.245768</td>
+                        <td>0.180234</td>
+                        <td>0.101184</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>E</td>
+                        <td>300</td>
+                        <td>0.912578</td>
+                        <td>0.478888</td>
+                        <td>0.329778</td>
+                        <td>0.294004</td>
+                        <td>0.20429</td>
+                        <td>0.099882</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>E</td>
+                        <td>400</td>
+                        <td>1.041786</td>
+                        <td>0.5425</td>
+                        <td>0.40052</td>
+                        <td>0.317564</td>
+                        <td>0.215574</td>
+                        <td>0.1054</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>E</td>
+                        <td>500</td>
+                        <td>1.205652</td>
+                        <td>0.624712</td>
+                        <td>0.4464</td>
+                        <td>0.372744</td>
+                        <td>0.25203</td>
+                        <td>0.11687</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>E</td>
+                        <td>1000</td>
+                        <td>1.6957</td>
+                        <td>0.831358</td>
+                        <td>0.63054</td>
+                        <td>0.517576</td>
+                        <td>0.352346</td>
+                        <td>0.123256</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>E</td>
+                        <td>2000</td>
+                        <td>2.413288</td>
+                        <td>1.147</td>
+                        <td>0.868</td>
+                        <td>0.70649</td>
+                        <td>0.443734</td>
+                        <td>0.123566</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>E</td>
+                        <td>3000</td>
+                        <td>2.950022</td>
+                        <td>1.437098</td>
+                        <td>1.032672</td>
+                        <td>0.753424</td>
+                        <td>0.4464</td>
+                        <td>0.150474</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>E</td>
+                        <td>4000</td>
+                        <td>3.431142</td>
+                        <td>1.6058</td>
+                        <td>1.133484</td>
+                        <td>0.79174</td>
+                        <td>0.4464</td>
+                        <td>0.155248</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>S</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>S</td>
+                        <td>50</td>
+                        <td>0.279</td>
+                        <td>0.15376</td>
+                        <td>0.11842</td>
+                        <td>0.10044</td>
+                        <td>0.07936</td>
+                        <td>0.06014</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>S</td>
+                        <td>100</td>
+                        <td>0.544918</td>
+                        <td>0.286254</td>
+                        <td>0.213714</td>
+                        <td>0.181784</td>
+                        <td>0.143034</td>
+                        <td>0.091574</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>S</td>
+                        <td>200</td>
+                        <td>0.78988</td>
+                        <td>0.404612</td>
+                        <td>0.301692</td>
+                        <td>0.253084</td>
+                        <td>0.190216</td>
+                        <td>0.113708</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>S</td>
+                        <td>300</td>
+                        <td>0.977926</td>
+                        <td>0.49228</td>
+                        <td>0.367784</td>
+                        <td>0.309442</td>
+                        <td>0.22909</td>
+                        <td>0.128402</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>S</td>
+                        <td>400</td>
+                        <td>1.13119</td>
+                        <td>0.579514</td>
+                        <td>0.41509</td>
+                        <td>0.353958</td>
+                        <td>0.26102</td>
+                        <td>0.146816</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>S</td>
+                        <td>500</td>
+                        <td>1.300636</td>
+                        <td>0.65441</td>
+                        <td>0.471882</td>
+                        <td>0.395684</td>
+                        <td>0.274226</td>
+                        <td>0.153202</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>S</td>
+                        <td>1000</td>
+                        <td>1.865208</td>
+                        <td>0.881206</td>
+                        <td>0.65751</td>
+                        <td>0.539896</td>
+                        <td>0.374604</td>
+                        <td>0.206832</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>S</td>
+                        <td>2000</td>
+                        <td>2.758876</td>
+                        <td>1.264924</td>
+                        <td>0.895404</td>
+                        <td>0.735816</td>
+                        <td>0.457126</td>
+                        <td>0.20708</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>S</td>
+                        <td>3000</td>
+                        <td>3.348</td>
+                        <td>1.592842</td>
+                        <td>1.086426</td>
+                        <td>0.884926</td>
+                        <td>0.54901</td>
+                        <td>0.20708</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>S</td>
+                        <td>4000</td>
+                        <td>3.813</td>
+                        <td>1.753918</td>
+                        <td>1.273976</td>
+                        <td>1.000556</td>
+                        <td>0.589186</td>
+                        <td>0.20708</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>W</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>W</td>
+                        <td>50</td>
+                        <td>0.25978</td>
+                        <td>0.14632</td>
+                        <td>0.11532</td>
+                        <td>0.09982</td>
+                        <td>0.07998</td>
+                        <td>0.06014</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>W</td>
+                        <td>100</td>
+                        <td>0.53909</td>
+                        <td>0.256928</td>
+                        <td>0.189844</td>
+                        <td>0.174778</td>
+                        <td>0.124186</td>
+                        <td>0.07006</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>W</td>
+                        <td>200</td>
+                        <td>0.776364</td>
+                        <td>0.385454</td>
+                        <td>0.304792</td>
+                        <td>0.241304</td>
+                        <td>0.181722</td>
+                        <td>0.084754</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>W</td>
+                        <td>300</td>
+                        <td>0.944198</td>
+                        <td>0.451174</td>
+                        <td>0.346332</td>
+                        <td>0.2604</td>
+                        <td>0.219232</td>
+                        <td>0.1116</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>W</td>
+                        <td>400</td>
+                        <td>1.0912</td>
+                        <td>0.5208</td>
+                        <td>0.4092</td>
+                        <td>0.3162</td>
+                        <td>0.232128</td>
+                        <td>0.116932</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>W</td>
+                        <td>500</td>
+                        <td>1.225678</td>
+                        <td>0.606174</td>
+                        <td>0.459234</td>
+                        <td>0.347448</td>
+                        <td>0.25699</td>
+                        <td>0.124</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>W</td>
+                        <td>1000</td>
+                        <td>1.661228</td>
+                        <td>0.915182</td>
+                        <td>0.66309</td>
+                        <td>0.53134</td>
+                        <td>0.374728</td>
+                        <td>0.124</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>W</td>
+                        <td>2000</td>
+                        <td>2.396982</td>
+                        <td>1.2462</td>
+                        <td>0.894102</td>
+                        <td>0.744</td>
+                        <td>0.465</td>
+                        <td>0.134912</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>W</td>
+                        <td>3000</td>
+                        <td>2.976</td>
+                        <td>1.488</td>
+                        <td>1.045816</td>
+                        <td>0.886166</td>
+                        <td>0.536734</td>
+                        <td>0.163928</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>W</td>
+                        <td>4000</td>
+                        <td>3.26151</td>
+                        <td>1.719136</td>
+                        <td>1.254198</td>
+                        <td>0.913322</td>
+                        <td>0.548576</td>
+                        <td>0.16957</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <!-- <iframe src="../HTML/setbackTable.html" frameborder="0" height="100px"></iframe> -->
-    <div>
-        <table id="are1" hidden>
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
-                    <th>D</th>
-                    <th>E</th>
-                    <th>F</th>
-                    <th>G</th>
-                    <th>H</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>N</td>
-                    <td>1</td>
-                    <td>A</td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>F</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>N</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>N</td>
-                    <td>50</td>
-                    <td>0.33108</td>
-                    <td>0.15438</td>
-                    <td>0.1054</td>
-                    <td>0.08618</td>
-                    <td>0.0775</td>
-                    <td>0.062</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>N</td>
-                    <td>100</td>
-                    <td>0.774566</td>
-                    <td>0.416268</td>
-                    <td>0.31465</td>
-                    <td>0.2604</td>
-                    <td>0.195734</td>
-                    <td>0.147374</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>N</td>
-                    <td>200</td>
-                    <td>1.12902</td>
-                    <td>0.624216</td>
-                    <td>0.455142</td>
-                    <td>0.370512</td>
-                    <td>0.277698</td>
-                    <td>0.205282</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>N</td>
-                    <td>300</td>
-                    <td>1.412732</td>
-                    <td>0.773388</td>
-                    <td>0.577034</td>
-                    <td>0.46376</td>
-                    <td>0.33852</td>
-                    <td>0.249674</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>N</td>
-                    <td>400</td>
-                    <td>1.662468</td>
-                    <td>0.925102</td>
-                    <td>0.666562</td>
-                    <td>0.529666</td>
-                    <td>0.38781</td>
-                    <td>0.288424</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>N</td>
-                    <td>500</td>
-                    <td>1.86403</td>
-                    <td>1.061502</td>
-                    <td>0.760492</td>
-                    <td>0.591108</td>
-                    <td>0.430218</td>
-                    <td>0.307892</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>N</td>
-                    <td>1000</td>
-                    <td>2.646346</td>
-                    <td>1.60983</td>
-                    <td>1.103972</td>
-                    <td>0.830118</td>
-                    <td>0.595572</td>
-                    <td>0.419244</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>N</td>
-                    <td>2000</td>
-                    <td>4.015182</td>
-                    <td>2.252708</td>
-                    <td>1.585402</td>
-                    <td>1.153758</td>
-                    <td>0.762104</td>
-                    <td>0.545166</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>N</td>
-                    <td>3000</td>
-                    <td>4.98821</td>
-                    <td>2.870166</td>
-                    <td>1.922</td>
-                    <td>1.396178</td>
-                    <td>0.940354</td>
-                    <td>0.6014</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>N</td>
-                    <td>4000</td>
-                    <td>5.983372</td>
-                    <td>3.469582</td>
-                    <td>2.207696</td>
-                    <td>1.580256</td>
-                    <td>1.048544</td>
-                    <td>0.691424</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>E</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>E</td>
-                    <td>50</td>
-                    <td>0.18414</td>
-                    <td>0.12648</td>
-                    <td>0.10478</td>
-                    <td>0.09176</td>
-                    <td>0.07812</td>
-                    <td>0.06634</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>E</td>
-                    <td>100</td>
-                    <td>0.510446</td>
-                    <td>0.248</td>
-                    <td>0.2046</td>
-                    <td>0.174096</td>
-                    <td>0.128712</td>
-                    <td>0.071424</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>E</td>
-                    <td>200</td>
-                    <td>0.737676</td>
-                    <td>0.3782</td>
-                    <td>0.274784</td>
-                    <td>0.245768</td>
-                    <td>0.180234</td>
-                    <td>0.101184</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>E</td>
-                    <td>300</td>
-                    <td>0.912578</td>
-                    <td>0.478888</td>
-                    <td>0.329778</td>
-                    <td>0.294004</td>
-                    <td>0.20429</td>
-                    <td>0.099882</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>E</td>
-                    <td>400</td>
-                    <td>1.041786</td>
-                    <td>0.5425</td>
-                    <td>0.40052</td>
-                    <td>0.317564</td>
-                    <td>0.215574</td>
-                    <td>0.1054</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>E</td>
-                    <td>500</td>
-                    <td>1.205652</td>
-                    <td>0.624712</td>
-                    <td>0.4464</td>
-                    <td>0.372744</td>
-                    <td>0.25203</td>
-                    <td>0.11687</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>E</td>
-                    <td>1000</td>
-                    <td>1.6957</td>
-                    <td>0.831358</td>
-                    <td>0.63054</td>
-                    <td>0.517576</td>
-                    <td>0.352346</td>
-                    <td>0.123256</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>E</td>
-                    <td>2000</td>
-                    <td>2.413288</td>
-                    <td>1.147</td>
-                    <td>0.868</td>
-                    <td>0.70649</td>
-                    <td>0.443734</td>
-                    <td>0.123566</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>E</td>
-                    <td>3000</td>
-                    <td>2.950022</td>
-                    <td>1.437098</td>
-                    <td>1.032672</td>
-                    <td>0.753424</td>
-                    <td>0.4464</td>
-                    <td>0.150474</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>E</td>
-                    <td>4000</td>
-                    <td>3.431142</td>
-                    <td>1.6058</td>
-                    <td>1.133484</td>
-                    <td>0.79174</td>
-                    <td>0.4464</td>
-                    <td>0.155248</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>S</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>S</td>
-                    <td>50</td>
-                    <td>0.279</td>
-                    <td>0.15376</td>
-                    <td>0.11842</td>
-                    <td>0.10044</td>
-                    <td>0.07936</td>
-                    <td>0.06014</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>S</td>
-                    <td>100</td>
-                    <td>0.544918</td>
-                    <td>0.286254</td>
-                    <td>0.213714</td>
-                    <td>0.181784</td>
-                    <td>0.143034</td>
-                    <td>0.091574</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>S</td>
-                    <td>200</td>
-                    <td>0.78988</td>
-                    <td>0.404612</td>
-                    <td>0.301692</td>
-                    <td>0.253084</td>
-                    <td>0.190216</td>
-                    <td>0.113708</td>
-                </tr>
-                <tr>
-                    <td>28</td>
-                    <td>S</td>
-                    <td>300</td>
-                    <td>0.977926</td>
-                    <td>0.49228</td>
-                    <td>0.367784</td>
-                    <td>0.309442</td>
-                    <td>0.22909</td>
-                    <td>0.128402</td>
-                </tr>
-                <tr>
-                    <td>29</td>
-                    <td>S</td>
-                    <td>400</td>
-                    <td>1.13119</td>
-                    <td>0.579514</td>
-                    <td>0.41509</td>
-                    <td>0.353958</td>
-                    <td>0.26102</td>
-                    <td>0.146816</td>
-                </tr>
-                <tr>
-                    <td>30</td>
-                    <td>S</td>
-                    <td>500</td>
-                    <td>1.300636</td>
-                    <td>0.65441</td>
-                    <td>0.471882</td>
-                    <td>0.395684</td>
-                    <td>0.274226</td>
-                    <td>0.153202</td>
-                </tr>
-                <tr>
-                    <td>31</td>
-                    <td>S</td>
-                    <td>1000</td>
-                    <td>1.865208</td>
-                    <td>0.881206</td>
-                    <td>0.65751</td>
-                    <td>0.539896</td>
-                    <td>0.374604</td>
-                    <td>0.206832</td>
-                </tr>
-                <tr>
-                    <td>32</td>
-                    <td>S</td>
-                    <td>2000</td>
-                    <td>2.758876</td>
-                    <td>1.264924</td>
-                    <td>0.895404</td>
-                    <td>0.735816</td>
-                    <td>0.457126</td>
-                    <td>0.20708</td>
-                </tr>
-                <tr>
-                    <td>33</td>
-                    <td>S</td>
-                    <td>3000</td>
-                    <td>3.348</td>
-                    <td>1.592842</td>
-                    <td>1.086426</td>
-                    <td>0.884926</td>
-                    <td>0.54901</td>
-                    <td>0.20708</td>
-                </tr>
-                <tr>
-                    <td>34</td>
-                    <td>S</td>
-                    <td>4000</td>
-                    <td>3.813</td>
-                    <td>1.753918</td>
-                    <td>1.273976</td>
-                    <td>1.000556</td>
-                    <td>0.589186</td>
-                    <td>0.20708</td>
-                </tr>
-                <tr>
-                    <td>35</td>
-                    <td>W</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>36</td>
-                    <td>W</td>
-                    <td>50</td>
-                    <td>0.25978</td>
-                    <td>0.14632</td>
-                    <td>0.11532</td>
-                    <td>0.09982</td>
-                    <td>0.07998</td>
-                    <td>0.06014</td>
-                </tr>
-                <tr>
-                    <td>37</td>
-                    <td>W</td>
-                    <td>100</td>
-                    <td>0.53909</td>
-                    <td>0.256928</td>
-                    <td>0.189844</td>
-                    <td>0.174778</td>
-                    <td>0.124186</td>
-                    <td>0.07006</td>
-                </tr>
-                <tr>
-                    <td>38</td>
-                    <td>W</td>
-                    <td>200</td>
-                    <td>0.776364</td>
-                    <td>0.385454</td>
-                    <td>0.304792</td>
-                    <td>0.241304</td>
-                    <td>0.181722</td>
-                    <td>0.084754</td>
-                </tr>
-                <tr>
-                    <td>39</td>
-                    <td>W</td>
-                    <td>300</td>
-                    <td>0.944198</td>
-                    <td>0.451174</td>
-                    <td>0.346332</td>
-                    <td>0.2604</td>
-                    <td>0.219232</td>
-                    <td>0.1116</td>
-                </tr>
-                <tr>
-                    <td>40</td>
-                    <td>W</td>
-                    <td>400</td>
-                    <td>1.0912</td>
-                    <td>0.5208</td>
-                    <td>0.4092</td>
-                    <td>0.3162</td>
-                    <td>0.232128</td>
-                    <td>0.116932</td>
-                </tr>
-                <tr>
-                    <td>41</td>
-                    <td>W</td>
-                    <td>500</td>
-                    <td>1.225678</td>
-                    <td>0.606174</td>
-                    <td>0.459234</td>
-                    <td>0.347448</td>
-                    <td>0.25699</td>
-                    <td>0.124</td>
-                </tr>
-                <tr>
-                    <td>42</td>
-                    <td>W</td>
-                    <td>1000</td>
-                    <td>1.661228</td>
-                    <td>0.915182</td>
-                    <td>0.66309</td>
-                    <td>0.53134</td>
-                    <td>0.374728</td>
-                    <td>0.124</td>
-                </tr>
-                <tr>
-                    <td>43</td>
-                    <td>W</td>
-                    <td>2000</td>
-                    <td>2.396982</td>
-                    <td>1.2462</td>
-                    <td>0.894102</td>
-                    <td>0.744</td>
-                    <td>0.465</td>
-                    <td>0.134912</td>
-                </tr>
-                <tr>
-                    <td>44</td>
-                    <td>W</td>
-                    <td>3000</td>
-                    <td>2.976</td>
-                    <td>1.488</td>
-                    <td>1.045816</td>
-                    <td>0.886166</td>
-                    <td>0.536734</td>
-                    <td>0.163928</td>
-                </tr>
-                <tr>
-                    <td>45</td>
-                    <td>W</td>
-                    <td>4000</td>
-                    <td>3.26151</td>
-                    <td>1.719136</td>
-                    <td>1.254198</td>
-                    <td>0.913322</td>
-                    <td>0.548576</td>
-                    <td>0.16957</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div>
-        <table id="are2" hidden>
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
-                    <th>D</th>
-                    <th>E</th>
-                    <th>F</th>
-                    <th>G</th>
-                    <th>H</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>NE</td>
-                    <td>OU/s</td>
-                    <td>99</td>
-                    <td>98</td>
-                    <td>97</td>
-                    <td>96</td>
-                    <td>94</td>
-                    <td>91</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>NE</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>NE</td>
-                    <td>50</td>
-                    <td>0.33108</td>
-                    <td>0.15438</td>
-                    <td>0.1054</td>
-                    <td>0.08618</td>
-                    <td>0.0775</td>
-                    <td>0.062</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>NE</td>
-                    <td>100</td>
-                    <td>0.49352</td>
-                    <td>0.21638</td>
-                    <td>0.15066</td>
-                    <td>0.12586</td>
-                    <td>0.10602</td>
-                    <td>0.08742</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>NE</td>
-                    <td>200</td>
-                    <td>0.70928</td>
-                    <td>0.3038</td>
-                    <td>0.21204</td>
-                    <td>0.18662</td>
-                    <td>0.1581</td>
-                    <td>0.12958</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>NE</td>
-                    <td>300</td>
-                    <td>0.8742</td>
-                    <td>0.37386</td>
-                    <td>0.2573</td>
-                    <td>0.22816</td>
-                    <td>0.1984</td>
-                    <td>0.1612</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>NE</td>
-                    <td>400</td>
-                    <td>0.9982</td>
-                    <td>0.43028</td>
-                    <td>0.3038</td>
-                    <td>0.27032</td>
-                    <td>0.2263</td>
-                    <td>0.17794</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>NE</td>
-                    <td>500</td>
-                    <td>1.14576</td>
-                    <td>0.47306</td>
-                    <td>0.34782</td>
-                    <td>0.31124</td>
-                    <td>0.25978</td>
-                    <td>0.20522</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>NE</td>
-                    <td>1000</td>
-                    <td>1.59836</td>
-                    <td>0.64604</td>
-                    <td>0.47802</td>
-                    <td>0.4061</td>
-                    <td>0.32116</td>
-                    <td>0.2139</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>NE</td>
-                    <td>2000</td>
-                    <td>2.33678</td>
-                    <td>0.89218</td>
-                    <td>0.7099</td>
-                    <td>0.62248</td>
-                    <td>0.4929</td>
-                    <td>0.31744</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>NE</td>
-                    <td>3000</td>
-                    <td>2.9109</td>
-                    <td>1.10484</td>
-                    <td>0.91698</td>
-                    <td>0.7998</td>
-                    <td>0.63798</td>
-                    <td>0.43772</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>NE</td>
-                    <td>4000</td>
-                    <td>3.26926</td>
-                    <td>1.2865</td>
-                    <td>1.06454</td>
-                    <td>0.92318</td>
-                    <td>0.72664</td>
-                    <td>0.47244</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>SE</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>SE</td>
-                    <td>50</td>
-                    <td>0.25978</td>
-                    <td>0.14632</td>
-                    <td>0.11532</td>
-                    <td>0.09982</td>
-                    <td>0.07998</td>
-                    <td>0.06014</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>SE</td>
-                    <td>100</td>
-                    <td>0.37262</td>
-                    <td>0.2108</td>
-                    <td>0.16182</td>
-                    <td>0.13702</td>
-                    <td>0.1085</td>
-                    <td>0.07626</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>SE</td>
-                    <td>200</td>
-                    <td>0.54064</td>
-                    <td>0.30008</td>
-                    <td>0.23312</td>
-                    <td>0.19902</td>
-                    <td>0.155</td>
-                    <td>0.10788</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>SE</td>
-                    <td>300</td>
-                    <td>0.66836</td>
-                    <td>0.36456</td>
-                    <td>0.28582</td>
-                    <td>0.24056</td>
-                    <td>0.18476</td>
-                    <td>0.12152</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>SE</td>
-                    <td>400</td>
-                    <td>0.79484</td>
-                    <td>0.42656</td>
-                    <td>0.32922</td>
-                    <td>0.279</td>
-                    <td>0.21266</td>
-                    <td>0.13888</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>SE</td>
-                    <td>500</td>
-                    <td>0.868</td>
-                    <td>0.48918</td>
-                    <td>0.37014</td>
-                    <td>0.31248</td>
-                    <td>0.23932</td>
-                    <td>0.15438</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>SE</td>
-                    <td>1000</td>
-                    <td>1.28712</td>
-                    <td>0.6913</td>
-                    <td>0.51212</td>
-                    <td>0.42284</td>
-                    <td>0.28644</td>
-                    <td>0.1581</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>SE</td>
-                    <td>2000</td>
-                    <td>1.8848</td>
-                    <td>0.9579</td>
-                    <td>0.72478</td>
-                    <td>0.59272</td>
-                    <td>0.40238</td>
-                    <td>0.19964</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>SE</td>
-                    <td>3000</td>
-                    <td>2.3529</td>
-                    <td>1.20838</td>
-                    <td>0.89156</td>
-                    <td>0.73718</td>
-                    <td>0.50034</td>
-                    <td>0.25916</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>SE</td>
-                    <td>4000</td>
-                    <td>2.7559</td>
-                    <td>1.4136</td>
-                    <td>1.02362</td>
-                    <td>0.83328</td>
-                    <td>0.5456</td>
-                    <td>0.27404</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>SW</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>SW</td>
-                    <td>50</td>
-                    <td>0.279</td>
-                    <td>0.15376</td>
-                    <td>0.11842</td>
-                    <td>0.10044</td>
-                    <td>0.07936</td>
-                    <td>0.06014</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>SW</td>
-                    <td>100</td>
-                    <td>0.40796</td>
-                    <td>0.21824</td>
-                    <td>0.16802</td>
-                    <td>0.14198</td>
-                    <td>0.11222</td>
-                    <td>0.08308</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>SW</td>
-                    <td>200</td>
-                    <td>0.60822</td>
-                    <td>0.31744</td>
-                    <td>0.24056</td>
-                    <td>0.2015</td>
-                    <td>0.15748</td>
-                    <td>0.11098</td>
-                </tr>
-                <tr>
-                    <td>28</td>
-                    <td>SW</td>
-                    <td>300</td>
-                    <td>0.74648</td>
-                    <td>0.38936</td>
-                    <td>0.2945</td>
-                    <td>0.24676</td>
-                    <td>0.19096</td>
-                    <td>0.13144</td>
-                </tr>
-                <tr>
-                    <td>29</td>
-                    <td>SW</td>
-                    <td>400</td>
-                    <td>0.87978</td>
-                    <td>0.45632</td>
-                    <td>0.34286</td>
-                    <td>0.28458</td>
-                    <td>0.21886</td>
-                    <td>0.14508</td>
-                </tr>
-                <tr>
-                    <td>30</td>
-                    <td>SW</td>
-                    <td>500</td>
-                    <td>0.9796</td>
-                    <td>0.5115</td>
-                    <td>0.37882</td>
-                    <td>0.31372</td>
-                    <td>0.24242</td>
-                    <td>0.15128</td>
-                </tr>
-                <tr>
-                    <td>31</td>
-                    <td>SW</td>
-                    <td>1000</td>
-                    <td>1.43344</td>
-                    <td>0.72726</td>
-                    <td>0.54064</td>
-                    <td>0.44764</td>
-                    <td>0.33108</td>
-                    <td>0.20522</td>
-                </tr>
-                <tr>
-                    <td>32</td>
-                    <td>SW</td>
-                    <td>2000</td>
-                    <td>2.09312</td>
-                    <td>1.0447</td>
-                    <td>0.7533</td>
-                    <td>0.61628</td>
-                    <td>0.4371</td>
-                    <td>0.21948</td>
-                </tr>
-                <tr>
-                    <td>33</td>
-                    <td>SW</td>
-                    <td>3000</td>
-                    <td>2.6102</td>
-                    <td>1.27162</td>
-                    <td>0.9083</td>
-                    <td>0.72912</td>
-                    <td>0.48608</td>
-                    <td>0.18662</td>
-                </tr>
-                <tr>
-                    <td>34</td>
-                    <td>SW</td>
-                    <td>4000</td>
-                    <td>3.02188</td>
-                    <td>1.46754</td>
-                    <td>1.05152</td>
-                    <td>0.83638</td>
-                    <td>0.55242</td>
-                    <td>0.21824</td>
-                </tr>
-                <tr>
-                    <td>35</td>
-                    <td>NW</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>36</td>
-                    <td>NW</td>
-                    <td>50</td>
-                    <td>0.18414</td>
-                    <td>0.12648</td>
-                    <td>0.10478</td>
-                    <td>0.09176</td>
-                    <td>0.07812</td>
-                    <td>0.06634</td>
-                </tr>
-                <tr>
-                    <td>37</td>
-                    <td>NW</td>
-                    <td>100</td>
-                    <td>0.27342</td>
-                    <td>0.18476</td>
-                    <td>0.1519</td>
-                    <td>0.13268</td>
-                    <td>0.1147</td>
-                    <td>0.09672</td>
-                </tr>
-                <tr>
-                    <td>38</td>
-                    <td>NW</td>
-                    <td>200</td>
-                    <td>0.40486</td>
-                    <td>0.26722</td>
-                    <td>0.21948</td>
-                    <td>0.1922</td>
-                    <td>0.16492</td>
-                    <td>0.13702</td>
-                </tr>
-                <tr>
-                    <td>39</td>
-                    <td>NW</td>
-                    <td>300</td>
-                    <td>0.5053</td>
-                    <td>0.33232</td>
-                    <td>0.26908</td>
-                    <td>0.2387</td>
-                    <td>0.20584</td>
-                    <td>0.16988</td>
-                </tr>
-                <tr>
-                    <td>40</td>
-                    <td>NW</td>
-                    <td>400</td>
-                    <td>0.58032</td>
-                    <td>0.38812</td>
-                    <td>0.31372</td>
-                    <td>0.279</td>
-                    <td>0.2387</td>
-                    <td>0.19468</td>
-                </tr>
-                <tr>
-                    <td>41</td>
-                    <td>NW</td>
-                    <td>500</td>
-                    <td>0.66898</td>
-                    <td>0.44082</td>
-                    <td>0.35402</td>
-                    <td>0.31682</td>
-                    <td>0.26598</td>
-                    <td>0.21514</td>
-                </tr>
-                <tr>
-                    <td>42</td>
-                    <td>NW</td>
-                    <td>1000</td>
-                    <td>1.01246</td>
-                    <td>0.63426</td>
-                    <td>0.51336</td>
-                    <td>0.45942</td>
-                    <td>0.38626</td>
-                    <td>0.30566</td>
-                </tr>
-                <tr>
-                    <td>43</td>
-                    <td>NW</td>
-                    <td>2000</td>
-                    <td>1.49544</td>
-                    <td>0.91636</td>
-                    <td>0.74958</td>
-                    <td>0.66154</td>
-                    <td>0.5456</td>
-                    <td>0.42222</td>
-                </tr>
-                <tr>
-                    <td>44</td>
-                    <td>NW</td>
-                    <td>3000</td>
-                    <td>1.86806</td>
-                    <td>1.14638</td>
-                    <td>0.93248</td>
-                    <td>0.81716</td>
-                    <td>0.66154</td>
-                    <td>0.48422</td>
-                </tr>
-                <tr>
-                    <td>45</td>
-                    <td>NW</td>
-                    <td>4000</td>
-                    <td>2.21836</td>
-                    <td>1.31936</td>
-                    <td>1.09244</td>
-                    <td>0.96038</td>
-                    <td>0.7719</td>
-                    <td>0.5611</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    
-    <div>
-        <table id="are3" hidden>
-            <tbody>
-                <tr>
-                    <th></th>
-                    <th>A</th>
-                    <th>B</th>
-                    <th>C</th>
-                    <th>D</th>
-                    <th>E</th>
-                    <th>F</th>
-                    <th>G</th>
-                    <th>H</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>NE</td>
-                    <td>OU/s</td>
-                    <td>99</td>
-                    <td>98</td>
-                    <td>97</td>
-                    <td>96</td>
-                    <td>94</td>
-                    <td>91</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>NE</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>NE</td>
-                    <td>50</td>
-                    <td>0.17794</td>
-                    <td>0.11408</td>
-                    <td>0.11532</td>
-                    <td>0.07502</td>
-                    <td>0.05084</td>
-                    <td>0.0372</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>NE</td>
-                    <td>100</td>
-                    <td>0.2635</td>
-                    <td>0.16244</td>
-                    <td>0.1271</td>
-                    <td>0.1023</td>
-                    <td>0.06758</td>
-                    <td>0.04712</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>NE</td>
-                    <td>200</td>
-                    <td>0.3875</td>
-                    <td>0.23312</td>
-                    <td>0.17794</td>
-                    <td>0.14136</td>
-                    <td>0.08742</td>
-                    <td>0.062</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>NE</td>
-                    <td>300</td>
-                    <td>0.47244</td>
-                    <td>0.28396</td>
-                    <td>0.21576</td>
-                    <td>0.16616</td>
-                    <td>0.10602</td>
-                    <td>0.05332</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>NE</td>
-                    <td>400</td>
-                    <td>0.55676</td>
-                    <td>0.32922</td>
-                    <td>0.24614</td>
-                    <td>0.1953</td>
-                    <td>0.11036</td>
-                    <td>0.0744</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>NE</td>
-                    <td>500</td>
-                    <td>0.6231</td>
-                    <td>0.3627</td>
-                    <td>0.27652</td>
-                    <td>0.2077</td>
-                    <td>0.1395</td>
-                    <td>0.07688</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>NE</td>
-                    <td>1000</td>
-                    <td>0.91574</td>
-                    <td>0.51832</td>
-                    <td>0.37014</td>
-                    <td>0.26846</td>
-                    <td>0.1736</td>
-                    <td>0.07068</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>NE</td>
-                    <td>2000</td>
-                    <td>1.3516</td>
-                    <td>0.71858</td>
-                    <td>0.49538</td>
-                    <td>0.3751</td>
-                    <td>0.2325</td>
-                    <td>0.09672</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>NE</td>
-                    <td>3000</td>
-                    <td>1.6709</td>
-                    <td>0.868</td>
-                    <td>0.59954</td>
-                    <td>0.41044</td>
-                    <td>0.217</td>
-                    <td>0.12772</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>NE</td>
-                    <td>4000</td>
-                    <td>1.9654</td>
-                    <td>0.98084</td>
-                    <td>0.66216</td>
-                    <td>0.44516</td>
-                    <td>0.21576</td>
-                    <td>0.1209</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>SE</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>SE</td>
-                    <td>50</td>
-                    <td>0.17112</td>
-                    <td>0.12028</td>
-                    <td>0.10044</td>
-                    <td>0.08928</td>
-                    <td>0.07564</td>
-                    <td>0.06138</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>SE</td>
-                    <td>100</td>
-                    <td>0.24862</td>
-                    <td>0.17298</td>
-                    <td>0.1457</td>
-                    <td>0.12958</td>
-                    <td>0.1085</td>
-                    <td>0.08556</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>SE</td>
-                    <td>200</td>
-                    <td>0.36828</td>
-                    <td>0.2511</td>
-                    <td>0.2108</td>
-                    <td>0.18662</td>
-                    <td>0.155</td>
-                    <td>0.11904</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>SE</td>
-                    <td>300</td>
-                    <td>0.46748</td>
-                    <td>0.31744</td>
-                    <td>0.26164</td>
-                    <td>0.2294</td>
-                    <td>0.1891</td>
-                    <td>0.1426</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>SE</td>
-                    <td>400</td>
-                    <td>0.54994</td>
-                    <td>0.36766</td>
-                    <td>0.3038</td>
-                    <td>0.26784</td>
-                    <td>0.21762</td>
-                    <td>0.16182</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>SE</td>
-                    <td>500</td>
-                    <td>0.62558</td>
-                    <td>0.41726</td>
-                    <td>0.34224</td>
-                    <td>0.30008</td>
-                    <td>0.2418</td>
-                    <td>0.17732</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>SE</td>
-                    <td>1000</td>
-                    <td>0.93372</td>
-                    <td>0.60326</td>
-                    <td>0.49228</td>
-                    <td>0.42346</td>
-                    <td>0.33294</td>
-                    <td>0.23808</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>SE</td>
-                    <td>2000</td>
-                    <td>1.3826</td>
-                    <td>0.87358</td>
-                    <td>0.70432</td>
-                    <td>0.60574</td>
-                    <td>0.46996</td>
-                    <td>0.3038</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>SE</td>
-                    <td>3000</td>
-                    <td>1.7732</td>
-                    <td>1.08004</td>
-                    <td>0.86304</td>
-                    <td>0.73222</td>
-                    <td>0.55242</td>
-                    <td>0.36828</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>SE</td>
-                    <td>4000</td>
-                    <td>2.08382</td>
-                    <td>1.25054</td>
-                    <td>1.00874</td>
-                    <td>0.85684</td>
-                    <td>0.64418</td>
-                    <td>0.3968</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>SW</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>SW</td>
-                    <td>50</td>
-                    <td>0.20646</td>
-                    <td>0.1271</td>
-                    <td>0.10168</td>
-                    <td>0.08928</td>
-                    <td>0.07254</td>
-                    <td>0.05394</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>SW</td>
-                    <td>100</td>
-                    <td>0.29884</td>
-                    <td>0.18228</td>
-                    <td>0.1457</td>
-                    <td>0.1271</td>
-                    <td>0.10044</td>
-                    <td>0.07254</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>SW</td>
-                    <td>200</td>
-                    <td>0.43896</td>
-                    <td>0.26226</td>
-                    <td>0.20894</td>
-                    <td>0.17732</td>
-                    <td>0.13578</td>
-                    <td>0.09424</td>
-                </tr>
-                <tr>
-                    <td>28</td>
-                    <td>SW</td>
-                    <td>300</td>
-                    <td>0.53692</td>
-                    <td>0.32302</td>
-                    <td>0.25916</td>
-                    <td>0.22754</td>
-                    <td>0.1736</td>
-                    <td>0.11656</td>
-                </tr>
-                <tr>
-                    <td>29</td>
-                    <td>SW</td>
-                    <td>400</td>
-                    <td>0.6169</td>
-                    <td>0.37572</td>
-                    <td>0.29636</td>
-                    <td>0.248</td>
-                    <td>0.17732</td>
-                    <td>0.11346</td>
-                </tr>
-                <tr>
-                    <td>30</td>
-                    <td>SW</td>
-                    <td>500</td>
-                    <td>0.7037</td>
-                    <td>0.4247</td>
-                    <td>0.3317</td>
-                    <td>0.27466</td>
-                    <td>0.20088</td>
-                    <td>0.12586</td>
-                </tr>
-                <tr>
-                    <td>31</td>
-                    <td>SW</td>
-                    <td>1000</td>
-                    <td>1.01928</td>
-                    <td>0.61628</td>
-                    <td>0.48732</td>
-                    <td>0.4123</td>
-                    <td>0.2976</td>
-                    <td>0.1798</td>
-                </tr>
-                <tr>
-                    <td>32</td>
-                    <td>SW</td>
-                    <td>2000</td>
-                    <td>1.49482</td>
-                    <td>0.8835</td>
-                    <td>0.68386</td>
-                    <td>0.55242</td>
-                    <td>0.36766</td>
-                    <td>0.19654</td>
-                </tr>
-                <tr>
-                    <td>33</td>
-                    <td>SW</td>
-                    <td>3000</td>
-                    <td>1.85628</td>
-                    <td>1.09616</td>
-                    <td>0.79732</td>
-                    <td>0.62868</td>
-                    <td>0.4588</td>
-                    <td>0.24862</td>
-                </tr>
-                <tr>
-                    <td>34</td>
-                    <td>SW</td>
-                    <td>4000</td>
-                    <td>2.16318</td>
-                    <td>1.27286</td>
-                    <td>0.95976</td>
-                    <td>0.75392</td>
-                    <td>0.48422</td>
-                    <td>0.26226</td>
-                </tr>
-                <tr>
-                    <td>35</td>
-                    <td>NW</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>36</td>
-                    <td>NW</td>
-                    <td>50</td>
-                    <td>0.21018</td>
-                    <td>0.14694</td>
-                    <td>0.12152</td>
-                    <td>0.10788</td>
-                    <td>0.09114</td>
-                    <td>0.07688</td>
-                </tr>
-                <tr>
-                    <td>37</td>
-                    <td>NW</td>
-                    <td>100</td>
-                    <td>0.31496</td>
-                    <td>0.217</td>
-                    <td>0.17794</td>
-                    <td>0.15748</td>
-                    <td>0.13144</td>
-                    <td>0.11036</td>
-                </tr>
-                <tr>
-                    <td>38</td>
-                    <td>NW</td>
-                    <td>200</td>
-                    <td>0.47926</td>
-                    <td>0.31682</td>
-                    <td>0.26102</td>
-                    <td>0.2294</td>
-                    <td>0.19406</td>
-                    <td>0.15872</td>
-                </tr>
-                <tr>
-                    <td>39</td>
-                    <td>NW</td>
-                    <td>300</td>
-                    <td>0.60264</td>
-                    <td>0.39742</td>
-                    <td>0.32612</td>
-                    <td>0.2852</td>
-                    <td>0.24056</td>
-                    <td>0.19592</td>
-                </tr>
-                <tr>
-                    <td>40</td>
-                    <td>NW</td>
-                    <td>400</td>
-                    <td>0.72292</td>
-                    <td>0.47492</td>
-                    <td>0.38378</td>
-                    <td>0.3379</td>
-                    <td>0.27776</td>
-                    <td>0.22258</td>
-                </tr>
-                <tr>
-                    <td>41</td>
-                    <td>NW</td>
-                    <td>500</td>
-                    <td>0.81778</td>
-                    <td>0.53382</td>
-                    <td>0.434</td>
-                    <td>0.3751</td>
-                    <td>0.31372</td>
-                    <td>0.2542</td>
-                </tr>
-                <tr>
-                    <td>42</td>
-                    <td>NW</td>
-                    <td>1000</td>
-                    <td>1.23752</td>
-                    <td>0.80042</td>
-                    <td>0.64356</td>
-                    <td>0.55862</td>
-                    <td>0.45198</td>
-                    <td>0.35774</td>
-                </tr>
-                <tr>
-                    <td>43</td>
-                    <td>NW</td>
-                    <td>2000</td>
-                    <td>1.87798</td>
-                    <td>1.19474</td>
-                    <td>0.94984</td>
-                    <td>0.8184</td>
-                    <td>0.64976</td>
-                    <td>0.50096</td>
-                </tr>
-                <tr>
-                    <td>44</td>
-                    <td>NW</td>
-                    <td>3000</td>
-                    <td>2.38762</td>
-                    <td>1.4973</td>
-                    <td>1.1904</td>
-                    <td>1.01742</td>
-                    <td>0.79484</td>
-                    <td>0.61442</td>
-                </tr>
-                <tr>
-                    <td>45</td>
-                    <td>NW</td>
-                    <td>4000</td>
-                    <td>2.84704</td>
-                    <td>1.76266</td>
-                    <td>1.39562</td>
-                    <td>1.1842</td>
-                    <td>0.93496</td>
-                    <td>0.70308</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+        <div>
+            <table id="are2" hidden>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>NE</td>
+                        <td>OU/s</td>
+                        <td>99</td>
+                        <td>98</td>
+                        <td>97</td>
+                        <td>96</td>
+                        <td>94</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>NE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>NE</td>
+                        <td>50</td>
+                        <td>0.33108</td>
+                        <td>0.15438</td>
+                        <td>0.1054</td>
+                        <td>0.08618</td>
+                        <td>0.0775</td>
+                        <td>0.062</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>NE</td>
+                        <td>100</td>
+                        <td>0.49352</td>
+                        <td>0.21638</td>
+                        <td>0.15066</td>
+                        <td>0.12586</td>
+                        <td>0.10602</td>
+                        <td>0.08742</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>NE</td>
+                        <td>200</td>
+                        <td>0.70928</td>
+                        <td>0.3038</td>
+                        <td>0.21204</td>
+                        <td>0.18662</td>
+                        <td>0.1581</td>
+                        <td>0.12958</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>NE</td>
+                        <td>300</td>
+                        <td>0.8742</td>
+                        <td>0.37386</td>
+                        <td>0.2573</td>
+                        <td>0.22816</td>
+                        <td>0.1984</td>
+                        <td>0.1612</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>NE</td>
+                        <td>400</td>
+                        <td>0.9982</td>
+                        <td>0.43028</td>
+                        <td>0.3038</td>
+                        <td>0.27032</td>
+                        <td>0.2263</td>
+                        <td>0.17794</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>NE</td>
+                        <td>500</td>
+                        <td>1.14576</td>
+                        <td>0.47306</td>
+                        <td>0.34782</td>
+                        <td>0.31124</td>
+                        <td>0.25978</td>
+                        <td>0.20522</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>NE</td>
+                        <td>1000</td>
+                        <td>1.59836</td>
+                        <td>0.64604</td>
+                        <td>0.47802</td>
+                        <td>0.4061</td>
+                        <td>0.32116</td>
+                        <td>0.2139</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>NE</td>
+                        <td>2000</td>
+                        <td>2.33678</td>
+                        <td>0.89218</td>
+                        <td>0.7099</td>
+                        <td>0.62248</td>
+                        <td>0.4929</td>
+                        <td>0.31744</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>NE</td>
+                        <td>3000</td>
+                        <td>2.9109</td>
+                        <td>1.10484</td>
+                        <td>0.91698</td>
+                        <td>0.7998</td>
+                        <td>0.63798</td>
+                        <td>0.43772</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>NE</td>
+                        <td>4000</td>
+                        <td>3.26926</td>
+                        <td>1.2865</td>
+                        <td>1.06454</td>
+                        <td>0.92318</td>
+                        <td>0.72664</td>
+                        <td>0.47244</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>SE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>SE</td>
+                        <td>50</td>
+                        <td>0.25978</td>
+                        <td>0.14632</td>
+                        <td>0.11532</td>
+                        <td>0.09982</td>
+                        <td>0.07998</td>
+                        <td>0.06014</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>SE</td>
+                        <td>100</td>
+                        <td>0.37262</td>
+                        <td>0.2108</td>
+                        <td>0.16182</td>
+                        <td>0.13702</td>
+                        <td>0.1085</td>
+                        <td>0.07626</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>SE</td>
+                        <td>200</td>
+                        <td>0.54064</td>
+                        <td>0.30008</td>
+                        <td>0.23312</td>
+                        <td>0.19902</td>
+                        <td>0.155</td>
+                        <td>0.10788</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>SE</td>
+                        <td>300</td>
+                        <td>0.66836</td>
+                        <td>0.36456</td>
+                        <td>0.28582</td>
+                        <td>0.24056</td>
+                        <td>0.18476</td>
+                        <td>0.12152</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>SE</td>
+                        <td>400</td>
+                        <td>0.79484</td>
+                        <td>0.42656</td>
+                        <td>0.32922</td>
+                        <td>0.279</td>
+                        <td>0.21266</td>
+                        <td>0.13888</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>SE</td>
+                        <td>500</td>
+                        <td>0.868</td>
+                        <td>0.48918</td>
+                        <td>0.37014</td>
+                        <td>0.31248</td>
+                        <td>0.23932</td>
+                        <td>0.15438</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>SE</td>
+                        <td>1000</td>
+                        <td>1.28712</td>
+                        <td>0.6913</td>
+                        <td>0.51212</td>
+                        <td>0.42284</td>
+                        <td>0.28644</td>
+                        <td>0.1581</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>SE</td>
+                        <td>2000</td>
+                        <td>1.8848</td>
+                        <td>0.9579</td>
+                        <td>0.72478</td>
+                        <td>0.59272</td>
+                        <td>0.40238</td>
+                        <td>0.19964</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>SE</td>
+                        <td>3000</td>
+                        <td>2.3529</td>
+                        <td>1.20838</td>
+                        <td>0.89156</td>
+                        <td>0.73718</td>
+                        <td>0.50034</td>
+                        <td>0.25916</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>SE</td>
+                        <td>4000</td>
+                        <td>2.7559</td>
+                        <td>1.4136</td>
+                        <td>1.02362</td>
+                        <td>0.83328</td>
+                        <td>0.5456</td>
+                        <td>0.27404</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>SW</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>SW</td>
+                        <td>50</td>
+                        <td>0.279</td>
+                        <td>0.15376</td>
+                        <td>0.11842</td>
+                        <td>0.10044</td>
+                        <td>0.07936</td>
+                        <td>0.06014</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>SW</td>
+                        <td>100</td>
+                        <td>0.40796</td>
+                        <td>0.21824</td>
+                        <td>0.16802</td>
+                        <td>0.14198</td>
+                        <td>0.11222</td>
+                        <td>0.08308</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>SW</td>
+                        <td>200</td>
+                        <td>0.60822</td>
+                        <td>0.31744</td>
+                        <td>0.24056</td>
+                        <td>0.2015</td>
+                        <td>0.15748</td>
+                        <td>0.11098</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>SW</td>
+                        <td>300</td>
+                        <td>0.74648</td>
+                        <td>0.38936</td>
+                        <td>0.2945</td>
+                        <td>0.24676</td>
+                        <td>0.19096</td>
+                        <td>0.13144</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>SW</td>
+                        <td>400</td>
+                        <td>0.87978</td>
+                        <td>0.45632</td>
+                        <td>0.34286</td>
+                        <td>0.28458</td>
+                        <td>0.21886</td>
+                        <td>0.14508</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>SW</td>
+                        <td>500</td>
+                        <td>0.9796</td>
+                        <td>0.5115</td>
+                        <td>0.37882</td>
+                        <td>0.31372</td>
+                        <td>0.24242</td>
+                        <td>0.15128</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>SW</td>
+                        <td>1000</td>
+                        <td>1.43344</td>
+                        <td>0.72726</td>
+                        <td>0.54064</td>
+                        <td>0.44764</td>
+                        <td>0.33108</td>
+                        <td>0.20522</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>SW</td>
+                        <td>2000</td>
+                        <td>2.09312</td>
+                        <td>1.0447</td>
+                        <td>0.7533</td>
+                        <td>0.61628</td>
+                        <td>0.4371</td>
+                        <td>0.21948</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>SW</td>
+                        <td>3000</td>
+                        <td>2.6102</td>
+                        <td>1.27162</td>
+                        <td>0.9083</td>
+                        <td>0.72912</td>
+                        <td>0.48608</td>
+                        <td>0.18662</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>SW</td>
+                        <td>4000</td>
+                        <td>3.02188</td>
+                        <td>1.46754</td>
+                        <td>1.05152</td>
+                        <td>0.83638</td>
+                        <td>0.55242</td>
+                        <td>0.21824</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>NW</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>NW</td>
+                        <td>50</td>
+                        <td>0.18414</td>
+                        <td>0.12648</td>
+                        <td>0.10478</td>
+                        <td>0.09176</td>
+                        <td>0.07812</td>
+                        <td>0.06634</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>NW</td>
+                        <td>100</td>
+                        <td>0.27342</td>
+                        <td>0.18476</td>
+                        <td>0.1519</td>
+                        <td>0.13268</td>
+                        <td>0.1147</td>
+                        <td>0.09672</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>NW</td>
+                        <td>200</td>
+                        <td>0.40486</td>
+                        <td>0.26722</td>
+                        <td>0.21948</td>
+                        <td>0.1922</td>
+                        <td>0.16492</td>
+                        <td>0.13702</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>NW</td>
+                        <td>300</td>
+                        <td>0.5053</td>
+                        <td>0.33232</td>
+                        <td>0.26908</td>
+                        <td>0.2387</td>
+                        <td>0.20584</td>
+                        <td>0.16988</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>NW</td>
+                        <td>400</td>
+                        <td>0.58032</td>
+                        <td>0.38812</td>
+                        <td>0.31372</td>
+                        <td>0.279</td>
+                        <td>0.2387</td>
+                        <td>0.19468</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>NW</td>
+                        <td>500</td>
+                        <td>0.66898</td>
+                        <td>0.44082</td>
+                        <td>0.35402</td>
+                        <td>0.31682</td>
+                        <td>0.26598</td>
+                        <td>0.21514</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>NW</td>
+                        <td>1000</td>
+                        <td>1.01246</td>
+                        <td>0.63426</td>
+                        <td>0.51336</td>
+                        <td>0.45942</td>
+                        <td>0.38626</td>
+                        <td>0.30566</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>NW</td>
+                        <td>2000</td>
+                        <td>1.49544</td>
+                        <td>0.91636</td>
+                        <td>0.74958</td>
+                        <td>0.66154</td>
+                        <td>0.5456</td>
+                        <td>0.42222</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>NW</td>
+                        <td>3000</td>
+                        <td>1.86806</td>
+                        <td>1.14638</td>
+                        <td>0.93248</td>
+                        <td>0.81716</td>
+                        <td>0.66154</td>
+                        <td>0.48422</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>NW</td>
+                        <td>4000</td>
+                        <td>2.21836</td>
+                        <td>1.31936</td>
+                        <td>1.09244</td>
+                        <td>0.96038</td>
+                        <td>0.7719</td>
+                        <td>0.5611</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <!-- <p><input type="button" id="bt" value="Show Table Data" onclick="getCellValue1(10,3)" /></p>
+        <div>
+            <table id="are3" hidden>
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                        <th>D</th>
+                        <th>E</th>
+                        <th>F</th>
+                        <th>G</th>
+                        <th>H</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>NE</td>
+                        <td>OU/s</td>
+                        <td>99</td>
+                        <td>98</td>
+                        <td>97</td>
+                        <td>96</td>
+                        <td>94</td>
+                        <td>91</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>NE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>NE</td>
+                        <td>50</td>
+                        <td>0.17794</td>
+                        <td>0.11408</td>
+                        <td>0.11532</td>
+                        <td>0.07502</td>
+                        <td>0.05084</td>
+                        <td>0.0372</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>NE</td>
+                        <td>100</td>
+                        <td>0.2635</td>
+                        <td>0.16244</td>
+                        <td>0.1271</td>
+                        <td>0.1023</td>
+                        <td>0.06758</td>
+                        <td>0.04712</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>NE</td>
+                        <td>200</td>
+                        <td>0.3875</td>
+                        <td>0.23312</td>
+                        <td>0.17794</td>
+                        <td>0.14136</td>
+                        <td>0.08742</td>
+                        <td>0.062</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>NE</td>
+                        <td>300</td>
+                        <td>0.47244</td>
+                        <td>0.28396</td>
+                        <td>0.21576</td>
+                        <td>0.16616</td>
+                        <td>0.10602</td>
+                        <td>0.05332</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>NE</td>
+                        <td>400</td>
+                        <td>0.55676</td>
+                        <td>0.32922</td>
+                        <td>0.24614</td>
+                        <td>0.1953</td>
+                        <td>0.11036</td>
+                        <td>0.0744</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>NE</td>
+                        <td>500</td>
+                        <td>0.6231</td>
+                        <td>0.3627</td>
+                        <td>0.27652</td>
+                        <td>0.2077</td>
+                        <td>0.1395</td>
+                        <td>0.07688</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>NE</td>
+                        <td>1000</td>
+                        <td>0.91574</td>
+                        <td>0.51832</td>
+                        <td>0.37014</td>
+                        <td>0.26846</td>
+                        <td>0.1736</td>
+                        <td>0.07068</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>NE</td>
+                        <td>2000</td>
+                        <td>1.3516</td>
+                        <td>0.71858</td>
+                        <td>0.49538</td>
+                        <td>0.3751</td>
+                        <td>0.2325</td>
+                        <td>0.09672</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>NE</td>
+                        <td>3000</td>
+                        <td>1.6709</td>
+                        <td>0.868</td>
+                        <td>0.59954</td>
+                        <td>0.41044</td>
+                        <td>0.217</td>
+                        <td>0.12772</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>NE</td>
+                        <td>4000</td>
+                        <td>1.9654</td>
+                        <td>0.98084</td>
+                        <td>0.66216</td>
+                        <td>0.44516</td>
+                        <td>0.21576</td>
+                        <td>0.1209</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>SE</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>SE</td>
+                        <td>50</td>
+                        <td>0.17112</td>
+                        <td>0.12028</td>
+                        <td>0.10044</td>
+                        <td>0.08928</td>
+                        <td>0.07564</td>
+                        <td>0.06138</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>SE</td>
+                        <td>100</td>
+                        <td>0.24862</td>
+                        <td>0.17298</td>
+                        <td>0.1457</td>
+                        <td>0.12958</td>
+                        <td>0.1085</td>
+                        <td>0.08556</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>SE</td>
+                        <td>200</td>
+                        <td>0.36828</td>
+                        <td>0.2511</td>
+                        <td>0.2108</td>
+                        <td>0.18662</td>
+                        <td>0.155</td>
+                        <td>0.11904</td>
+                    </tr>
+                    <tr>
+                        <td>17</td>
+                        <td>SE</td>
+                        <td>300</td>
+                        <td>0.46748</td>
+                        <td>0.31744</td>
+                        <td>0.26164</td>
+                        <td>0.2294</td>
+                        <td>0.1891</td>
+                        <td>0.1426</td>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>SE</td>
+                        <td>400</td>
+                        <td>0.54994</td>
+                        <td>0.36766</td>
+                        <td>0.3038</td>
+                        <td>0.26784</td>
+                        <td>0.21762</td>
+                        <td>0.16182</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>SE</td>
+                        <td>500</td>
+                        <td>0.62558</td>
+                        <td>0.41726</td>
+                        <td>0.34224</td>
+                        <td>0.30008</td>
+                        <td>0.2418</td>
+                        <td>0.17732</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td>SE</td>
+                        <td>1000</td>
+                        <td>0.93372</td>
+                        <td>0.60326</td>
+                        <td>0.49228</td>
+                        <td>0.42346</td>
+                        <td>0.33294</td>
+                        <td>0.23808</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td>SE</td>
+                        <td>2000</td>
+                        <td>1.3826</td>
+                        <td>0.87358</td>
+                        <td>0.70432</td>
+                        <td>0.60574</td>
+                        <td>0.46996</td>
+                        <td>0.3038</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>SE</td>
+                        <td>3000</td>
+                        <td>1.7732</td>
+                        <td>1.08004</td>
+                        <td>0.86304</td>
+                        <td>0.73222</td>
+                        <td>0.55242</td>
+                        <td>0.36828</td>
+                    </tr>
+                    <tr>
+                        <td>23</td>
+                        <td>SE</td>
+                        <td>4000</td>
+                        <td>2.08382</td>
+                        <td>1.25054</td>
+                        <td>1.00874</td>
+                        <td>0.85684</td>
+                        <td>0.64418</td>
+                        <td>0.3968</td>
+                    </tr>
+                    <tr>
+                        <td>24</td>
+                        <td>SW</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>25</td>
+                        <td>SW</td>
+                        <td>50</td>
+                        <td>0.20646</td>
+                        <td>0.1271</td>
+                        <td>0.10168</td>
+                        <td>0.08928</td>
+                        <td>0.07254</td>
+                        <td>0.05394</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>SW</td>
+                        <td>100</td>
+                        <td>0.29884</td>
+                        <td>0.18228</td>
+                        <td>0.1457</td>
+                        <td>0.1271</td>
+                        <td>0.10044</td>
+                        <td>0.07254</td>
+                    </tr>
+                    <tr>
+                        <td>27</td>
+                        <td>SW</td>
+                        <td>200</td>
+                        <td>0.43896</td>
+                        <td>0.26226</td>
+                        <td>0.20894</td>
+                        <td>0.17732</td>
+                        <td>0.13578</td>
+                        <td>0.09424</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>SW</td>
+                        <td>300</td>
+                        <td>0.53692</td>
+                        <td>0.32302</td>
+                        <td>0.25916</td>
+                        <td>0.22754</td>
+                        <td>0.1736</td>
+                        <td>0.11656</td>
+                    </tr>
+                    <tr>
+                        <td>29</td>
+                        <td>SW</td>
+                        <td>400</td>
+                        <td>0.6169</td>
+                        <td>0.37572</td>
+                        <td>0.29636</td>
+                        <td>0.248</td>
+                        <td>0.17732</td>
+                        <td>0.11346</td>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>SW</td>
+                        <td>500</td>
+                        <td>0.7037</td>
+                        <td>0.4247</td>
+                        <td>0.3317</td>
+                        <td>0.27466</td>
+                        <td>0.20088</td>
+                        <td>0.12586</td>
+                    </tr>
+                    <tr>
+                        <td>31</td>
+                        <td>SW</td>
+                        <td>1000</td>
+                        <td>1.01928</td>
+                        <td>0.61628</td>
+                        <td>0.48732</td>
+                        <td>0.4123</td>
+                        <td>0.2976</td>
+                        <td>0.1798</td>
+                    </tr>
+                    <tr>
+                        <td>32</td>
+                        <td>SW</td>
+                        <td>2000</td>
+                        <td>1.49482</td>
+                        <td>0.8835</td>
+                        <td>0.68386</td>
+                        <td>0.55242</td>
+                        <td>0.36766</td>
+                        <td>0.19654</td>
+                    </tr>
+                    <tr>
+                        <td>33</td>
+                        <td>SW</td>
+                        <td>3000</td>
+                        <td>1.85628</td>
+                        <td>1.09616</td>
+                        <td>0.79732</td>
+                        <td>0.62868</td>
+                        <td>0.4588</td>
+                        <td>0.24862</td>
+                    </tr>
+                    <tr>
+                        <td>34</td>
+                        <td>SW</td>
+                        <td>4000</td>
+                        <td>2.16318</td>
+                        <td>1.27286</td>
+                        <td>0.95976</td>
+                        <td>0.75392</td>
+                        <td>0.48422</td>
+                        <td>0.26226</td>
+                    </tr>
+                    <tr>
+                        <td>35</td>
+                        <td>NW</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>36</td>
+                        <td>NW</td>
+                        <td>50</td>
+                        <td>0.21018</td>
+                        <td>0.14694</td>
+                        <td>0.12152</td>
+                        <td>0.10788</td>
+                        <td>0.09114</td>
+                        <td>0.07688</td>
+                    </tr>
+                    <tr>
+                        <td>37</td>
+                        <td>NW</td>
+                        <td>100</td>
+                        <td>0.31496</td>
+                        <td>0.217</td>
+                        <td>0.17794</td>
+                        <td>0.15748</td>
+                        <td>0.13144</td>
+                        <td>0.11036</td>
+                    </tr>
+                    <tr>
+                        <td>38</td>
+                        <td>NW</td>
+                        <td>200</td>
+                        <td>0.47926</td>
+                        <td>0.31682</td>
+                        <td>0.26102</td>
+                        <td>0.2294</td>
+                        <td>0.19406</td>
+                        <td>0.15872</td>
+                    </tr>
+                    <tr>
+                        <td>39</td>
+                        <td>NW</td>
+                        <td>300</td>
+                        <td>0.60264</td>
+                        <td>0.39742</td>
+                        <td>0.32612</td>
+                        <td>0.2852</td>
+                        <td>0.24056</td>
+                        <td>0.19592</td>
+                    </tr>
+                    <tr>
+                        <td>40</td>
+                        <td>NW</td>
+                        <td>400</td>
+                        <td>0.72292</td>
+                        <td>0.47492</td>
+                        <td>0.38378</td>
+                        <td>0.3379</td>
+                        <td>0.27776</td>
+                        <td>0.22258</td>
+                    </tr>
+                    <tr>
+                        <td>41</td>
+                        <td>NW</td>
+                        <td>500</td>
+                        <td>0.81778</td>
+                        <td>0.53382</td>
+                        <td>0.434</td>
+                        <td>0.3751</td>
+                        <td>0.31372</td>
+                        <td>0.2542</td>
+                    </tr>
+                    <tr>
+                        <td>42</td>
+                        <td>NW</td>
+                        <td>1000</td>
+                        <td>1.23752</td>
+                        <td>0.80042</td>
+                        <td>0.64356</td>
+                        <td>0.55862</td>
+                        <td>0.45198</td>
+                        <td>0.35774</td>
+                    </tr>
+                    <tr>
+                        <td>43</td>
+                        <td>NW</td>
+                        <td>2000</td>
+                        <td>1.87798</td>
+                        <td>1.19474</td>
+                        <td>0.94984</td>
+                        <td>0.8184</td>
+                        <td>0.64976</td>
+                        <td>0.50096</td>
+                    </tr>
+                    <tr>
+                        <td>44</td>
+                        <td>NW</td>
+                        <td>3000</td>
+                        <td>2.38762</td>
+                        <td>1.4973</td>
+                        <td>1.1904</td>
+                        <td>1.01742</td>
+                        <td>0.79484</td>
+                        <td>0.61442</td>
+                    </tr>
+                    <tr>
+                        <td>45</td>
+                        <td>NW</td>
+                        <td>4000</td>
+                        <td>2.84704</td>
+                        <td>1.76266</td>
+                        <td>1.39562</td>
+                        <td>1.1842</td>
+                        <td>0.93496</td>
+                        <td>0.70308</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- <p><input type="button" id="bt" value="Show Table Data" onclick="getCellValue1(10,3)" /></p>
     <p id="info"></p>
     <br> -->
 
-    <table id="distanceTable" border="1px solid black;">
-        <caption style="color: midnightblue; font-weight:bold">SETBACK DISTANCES FROM ODOR SOURCE AT VARIOUS ODOR
-            ANNOYANCE-FREE FREQUENCIES IN FEET</caption>
-        <br>
-        <tr>
-            <th>Direction</th>
-            <th>99% Annoyance-free</th>
-            <th>98% Annoyance-free</th>
-            <th>97% Annoyance-free</th>
-            <th>96% Annoyance-free</th>
-            <th>94% Annoyance-free</th>
-            <th>91% Annoyance-free</th>
-        </tr>
-        <tr>
-            <td>Northeast</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Southeast</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Southwest</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Northwest</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
+        <table id="distanceTable" border="1px solid black;">
+            <caption style="color: midnightblue; font-weight:bold">SETBACK DISTANCES FROM ODOR SOURCE AT VARIOUS ODOR
+                ANNOYANCE-FREE FREQUENCIES IN FEET</caption>
+                <input type="button" id="bt" value="Click Me to Get/Update the Annoyance-free Table"
+            onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " />
+            <br>
+            <tr>
+                <th>Direction</th>
+                <th>99% Annoyance-free</th>
+                <th>98% Annoyance-free</th>
+                <th>97% Annoyance-free</th>
+                <th>96% Annoyance-free</th>
+                <th>94% Annoyance-free</th>
+                <th>91% Annoyance-free</th>
+            </tr>
+            <tr>
+                <td>Northeast</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Southeast</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Southwest</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Northwest</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
 
 
-    </table>
-    <br>
-    <input type="button" id="bt" value="Click Me to Get/Update the Annoyance-free Table" onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " />
-    
-    <div class="odorChart">
-        <button type="button" onclick="chart(document.getElementById('county'), document.getElementById('counties'))">Click Me to Get/Update the Odor Graph</button>
-        <canvas id="myChart" ></canvas>
-        <p style="position:inherit">Date/Time: <span id="datetime"></span></p>
-    </div>
-    <input type="button" value="Print This Page" onclick="printpage()"/>
+        </table>
+        
+        <div class="odorChart">
+            <button type="button"
+                onclick="chart(document.getElementById('county'), document.getElementById('counties'))">Click Me to
+                Get/Update the Odor Graph</button>
+            <canvas id="myChart"></canvas>
+            <p style="position:inherit">Date/Time: <span id="datetime"></span></p>
+        </div>
+        <input type="button" value="Print This Page" onclick="printpage()" />
 
 </body>
 <!-- javascript file import -->
