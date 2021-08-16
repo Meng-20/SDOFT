@@ -1,1 +1,2 @@
 This is the source code of SDOFT tool website.
+down load the source code zip file and extract, do not change the location of the files, find the index.html file in HTML folder. Drag index.html to your browser. Then you can use this tool locally.

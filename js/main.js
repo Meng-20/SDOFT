@@ -2288,3 +2288,55 @@ function chart(el, dl) {
 function printpage() {
     window.print()
   }
+
+function dependedSourceType1(){
+    var values = $('#sourceType1 option:selected').val();
+        if (values == 0){
+            $("#requre").show();
+            $("#Cattle Yard").hide();
+            $("#Dairy Barn").hide();
+            $("#Swine Barn").hide();
+            $("#Manure Storage").hide();
+            $("#PoultryBarn").hide();
+        }
+        if (values == 1){
+            $("#requre").hide();
+            $("#Cattle Yard").show();
+            $("#Dairy Barn").hide();
+            $("#Swine Barn").hide();
+            $("#Manure Storage").hide();
+            $("#PoultryBarn").hide();
+        }
+        if (values == 2){
+            $("#requre").hide();
+            $("#Cattle Yard").hide();
+            $("#Dairy Barn").show();
+            $("#Swine Barn").hide();
+            $("#Manure Storage").hide();
+            $("#PoultryBarn").hide();
+        }
+        if (values == 3){
+            $("#requre").hide();
+            $("#Cattle Yard").hide();
+            $("#Dairy Barn").hide();
+            $("#Swine Barn").show();
+            $("#Manure Storage").hide();
+            $("#PoultryBarn").hide();
+        }
+        if (values == 4){
+            $("#requre").hide();
+            $("#Cattle Yard").hide();
+            $("#Dairy Barn").hide();
+            $("#Swine Barn").hide();
+            $("#Manure Storage").show();
+            $("#PoultryBarn").hide();
+        }
+        if (values == 5){
+            $("#requre").hide();
+            $("#Cattle Yard").hide();
+            $("#Dairy Barn").hide();
+            $("#Swine Barn").hide();
+            $("#Manure Storage").hide();
+            $("#PoultryBarn").show();
+        }
+}
