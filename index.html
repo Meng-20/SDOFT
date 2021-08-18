@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../js/Chart.bundle.min.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./js/Chart.bundle.min.js"></script>
     <title>SOUTH DAKOTA ODOR FOOTPRINT TOOL</title>
 </head>
 
@@ -111,28 +111,28 @@
             </datalist>
         </form>
         <p><strong>Note:</strong> Please do not input county name that is not in the list.</p>
-        <div class="ar" >
+        <div class="ar">
             <p><strong>Area: </strong></p>
             <p id="CountyArea"></p>
         </div>
-   
 
 
-        
+
+
         <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
         <div class="source">
-           <form >
-            <p>Source 1</p>
-            <p>Source 2</p>
-            <p>Source 3</p>
-            <p>Source 4</p>
-            <p>Source 5</p>
-           </form>
+            <form>
+                <p>Source 1</p>
+                <p>Source 2</p>
+                <p>Source 3</p>
+                <p>Source 4</p>
+                <p>Source 5</p>
+            </form>
         </div>
         <div class="sourcetable">
             <label for="sourcetable">Source Type:</label>
             <form action="source1.php">
-                <select style="width:210px" data-target="secondList1" class="firstList1 selectFilter form-control"> 
+                <select style="width:210px" data-target="secondList1" class="firstList1 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
@@ -142,7 +142,7 @@
                 </select>
             </form>
             <form action="source2.php">
-                <select style="width:210px" data-target="secondList2" class="firstList2 selectFilter form-control"> 
+                <select style="width:210px" data-target="secondList2" class="firstList2 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
@@ -152,7 +152,7 @@
                 </select>
             </form>
             <form action="source3.php">
-                <select style="width:210px" data-target="secondList3" class="firstList3 selectFilter form-control"> 
+                <select style="width:210px" data-target="secondList3" class="firstList3 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
@@ -162,7 +162,7 @@
                 </select>
             </form>
             <form action="source4.php">
-                <select style="width:210px" data-target="secondList4" class="firstList4 selectFilter form-control"> 
+                <select style="width:210px" data-target="secondList4" class="firstList4 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
@@ -172,7 +172,7 @@
                 </select>
             </form>
             <form action="source5.php">
-                <select style="width:210px" data-target="secondList5" class="firstList5 selectFilter form-control"> 
+                <select style="width:210px" data-target="secondList5" class="firstList5 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
@@ -185,7 +185,8 @@
         <div class="houseType">
             <label for="houseType"> House Type:</label>
             <form action="type1.php">
-                <select data-target="thirdList1" class="secondList1 selectFilter form-control" onChange="Displayfactor();sourceFactor();totalFactor();">
+                <select data-target="thirdList1" class="secondList1 selectFilter form-control"
+                    onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
                     <option value="3">Anaerobic Lagoon - Non Purple</option>
                     <option value="2">Anaerobic Lagoon - Purple</option>
@@ -209,7 +210,8 @@
                 </select>
             </form>
             <form action="type2.php">
-                <select data-target="thirdList2" class="secondList2 selectFilter form-control" onChange="Displayfactor();sourceFactor();totalFactor();">
+                <select data-target="thirdList2" class="secondList2 selectFilter form-control"
+                    onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
                     <option value="3">Anaerobic Lagoon - Non Purple</option>
                     <option value="2">Anaerobic Lagoon - Purple</option>
@@ -233,7 +235,8 @@
                 </select>
             </form>
             <form action="type3.php">
-                <select data-target="thirdList3" class="secondList3 selectFilter form-control" onChange="Displayfactor();sourceFactor();totalFactor();">
+                <select data-target="thirdList3" class="secondList3 selectFilter form-control"
+                    onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
                     <option value="3">Anaerobic Lagoon - Non Purple</option>
                     <option value="2">Anaerobic Lagoon - Purple</option>
@@ -257,7 +260,8 @@
                 </select>
             </form>
             <form action="type4.php">
-                <select data-target="thirdList4" class="secondList4 selectFilter form-control" onChange="Displayfactor();sourceFactor();totalFactor();">
+                <select data-target="thirdList4" class="secondList4 selectFilter form-control"
+                    onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
                     <option value="3">Anaerobic Lagoon - Non Purple</option>
                     <option value="2">Anaerobic Lagoon - Purple</option>
@@ -281,7 +285,8 @@
                 </select>
             </form>
             <form action="type5.php">
-                <select data-target="thirdList5" class="secondList5 selectFilter form-control" onChange="Displayfactor();sourceFactor();totalFactor();">
+                <select data-target="thirdList5" class="secondList5 selectFilter form-control"
+                    onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
                     <option value="3">Anaerobic Lagoon - Non Purple</option>
                     <option value="2">Anaerobic Lagoon - Purple</option>
@@ -320,20 +325,20 @@
         </div>
 
         <br>
-        
+
         <div>
             <form name="areaTable">
                 <table>
                     <p style="color: midnightblue;"><strong>Enter the width and length of the buildings</strong></p>
                     <div class="source">
-                        <form >
-                         <p>Source 1</p>
-                         <p>Source 2</p>
-                         <p>Source 3</p>
-                         <p>Source 4</p>
-                         <p>Source 5</p>
+                        <form>
+                            <p>Source 1</p>
+                            <p>Source 2</p>
+                            <p>Source 3</p>
+                            <p>Source 4</p>
+                            <p>Source 5</p>
                         </form>
-                     </div>
+                    </div>
                     <tr>
                         <td style="width: 100px;">Legth (ft)</td>
                         <td>
@@ -384,14 +389,14 @@
             <table class="controlTable">
                 <p style="color: midnightblue;"><strong>Odor Control Technology and Odor Control Factor</strong></p>
                 <div class="source">
-                    <form >
-                     <p>Source 1</p>
-                     <p>Source 2</p>
-                     <p>Source 3</p>
-                     <p>Source 4</p>
-                     <p>Source 5</p>
+                    <form>
+                        <p>Source 1</p>
+                        <p>Source 2</p>
+                        <p>Source 3</p>
+                        <p>Source 4</p>
+                        <p>Source 5</p>
                     </form>
-                 </div>
+                </div>
                 <tr>
                     <td style="width: 100px;"> Control：</td>
                     <td id="cc1">
@@ -2030,8 +2035,8 @@
         <table id="distanceTable" border="1px solid black;">
             <caption style="color: midnightblue; font-weight:bold">SETBACK DISTANCES FROM ODOR SOURCE AT VARIOUS ODOR
                 ANNOYANCE-FREE FREQUENCIES IN FEET</caption>
-                <input type="button" id="bt" value="Click Me to Get/Update the Annoyance-free Table"
-            onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " />
+            <input type="button" id="bt" value="Click Me to Get/Update the Annoyance-free Table"
+                onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " />
             <br>
             <tr>
                 <th>Direction</th>
@@ -2081,7 +2086,7 @@
 
 
         </table>
-        
+
         <div class="odorChart">
             <button type="button"
                 onclick="chart(document.getElementById('county'), document.getElementById('counties'))">Click Me to
@@ -2091,11 +2096,11 @@
         </div>
         <input type="button" value="Print This Page" onclick="printpage()" />
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-		integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-		crossorigin="anonymous"></script>
-	<script src="../js/selectFilter.min.js"></script>
+            integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+            crossorigin="anonymous"></script>
+        <script src="./js/selectFilter.min.js"></script>
 </body>
 <!-- javascript file import -->
-<script src="../js/main.js"></script>
+<script src="./js/main.js"></script>
 
 </html>

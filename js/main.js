@@ -123,7 +123,7 @@ function totalFactor() {
     var tal = Number(t1) + Number(t2) + Number(t3) + Number(t4) + Number(t5);
     if (tal > 4000)
         alert("Hello, the valid total odor emitting factor should be between 0 to 4000.\nPlease check your input.");
-    document.getElementById("TOEF").innerHTML = tal;//.toFixed(0);
+    document.getElementById("TOEF").innerHTML = tal.toFixed(0);
 }
 
 function showTableData() {
@@ -161,8 +161,6 @@ function getCellValue3(a, b) {
     document.getElementById("info").innerHTML = tem.rows[a].cells[b].innerText;
     //return tem.rows[a].cells[b].innerText;
 }
-
-
 
 function getCountyArea(el, dl) {
     if (el.value.trim() != '') {
@@ -1167,7 +1165,6 @@ function changeTableCell(el, dl) {
     w[5].innerHTML = (W_94 * 5280).toFixed(0);
     w[6].innerHTML = (W_91 * 5280).toFixed(0);
 }
-
 
 function chart(el, dl) {
     var area;
