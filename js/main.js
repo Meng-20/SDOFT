@@ -1022,7 +1022,7 @@ function changeTableCell(el, dl) {
         W_91 = Number(temW111111) + Number((temW222222 - temW111111) * (tal - temW3) / (temW4 - temW3));
     }
 
-    else {
+    else if (area == 3 || area==4){
         var temN1 = document.getElementById("are3").rows[n_99_1 - 1].cells[n_99_2].innerHTML;
         var temN2 = document.getElementById("are3").rows[n_99_1].cells[n_99_2].innerHTML;
         var temN3 = document.getElementById("are3").rows[n_99_1 - 1].cells[n_99_2 - 1].innerHTML;
@@ -1127,6 +1127,9 @@ function changeTableCell(el, dl) {
         var temW222222 = document.getElementById("are3").rows[w_91_1].cells[w_91_2].innerHTML;
         W_91 = Number(temW111111) + Number((temW222222 - temW111111) * (tal - temW3) / (temW4 - temW3));
 
+    }
+    else{
+        alert("Please select the county on the top.");
     }
     //north & northeast line
     var x = document.getElementById("distanceTable").rows[1].cells;
@@ -1989,7 +1992,7 @@ function chart(el, dl) {
         W_91 = Number(temW111111) + Number((temW222222 - temW111111) * (tal - temW3) / (temW4 - temW3));
     }
 
-    else {
+    else if (area == 3||area==4) {
         var temN1 = document.getElementById("are3").rows[n_99_1 - 1].cells[n_99_2].innerHTML;
         var temN2 = document.getElementById("are3").rows[n_99_1].cells[n_99_2].innerHTML;
         var temN3 = document.getElementById("are3").rows[n_99_1 - 1].cells[n_99_2 - 1].innerHTML;
@@ -2094,6 +2097,9 @@ function chart(el, dl) {
         var temW222222 = document.getElementById("are3").rows[w_91_1].cells[w_91_2].innerHTML;
         W_91 = Number(temW111111) + Number((temW222222 - temW111111) * (tal - temW3) / (temW4 - temW3));
 
+    }
+    else{
+        alert("Please select the county on the top.");
     }
     if (area == 1) {
         var n99_value = N_99;
@@ -2263,7 +2269,7 @@ function chart(el, dl) {
                 ticks: {
                     color: 'red',
                     //display: false,
-                    max: n99_value,
+                    max: n99_value*1.25,
                     min: 0,
                     //display: false,
                 },
@@ -2273,7 +2279,7 @@ function chart(el, dl) {
              },
             title: {
                 display: true,
-                text: 'Odor Radar Graph',
+                text: 'Odor Setback Distance(miles) Graph',
                 fontSize: '24',
                 position: 'top'
             }

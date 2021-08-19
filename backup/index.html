@@ -16,25 +16,28 @@
         <h1>SOUTH DAKOTA ODOR FOOTPRINT TOOL</h1>
     </div>
     <div class="box2">
-        <p style="color: midnightblue;"><strong>Procedure to Use SDOFT:</strong> </p>
+        <p style="color: midnightblue;"><strong>Procedure to use SDOFT:</strong> </p>
         <ol>
-            <li>Select South Dakota County from a drop down list where the site is located.</li>
-            <li>Select odor source type from a drop down list for each odor source at the site.</li>
-            <li>Select housing or manure storage type from a drop down list for each odor source at the site.</li>
+            <li>Select South Dakota County from drop down list where site is located.</li>
+            <li>Select Odor Source Type from drop down list for each odor source at the site.</li>
+            <li>Select housing or manure storage type from drop down list for each odor source at the site.</li>
             <li>Enter size (width and length) of emitting surface for each odor source at the site.</li>
-            <li>Specify odor control technology if any from a drop down list for each odor source at the site.</li>
-            <li>Click a button to update and view annoyance-free distance numbers.</li>
-            <li>Click a button to update and view annoyance-free curves.</li>
-            <li>Select the annoyance-free curves to be graphed by checking or unchecking the legend on the top of the graph.</li>
+            <li>Enter odor control technology if any from drop down list for each odor source at the site.</li>
+            <li>Click the botton and view annoyance-free distances at bottom of page.</li>
+            <li>Click the botton and view annoyance-free curves (scroll down).</li>
+            <li>Select the annoyance-free curves to be graphed by checking the square on the top of this graph.</li>
         </ol>
     </div>
+    <!-- <iframe src="../HTML/countySelect.html" frameborder="0" height="200px"></iframe> -->
+    <!--  -->
 
 
+    <!--  -->
     <div class="CountySelected">
         <form action="county.php" method="get">
             <p style="color: midnightblue;"><strong>County of Site</strong> </p>
-            <label for="county">Type or choose your county from the list:</label>
-            <input id="county" type="text" list="counties" required onchange="getCountyArea(document.getElementById('county'), document.getElementById('counties'));
+            <label for="county">Choose your county from the list:</label>
+            <input id="county" type="text" list="counties" onchange="getCountyArea(document.getElementById('county'), document.getElementById('counties'));
              changeDirection(document.getElementById('county'), document.getElementById('counties'));">
             <!-- onchange="AddValue(document.getElementById('county'), document.getElementById('counties'));" -->
             <datalist id="counties">
@@ -107,11 +110,14 @@
                 <option data-value="3" value="Ziebach"></option>
             </datalist>
         </form>
-        <p><strong>Note:</strong> This tool does not work for any county outside of South Dakota.</p>
+        <p><strong>Note:</strong> Please do not input county name that is not in the list.</p>
         <div class="ar">
-            <p>The county you selected is located in SDOFT Area: </p>
+            <p><strong>Area: </strong></p>
             <p id="CountyArea"></p>
         </div>
+
+
+
 
         <p style="color: midnightblue;"><strong>Source Type and Housing Type or Manure Storage</strong></p>
         <div class="source">
@@ -126,52 +132,52 @@
         <div class="sourcetable">
             <label for="sourcetable">Source Type:</label>
             <form action="source1.php">
-                <select style="width:200px" data-target="secondList1" class="firstList1 selectFilter form-control">
+                <select style="width:210px" data-target="secondList1" class="firstList1 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
                     <option data-ref="SwineBarn">Swine Barn</option>
-                    <option data-ref="PoultryBarn">Poultry Barn</option>
-                    <option data-ref="ManureStorage">Manure Storage</option>                    
+                    <option data-ref="PoultryBarn">PoultryBarn</option>
+                    <option data-ref="ManureStorage">Manure Storage</option>
                 </select>
             </form>
             <form action="source2.php">
-                <select style="width:200px" data-target="secondList2" class="firstList2 selectFilter form-control">
+                <select style="width:210px" data-target="secondList2" class="firstList2 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
                     <option data-ref="SwineBarn">Swine Barn</option>
-                    <option data-ref="PoultryBarn">Poultry Barn</option>
+                    <option data-ref="PoultryBarn">PoultryBarn</option>
                     <option data-ref="ManureStorage">Manure Storage</option>
                 </select>
             </form>
             <form action="source3.php">
-                <select style="width:200px" data-target="secondList3" class="firstList3 selectFilter form-control">
+                <select style="width:210px" data-target="secondList3" class="firstList3 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
                     <option data-ref="SwineBarn">Swine Barn</option>
-                    <option data-ref="PoultryBarn">Poultry Barn</option>
+                    <option data-ref="PoultryBarn">PoultryBarn</option>
                     <option data-ref="ManureStorage">Manure Storage</option>
                 </select>
             </form>
             <form action="source4.php">
-                <select style="width:200px" data-target="secondList4" class="firstList4 selectFilter form-control">
+                <select style="width:210px" data-target="secondList4" class="firstList4 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
                     <option data-ref="SwineBarn">Swine Barn</option>
-                    <option data-ref="PoultryBarn">Poultry Barn</option>
+                    <option data-ref="PoultryBarn">PoultryBarn</option>
                     <option data-ref="ManureStorage">Manure Storage</option>
                 </select>
             </form>
             <form action="source5.php">
-                <select style="width:200px" data-target="secondList5" class="firstList5 selectFilter form-control">
+                <select style="width:210px" data-target="secondList5" class="firstList5 selectFilter form-control">
                     <option>Non-selected</option>
                     <option data-ref="CattleYard">Cattle Yard</option>
                     <option data-ref="DairyBarn">Dairy Barn</option>
                     <option data-ref="SwineBarn">Swine Barn</option>
-                    <option data-ref="PoultryBarn">Poultry Barn</option>
+                    <option data-ref="PoultryBarn">PoultryBarn</option>
                     <option data-ref="ManureStorage">Manure Storage</option>
                 </select>
             </form>
@@ -182,24 +188,24 @@
                 <select data-target="thirdList1" class="secondList1 selectFilter form-control"
                     onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
-                    <option data-belong="ManureStorage" value="3">Anaerobic Lagoon - Non Purple</option>
-                    <option data-belong="ManureStorage" value="2">Anaerobic Lagoon - Purple</option>
-                    <option data-belong="PoultryBarn" value="5">Broiler with Litter Floor</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option data-belong="PoultryBarn" value="5">Broiler Litter</option>
                     <option data-belong="ManureStorage" value="9">Crusted Stockpile</option>
                     <option data-belong="ManureStorage" value="136">Steel or Concrete Tank</option>
-                    <option data-belong="CattleYard" value="19">Dirt/Concrete Lot</option>
+                    <option data-belong="CattleYard" value="19">Dirt/Concrete lot</option>
                     <option data-belong="ManureStorage" value="63">Earthen Storage Basin</option>
                     <option data-belong="SwineBarn" value="68">Farrowing</option>
                     <option data-belong="SwineBarn" value="165">Finishing - Deep Pit</option>
                     <option data-belong="SwineBarn" value="19">Finishing - Hoop Barn</option>
-                    <!--<option value="53">Finishing - Open Front Scrape</option>-->
+                    <option value="53">Finishing - Open Front Scrape</option>
                     <option data-belong="SwineBarn" value="97">Finishing - Pull Plug</option>
                     <option data-belong="DairyBarn" value="29">Free Stall</option>
                     <option data-belong="CattleYard" value="19">Free Stall - Scrape</option>
                     <option data-belong="SwineBarn" value="243">Gestation - Deep Pit</option>
                     <option data-belong="SwineBarn" value="146">Gestation - Pull Plug</option>
-                    <option data-belong="DairyBarn" value="29">Loose Housing</option>
-                    <option data-belong="PoultryBarn" value="10">Turkey with Litter Floor</option>
+                    <option data-belong="DairyBarn" value="29">Loose Housing </option>
+                    <option data-belong="PoultryBarn" value="10">Turkey Litter</option>
                     <option data-belong="DairyBarn" value="136">Tie Stall</option>
                 </select>
             </form>
@@ -207,24 +213,24 @@
                 <select data-target="thirdList2" class="secondList2 selectFilter form-control"
                     onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
-                    <option data-belong="ManureStorage" value="3">Anaerobic Lagoon - Non Purple</option>
-                    <option data-belong="ManureStorage" value="2">Anaerobic Lagoon - Purple</option>
-                    <option data-belong="PoultryBarn" value="5">Broiler with Litter Floor</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option data-belong="PoultryBarn" value="5">Broiler Litter</option>
                     <option data-belong="ManureStorage" value="9">Crusted Stockpile</option>
                     <option data-belong="ManureStorage" value="136">Steel or Concrete Tank</option>
-                    <option data-belong="CattleYard" value="19">Dirt/Concrete Lot</option>
+                    <option data-belong="CattleYard" value="19">Dirt/Concrete lot</option>
                     <option data-belong="ManureStorage" value="63">Earthen Storage Basin</option>
                     <option data-belong="SwineBarn" value="68">Farrowing</option>
                     <option data-belong="SwineBarn" value="165">Finishing - Deep Pit</option>
                     <option data-belong="SwineBarn" value="19">Finishing - Hoop Barn</option>
-                    <!--<option value="53">Finishing - Open Front Scrape</option>-->
+                    <option value="53">Finishing - Open Front Scrape</option>
                     <option data-belong="SwineBarn" value="97">Finishing - Pull Plug</option>
                     <option data-belong="DairyBarn" value="29">Free Stall</option>
                     <option data-belong="CattleYard" value="19">Free Stall - Scrape</option>
                     <option data-belong="SwineBarn" value="243">Gestation - Deep Pit</option>
                     <option data-belong="SwineBarn" value="146">Gestation - Pull Plug</option>
-                    <option data-belong="DairyBarn" value="29">Loose Housing</option>
-                    <option data-belong="PoultryBarn" value="10">Turkey with Litter Floor</option>
+                    <option data-belong="DairyBarn" value="29">Loose Housing </option>
+                    <option data-belong="PoultryBarn" value="10">Turkey Litter</option>
                     <option data-belong="DairyBarn" value="136">Tie Stall</option>
                 </select>
             </form>
@@ -232,24 +238,24 @@
                 <select data-target="thirdList3" class="secondList3 selectFilter form-control"
                     onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
-                    <option data-belong="ManureStorage" value="3">Anaerobic Lagoon - Non Purple</option>
-                    <option data-belong="ManureStorage" value="2">Anaerobic Lagoon - Purple</option>
-                    <option data-belong="PoultryBarn" value="5">Broiler with Litter Floor</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option data-belong="PoultryBarn" value="5">Broiler Litter</option>
                     <option data-belong="ManureStorage" value="9">Crusted Stockpile</option>
                     <option data-belong="ManureStorage" value="136">Steel or Concrete Tank</option>
-                    <option data-belong="CattleYard" value="19">Dirt/Concrete Lot</option>
+                    <option data-belong="CattleYard" value="19">Dirt/Concrete lot</option>
                     <option data-belong="ManureStorage" value="63">Earthen Storage Basin</option>
                     <option data-belong="SwineBarn" value="68">Farrowing</option>
                     <option data-belong="SwineBarn" value="165">Finishing - Deep Pit</option>
                     <option data-belong="SwineBarn" value="19">Finishing - Hoop Barn</option>
-                    <!--<option value="53">Finishing - Open Front Scrape</option>-->
+                    <option value="53">Finishing - Open Front Scrape</option>
                     <option data-belong="SwineBarn" value="97">Finishing - Pull Plug</option>
                     <option data-belong="DairyBarn" value="29">Free Stall</option>
                     <option data-belong="CattleYard" value="19">Free Stall - Scrape</option>
                     <option data-belong="SwineBarn" value="243">Gestation - Deep Pit</option>
                     <option data-belong="SwineBarn" value="146">Gestation - Pull Plug</option>
-                    <option data-belong="DairyBarn" value="29">Loose Housing</option>
-                    <option data-belong="PoultryBarn" value="10">Turkey with Litter Floor</option>
+                    <option data-belong="DairyBarn" value="29">Loose Housing </option>
+                    <option data-belong="PoultryBarn" value="10">Turkey Litter</option>
                     <option data-belong="DairyBarn" value="136">Tie Stall</option>
                 </select>
             </form>
@@ -257,24 +263,24 @@
                 <select data-target="thirdList4" class="secondList4 selectFilter form-control"
                     onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
-                    <option data-belong="ManureStorage" value="3">Anaerobic Lagoon - Non Purple</option>
-                    <option data-belong="ManureStorage" value="2">Anaerobic Lagoon - Purple</option>
-                    <option data-belong="PoultryBarn" value="5">Broiler with Litter Floor</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option data-belong="PoultryBarn" value="5">Broiler Litter</option>
                     <option data-belong="ManureStorage" value="9">Crusted Stockpile</option>
                     <option data-belong="ManureStorage" value="136">Steel or Concrete Tank</option>
-                    <option data-belong="CattleYard" value="19">Dirt/Concrete Lot</option>
+                    <option data-belong="CattleYard" value="19">Dirt/Concrete lot</option>
                     <option data-belong="ManureStorage" value="63">Earthen Storage Basin</option>
                     <option data-belong="SwineBarn" value="68">Farrowing</option>
                     <option data-belong="SwineBarn" value="165">Finishing - Deep Pit</option>
                     <option data-belong="SwineBarn" value="19">Finishing - Hoop Barn</option>
-                    <!--<option value="53">Finishing - Open Front Scrape</option>-->
+                    <option value="53">Finishing - Open Front Scrape</option>
                     <option data-belong="SwineBarn" value="97">Finishing - Pull Plug</option>
                     <option data-belong="DairyBarn" value="29">Free Stall</option>
                     <option data-belong="CattleYard" value="19">Free Stall - Scrape</option>
                     <option data-belong="SwineBarn" value="243">Gestation - Deep Pit</option>
                     <option data-belong="SwineBarn" value="146">Gestation - Pull Plug</option>
-                    <option data-belong="DairyBarn" value="29">Loose Housing</option>
-                    <option data-belong="PoultryBarn" value="10">Turkey with Litter Floor</option>
+                    <option data-belong="DairyBarn" value="29">Loose Housing </option>
+                    <option data-belong="PoultryBarn" value="10">Turkey Litter</option>
                     <option data-belong="DairyBarn" value="136">Tie Stall</option>
                 </select>
             </form>
@@ -282,24 +288,24 @@
                 <select data-target="thirdList5" class="secondList5 selectFilter form-control"
                     onChange="Displayfactor();sourceFactor();totalFactor();">
                     <option value="0">Non-selected</option>
-                    <option data-belong="ManureStorage" value="3">Anaerobic Lagoon - Non Purple</option>
-                    <option data-belong="ManureStorage" value="2">Anaerobic Lagoon - Purple</option>
-                    <option data-belong="PoultryBarn" value="5">Broiler with Litter Floor</option>
+                    <option value="3">Anaerobic Lagoon - Non Purple</option>
+                    <option value="2">Anaerobic Lagoon - Purple</option>
+                    <option data-belong="PoultryBarn" value="5">Broiler Litter</option>
                     <option data-belong="ManureStorage" value="9">Crusted Stockpile</option>
                     <option data-belong="ManureStorage" value="136">Steel or Concrete Tank</option>
-                    <option data-belong="CattleYard" value="19">Dirt/Concrete Lot</option>
+                    <option data-belong="CattleYard" value="19">Dirt/Concrete lot</option>
                     <option data-belong="ManureStorage" value="63">Earthen Storage Basin</option>
                     <option data-belong="SwineBarn" value="68">Farrowing</option>
                     <option data-belong="SwineBarn" value="165">Finishing - Deep Pit</option>
                     <option data-belong="SwineBarn" value="19">Finishing - Hoop Barn</option>
-                    <!--<option value="53">Finishing - Open Front Scrape</option>-->
+                    <option value="53">Finishing - Open Front Scrape</option>
                     <option data-belong="SwineBarn" value="97">Finishing - Pull Plug</option>
                     <option data-belong="DairyBarn" value="29">Free Stall</option>
                     <option data-belong="CattleYard" value="19">Free Stall - Scrape</option>
                     <option data-belong="SwineBarn" value="243">Gestation - Deep Pit</option>
                     <option data-belong="SwineBarn" value="146">Gestation - Pull Plug</option>
-                    <option data-belong="DairyBarn" value="29">Loose Housing</option>
-                    <option data-belong="PoultryBarn" value="10">Turkey with Litter Floor</option>
+                    <option data-belong="DairyBarn" value="29">Loose Housing </option>
+                    <option data-belong="PoultryBarn" value="10">Turkey Litter</option>
                     <option data-belong="DairyBarn" value="136">Tie Stall</option>
                 </select>
             </form>
@@ -395,7 +401,7 @@
                     <td style="width: 100px;"> Control：</td>
                     <td id="cc1">
                         <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                            <option value="1">No Odor Control </option>
+                            <option value="1">A No Odor Control </option>
                             <option value="0.1">Biofilter</option>
                             <option value="0.5">Geotextile Cover</option>
                             <option value="0.1">Impermeable Cover</option>
@@ -408,7 +414,7 @@
                     </td>
                     <td id="cc2">
                         <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                            <option value="1">No Odor Control </option>
+                            <option value="1">A No Odor Control </option>
                             <option value="0.1">Biofilter</option>
                             <option value="0.5">Geotextile Cover</option>
                             <option value="0.1">Impermeable Cover</option>
@@ -421,7 +427,7 @@
                     </td>
                     <td id="cc3">
                         <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                            <option value="1">No Odor Control </option>
+                            <option value="1">A No Odor Control </option>
                             <option value="0.1">Biofilter</option>
                             <option value="0.5">Geotextile Cover</option>
                             <option value="0.1">Impermeable Cover</option>
@@ -434,7 +440,7 @@
                     </td>
                     <td id="cc4">
                         <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                            <option value="1">No Odor Control </option>
+                            <option value="1">A No Odor Control </option>
                             <option value="0.1">Biofilter</option>
                             <option value="0.5">Geotextile Cover</option>
                             <option value="0.1">Impermeable Cover</option>
@@ -447,7 +453,7 @@
                     </td>
                     <td id="cc5">
                         <select onchange="displayControlFactor();sourceFactor();totalFactor();" style="width:210px">
-                            <option value="1">No Odor Control </option>
+                            <option value="1">A No Odor Control </option>
                             <option value="0.1">Biofilter</option>
                             <option value="0.5">Geotextile Cover</option>
                             <option value="0.1">Impermeable Cover</option>
@@ -2022,10 +2028,14 @@
             </table>
         </div>
 
+        <!-- <p><input type="button" id="bt" value="Show Table Data" onclick="getCellValue1(10,3)" /></p>
+    <p id="info"></p>
+    <br> -->
+
         <table id="distanceTable" border="1px solid black;">
             <caption style="color: midnightblue; font-weight:bold">SETBACK DISTANCES FROM ODOR SOURCE AT VARIOUS ODOR
                 ANNOYANCE-FREE FREQUENCIES IN FEET</caption>
-            <input type="button" id="bt" value="Click Me to Get/Update the Setback Distance Table"
+            <input type="button" id="bt" value="Click Me to Get/Update the Annoyance-free Table"
                 onclick="changeTableCell(document.getElementById('county'), document.getElementById('counties')); changeDirection(document.getElementById('county'), document.getElementById('counties')); " />
             <br>
             <tr>
@@ -2080,7 +2090,7 @@
         <div class="odorChart">
             <button type="button"
                 onclick="chart(document.getElementById('county'), document.getElementById('counties'))">Click Me to
-                Get/Update the Setback Distance Graph</button>
+                Get/Update the Odor Graph</button>
             <canvas id="myChart"></canvas>
             <p style="position:inherit">Date/Time: <span id="datetime"></span></p>
         </div>
