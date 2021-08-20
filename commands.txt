@@ -14,6 +14,6 @@ git push -u origin main
 
 update
 git add .
-git commit -m 'updata odor graph and make county selection required'
+git commit -m 'make tags align and some other minor modifications'
 git pull
 git push

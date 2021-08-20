@@ -58,6 +58,18 @@ html {
     text-align:center;
 }
 
+#sourceTypeTable{
+    text-align:center;
+}
+
+#areatable{
+    text-align:center;
+}
+
 .ar p{
     display: inline-table;
+}
+
+.controlTable{
+    text-align:center;
 }
